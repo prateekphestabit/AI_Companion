@@ -1,0 +1,184 @@
+yyyy-03-00 19:30:59 [ERROR]: uncaughtException: Unexpected token ')'
+/home/prateek/AI_Companion/backend/src/routes/dev.js:31
+, upload.single('avatar'), createNewCompanion); // create new companion
+                                             ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:3:19)
+yyyy-03-00 19:31:01 [ERROR]: uncaughtException: Unexpected token ')'
+/home/prateek/AI_Companion/backend/src/routes/dev.js:31
+ upload.single('avatar'), createNewCompanion); // create new companion
+                                            ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:3:19)
+yyyy-03-00 19:31:03 [ERROR]: uncaughtException: Unexpected token ')'
+/home/prateek/AI_Companion/backend/src/routes/dev.js:31
+.postupload.single('avatar'), createNewCompanion); // create new companion
+                                                ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:3:19)
+yyyy-03-00 19:31:07 [ERROR]: uncaughtException: Unexpected token ')'
+/home/prateek/AI_Companion/backend/src/routes/dev.js:31
+    .postupload.single('avatar'), createNewCompanion); // create new companion
+                                                    ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:3:19)
+yyyy-03-01 11:10:59 [ERROR]: Error in creating new user bcrypt is not defined
+yyyy-03-01 11:11:11 [ERROR]: uncaughtException: Missing initializer in const declaration
+/home/prateek/AI_Companion/backend/src/controllers/devUser.js:3
+const bcrypt
+      ^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/dev.js:14:5)
+yyyy-03-01 11:11:14 [ERROR]: uncaughtException: requier is not defined
+ReferenceError: requier is not defined
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/devUser.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/dev.js:14:5)
+yyyy-03-01 11:11:15 [ERROR]: uncaughtException: requie is not defined
+ReferenceError: requie is not defined
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/devUser.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/dev.js:14:5)
+yyyy-03-01 11:11:19 [ERROR]: uncaughtException: The "id" argument must be of type string. Received undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "id" argument must be of type string. Received undefined
+    at Module.require (node:internal/modules/cjs/loader:1497:3)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/devUser.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+yyyy-03-01 11:11:20 [ERROR]: uncaughtException: The argument 'id' must be a non-empty string. Received ''
+TypeError [ERR_INVALID_ARG_VALUE]: The argument 'id' must be a non-empty string. Received ''
+    at Module.require (node:internal/modules/cjs/loader:1499:11)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/devUser.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+yyyy-03-01 11:11:23 [ERROR]: uncaughtException: Cannot find module 'by'
+Require stack:
+- /home/prateek/AI_Companion/backend/src/controllers/devUser.js
+- /home/prateek/AI_Companion/backend/src/routes/dev.js
+- /home/prateek/AI_Companion/backend/src/loaders/routes.js
+- /home/prateek/AI_Companion/backend/src/loaders/loader.js
+- /home/prateek/AI_Companion/backend/src/app.js
+Error: Cannot find module 'by'
+Require stack:
+- /home/prateek/AI_Companion/backend/src/controllers/devUser.js
+- /home/prateek/AI_Companion/backend/src/routes/dev.js
+- /home/prateek/AI_Companion/backend/src/loaders/routes.js
+- /home/prateek/AI_Companion/backend/src/loaders/loader.js
+- /home/prateek/AI_Companion/backend/src/app.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/devUser.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+yyyy-03-01 11:11:34 [ERROR]: uncaughtException: Invalid or unexpected token
+/home/prateek/AI_Companion/backend/src/controllers/devUser.js:3
+const bcrypt = require("bcryptjs')
+                       ^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/dev.js:14:5)
+yyyy-03-01 11:24:41 [ERROR]: uncaughtException: Invalid left-hand side in assignment
+/home/prateek/AI_Companion/backend/src/middlewares/auth.js:24
+    const user = await 
+
+SyntaxError: Invalid left-hand side in assignment
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/middleware.js:5:24)
