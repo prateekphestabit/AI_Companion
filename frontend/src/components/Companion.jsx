@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Companion = ({ companion, onDelete }) => {
   const [showInfo, setShowInfo] = useState(false);
+  const navigate = useNavigate();
 
   // Avatar: use image if available, else first letter
   const avatarLetter = companion.name ? companion.name[0].toUpperCase() : '?';
@@ -34,7 +36,10 @@ const Companion = ({ companion, onDelete }) => {
   const personalityColor = tagColors[companion.personality] || 'bg-indigo-500/15 text-indigo-400 border-indigo-500/20';
 
   return (
-    <div className="group relative bg-white/4 hover:bg-white/6 border border-white/8 hover:border-indigo-500/30 rounded-2xl p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-indigo-500/10 flex flex-col gap-4">
+    <div 
+      onClick={() => navigate(`/chat/${companion._id}`)}
+      className="group relative bg-white/4 hover:bg-white/6 border border-white/8 hover:border-indigo-500/30 rounded-2xl p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-indigo-500/10 flex flex-col gap-4 cursor-pointer"
+    >
       {/* Avatar + Name */}
       <div className="flex items-center gap-3">
         {companion.avatar ? (
@@ -83,9 +88,10 @@ const Companion = ({ companion, onDelete }) => {
         {/* Info tooltip trigger */}
         <div className="relative">
           <button
+            onClick={(e) => e.stopPropagation()}
             onMouseEnter={() => setShowInfo(true)}
             onMouseLeave={() => setShowInfo(false)}
-            className="w-7 h-7 rounded-full border border-white/15 flex items-center justify-center text-slate-400 hover:text-white hover:border-indigo-500/50 hover:bg-indigo-500/10 transition-all duration-150 text-xs font-bold cursor-help"
+            className="w-7 h-7 rounded-full border border-white/15 flex items-center justify-center text-slate-400 hover:text-white hover:border-indigo-500/50 hover:bg-indigo-500/10 transition-all duration-150 text-xs font-bold"
           >
             i
           </button>
@@ -99,7 +105,10 @@ const Companion = ({ companion, onDelete }) => {
         </div>
 
         <button
-          onClick={() => onDelete(companion._id)}
+          onClick={(e) => {
+            e.stopPropagation();
+            onDelete(companion._id);
+          }}
           className="text-xs text-red-400/70 hover:text-red-400 font-medium px-3 py-1.5 rounded-lg hover:bg-red-500/10 border border-transparent hover:border-red-500/20 transition-all duration-150"
         >
           Delete

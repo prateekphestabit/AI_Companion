@@ -4,6 +4,7 @@ import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
 import CreateCompanion from './pages/CreateCompanion';
 import Profile from './pages/Profile';
+import Chat from './pages/Chat';
 
 const LandingPage = () => {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/createCompanion" element={<CreateCompanion />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/chat/:companionId" element={<Chat />} />
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
       </Routes>
     </Router>

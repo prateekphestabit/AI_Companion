@@ -840,3 +840,4 @@ SyntaxError: Unexpected token 'catch'
     at Module.require (node:internal/modules/cjs/loader:1504:12)
     at require (node:internal/modules/helpers:152:16)
     at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 16:00:11 [ERROR]: Failed To Load Cors is not defined
