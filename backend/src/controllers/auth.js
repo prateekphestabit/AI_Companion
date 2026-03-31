@@ -5,10 +5,10 @@ const logger = require('../utils/logger.js');
 
 async function signin(req, res) {
   try {
-    const {email, password } = req.body;
+    const { email, password } = req.body;
 
     const user = await User.findOne({ email });
-    
+
     if (!user) {
       return res.status(401).json({ success: false, message: "User Not Found" });
     }
@@ -86,9 +86,9 @@ async function signout(req, res) {
   }
 }
 
-async function checkAuth(req, res){
+async function checkAuth(req, res) {
   try {
-    const token = req.cookies.token; 
+    const token = req.cookies.token;
     if (!token) {
       return res.status(401).json({ success: false, message: "No JWT token found" });
     }
@@ -98,17 +98,17 @@ async function checkAuth(req, res){
       decodedToken = jwt.verify(token, process.env.JWT_SECRET);
     } catch (error) {
       logger.error("Error in auth", error);
-      res.clearCookie('token'); 
+      res.clearCookie('token');
       return res.status(401).json({ success: false, message: "Invalid JWT token" });
-    } 
-    
+    }
+
     const user = await User.findById(decodedToken._id);
 
     if (!user) {
-      res.clearCookie('token'); 
+      res.clearCookie('token');
       return res.status(401).json({ success: false, message: "No user found Invalid JWT Token" });
     }
-    
+
     res.status(200).json({
       success: true,
       user: { id: user._id, name: user.name, email: user.email },

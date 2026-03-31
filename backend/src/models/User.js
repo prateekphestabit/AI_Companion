@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 const companionSchema = require("./Companion");
+const listSchema = require("./List");
+const noteSchema = require("./Note");
 
 const userSchema = new mongoose.Schema(
   { 
@@ -8,6 +10,8 @@ const userSchema = new mongoose.Schema(
     password: { type: String, required: true},
     avatar:   { type: Buffer, default: null },
     companions: [companionSchema],
+    lists: [listSchema],
+    notes: [noteSchema],
   },
   { timestamps: true }
 );

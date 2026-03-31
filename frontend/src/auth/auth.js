@@ -6,13 +6,13 @@ export async function checkAuth() {
             credentials: "include"
         }).catch(error => {
             console.error("Network error during auth check:", error);
-            return false;
+            return { success: false };
         });
         
         const data = await res.json();
-        return data.success;
+        return data;
     } catch (error) {
         console.error("Auth check failed:", error);
-        return false;
+        return { success: false };
     }
 }

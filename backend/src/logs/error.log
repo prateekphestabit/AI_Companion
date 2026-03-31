@@ -182,3 +182,661 @@ SyntaxError: Invalid left-hand side in assignment
     at Module.require (node:internal/modules/cjs/loader:1504:12)
     at require (node:internal/modules/helpers:152:16)
     at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/middleware.js:5:24)
+yyyy-03-01 13:46:29 [ERROR]: Error in auth jwt malformed
+yyyy-03-01 13:46:29 [ERROR]: Error in auth jwt malformed
+yyyy-03-01 14:02:24 [ERROR]: uncaughtException: mongoose is not defined
+ReferenceError: mongoose is not defined
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/models/Companion.js:3:25)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/models/User.js:2:25)
+yyyy-03-01 17:20:18 [ERROR]: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as post] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
+    at Router.<computed> [as post] (/home/prateek/AI_Companion/backend/node_modules/router/index.js:448:19)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:12:15)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+yyyy-03-01 17:59:35 [ERROR]: uncaughtException: accountRouterroute is not defined
+ReferenceError: accountRouterroute is not defined
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:13:1)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:4:23)
+yyyy-03-01 17:59:38 [ERROR]: uncaughtException: accountRouter.route.post is not a function
+TypeError: accountRouter.route.post is not a function
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:13:21)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:4:23)
+yyyy-03-01 17:59:41 [ERROR]: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as post] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:13:23)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+yyyy-03-01 17:59:46 [ERROR]: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as post] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:13:32)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+yyyy-03-01 17:59:49 [ERROR]: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as post] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:14:2)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+yyyy-03-01 17:59:51 [ERROR]: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as post] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:14:6)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+yyyy-03-01 18:00:02 [ERROR]: uncaughtException: Invalid or unexpected token
+/home/prateek/AI_Companion/backend/src/routes/account.js:15
+    \
+    ^
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:4:23)
+yyyy-03-01 18:00:08 [ERROR]: uncaughtException: getAvatar is not defined
+ReferenceError: getAvatar is not defined
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:15:10)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:4:23)
+yyyy-03-01 18:00:36 [ERROR]: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as get] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:16:6)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+yyyy-03-01 18:00:42 [ERROR]: uncaughtException: getAvatar is not defined
+ReferenceError: getAvatar is not defined
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/account.js:50:3)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-01 18:03:31 [ERROR]: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as get] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:16:6)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+yyyy-03-01 18:03:36 [ERROR]: uncaughtException: a is not defined
+ReferenceError: a is not defined
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/account.js:47:1)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-01 18:03:38 [ERROR]: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as get] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:16:6)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+yyyy-03-01 18:04:14 [ERROR]: Error in createCompanion createdCompanion is not defined
+yyyy-03-01 18:05:14 [ERROR]: Error in createCompanion createdCompanion is not defined
+yyyy-03-01 18:05:51 [ERROR]: Error in createCompanion createdCompanion is not defined
+yyyy-03-01 18:06:48 [ERROR]: Error in createCompanion createdCompanion is not defined
+yyyy-03-01 18:07:25 [ERROR]: uncaughtException: Unexpected identifier 'user'
+/home/prateek/AI_Companion/backend/src/controllers/companion.js:67
+        await user.save();
+              ^^^^
+
+SyntaxError: Unexpected identifier 'user'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/companion.js:9:5)
+yyyy-03-01 18:07:28 [ERROR]: uncaughtException: Unexpected identifier 'user'
+/home/prateek/AI_Companion/backend/src/controllers/companion.js:67
+        await user.save();
+              ^^^^
+
+SyntaxError: Unexpected identifier 'user'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/companion.js:9:5)
+yyyy-03-01 18:07:41 [ERROR]: Error in createCompanion createdCompanion is not defined
+yyyy-03-01 18:09:22 [ERROR]: Error in createCompanion createdCompanion is not defined
+yyyy-03-01 18:09:52 [ERROR]: Error in createCompanion createdCompanion is not defined
+yyyy-03-01 18:12:45 [ERROR]: Error in createCompanion createdCompanion is not defined
+yyyy-03-02 12:44:52 [ERROR]: uncaughtException: getAccount is not defined
+ReferenceError: getAccount is not defined
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:12:10)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:4:23)
+yyyy-03-02 12:45:00 [ERROR]: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as get] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:13:6)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+yyyy-03-02 12:45:06 [ERROR]: uncaughtException: as is not defined
+ReferenceError: as is not defined
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/account.js:46:1)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 12:45:09 [ERROR]: uncaughtException: Unexpected token '.'
+/home/prateek/AI_Companion/backend/src/controllers/account.js:47
+module.exports = {
+      ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 12:45:10 [ERROR]: uncaughtException: Unexpected identifier 'module'
+/home/prateek/AI_Companion/backend/src/controllers/account.js:47
+module.exports = {
+^^^^^^
+
+SyntaxError: Unexpected identifier 'module'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 12:45:17 [ERROR]: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as get] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:13:6)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+yyyy-03-02 12:45:29 [ERROR]: uncaughtException: Missing catch or finally after try
+/home/prateek/AI_Companion/backend/src/controllers/account.js:49
+}
+^
+
+SyntaxError: Missing catch or finally after try
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 12:45:32 [ERROR]: uncaughtException: Missing catch or finally after try
+/home/prateek/AI_Companion/backend/src/controllers/account.js:50
+}
+^
+
+SyntaxError: Missing catch or finally after try
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 12:45:36 [ERROR]: uncaughtException: Missing catch or finally after try
+/home/prateek/AI_Companion/backend/src/controllers/account.js:51
+}
+^
+
+SyntaxError: Missing catch or finally after try
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 12:45:41 [ERROR]: uncaughtException: Unexpected end of input
+/home/prateek/AI_Companion/backend/src/controllers/account.js:59
+
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 12:45:42 [ERROR]: uncaughtException: Unexpected end of input
+/home/prateek/AI_Companion/backend/src/controllers/account.js:60
+
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 12:45:45 [ERROR]: uncaughtException: Missing catch or finally after try
+/home/prateek/AI_Companion/backend/src/controllers/account.js:54
+}
+^
+
+SyntaxError: Missing catch or finally after try
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 12:45:46 [ERROR]: uncaughtException: missing ) after argument list
+/home/prateek/AI_Companion/backend/src/controllers/account.js:55
+}
+^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 12:45:48 [ERROR]: uncaughtException: missing ) after argument list
+/home/prateek/AI_Companion/backend/src/controllers/account.js:56
+}
+^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 12:45:50 [ERROR]: uncaughtException: missing ) after argument list
+/home/prateek/AI_Companion/backend/src/controllers/account.js:57
+}
+^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 12:45:52 [ERROR]: uncaughtException: Missing catch or finally after try
+/home/prateek/AI_Companion/backend/src/controllers/account.js:58
+}
+^
+
+SyntaxError: Missing catch or finally after try
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 12:45:54 [ERROR]: uncaughtException: Unexpected end of input
+/home/prateek/AI_Companion/backend/src/controllers/account.js:66
+
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 12:45:56 [ERROR]: uncaughtException: Unexpected end of input
+/home/prateek/AI_Companion/backend/src/controllers/account.js:67
+
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 12:45:59 [ERROR]: uncaughtException: Unexpected end of input
+/home/prateek/AI_Companion/backend/src/controllers/account.js:68
+
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 13:09:23 [ERROR]: uncaughtException: Unexpected identifier 'res'
+/home/prateek/AI_Companion/backend/src/controllers/account.js:74
+    res.status(200).json({
+    ^^^
+
+SyntaxError: Unexpected identifier 'res'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 13:09:24 [ERROR]: uncaughtException: Unexpected token ')'
+/home/prateek/AI_Companion/backend/src/controllers/account.js:73
+    if()
+       ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 13:09:32 [ERROR]: uncaughtException: Missing initializer in const declaration
+/home/prateek/AI_Companion/backend/src/controllers/account.js:74
+    res.status(200).json({
+    ^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 13:09:36 [ERROR]: uncaughtException: Unexpected token '.'
+/home/prateek/AI_Companion/backend/src/controllers/account.js:75
+    res.status(200).json({
+       ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 13:09:55 [ERROR]: uncaughtException: Unexpected token '.'
+/home/prateek/AI_Companion/backend/src/controllers/account.js:76
+    res.status(200).json({
+       ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 13:10:47 [ERROR]: uncaughtException: Unexpected identifier 'res'
+/home/prateek/AI_Companion/backend/src/controllers/account.js:76
+    res.status(200).json({
+    ^^^
+
+SyntaxError: Unexpected identifier 'res'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 13:10:56 [ERROR]: uncaughtException: Unexpected token ')'
+/home/prateek/AI_Companion/backend/src/controllers/account.js:74
+    if ()
+        ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 13:11:15 [ERROR]: uncaughtException: Unexpected token 'catch'
+/home/prateek/AI_Companion/backend/src/controllers/account.js:82
+  } catch (error) {
+    ^^^^^
+
+SyntaxError: Unexpected token 'catch'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
+yyyy-03-02 13:11:42 [ERROR]: uncaughtException: Unexpected token 'catch'
+/home/prateek/AI_Companion/backend/src/controllers/account.js:84
+  } catch (error) {
+    ^^^^^
+
+SyntaxError: Unexpected token 'catch'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)

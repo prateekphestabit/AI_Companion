@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const historySchema = require("./History");
 
 const companionSchema = new mongoose.Schema(
   {
@@ -8,6 +9,7 @@ const companionSchema = new mongoose.Schema(
     personality: { type: String, trim: true },
     communicationStyle: { type: String, trim: true },
     expertise: { type: String, trim: true },
+    history: [historySchema],
   },
   { timestamps: true }
 );

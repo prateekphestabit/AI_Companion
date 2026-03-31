@@ -1,3 +1,4 @@
+const companionSchema = require("../models/Companion.js");
 const User = require("../models/User");
 const logger = require('../utils/logger.js');
 
@@ -18,6 +19,81 @@ async function deleteAccount(req, res){
   }
 }
 
+async function uploadAvatar(req, res) {
+  try {
+    const userId = req.user._id;
+    if (!req.file) {
+      return res.status(400).json({ success: false, message: "No image provided" });
+    }
+    
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.status(404).json({ success: false, message: "User not found" });
+    }
+
+    user.avatar = req.file.buffer;
+    await user.save();
+
+    res.status(200).json({
+      success: true,
+      message: "Avatar uploaded successfully"
+    });
+  } catch (error) {
+    logger.error("Error in uploadAvatar", error);
+    res.status(500).json({ success: false, message: "Server error", error: error.message });
+  }
+}
+
+async function getAccount(req, res) {
+  try {
+    const userId = req.user._id;
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.status(404).json({ success: false, message: "User not found" });
+    }
+
+    const userWithBase64 = {...user.toObject()}
+    if (userWithBase64.avatar){
+      let bufferData = null;
+      if (Buffer.isBuffer(userWithBase64.avatar)) {
+        bufferData = userWithBase64.avatar;
+      } else if (userWithBase64.avatar.buffer) {
+        bufferData = userWithBase64.avatar.buffer;
+      }
+      if (bufferData) {
+        userWithBase64.avatar = `data:image/png;base64,${bufferData.toString('base64')}`;
+      }
+    }
+
+    userWithBase64.companions = userWithBase64.companions.map(comp => {
+      // Mongoose stores buffers as BSON Binary objects or native Buffers depending on the driver version
+      if (comp.avatar) {
+        let bufferData = null;
+        if (Buffer.isBuffer(comp.avatar)) {
+          bufferData = comp.avatar;
+        } else if (comp.avatar.buffer) { // Handle BSON Binary
+          bufferData = comp.avatar.buffer;
+        }
+
+        if (bufferData) {
+          comp.avatar = `data:image/png;base64,${bufferData.toString('base64')}`;
+        }
+      }
+      return comp;
+    });
+    
+    res.status(200).json({
+      success: true,
+      user: userWithBase64
+    });
+  } catch (error) {
+    logger.error("Error in getAccount", error);
+    res.status(500).json({ success: false, message: "Server error", error: error.message });
+  }
+}
+
 module.exports = {
-  deleteAccount
+  deleteAccount,
+  uploadAvatar,
+  getAccount
 };

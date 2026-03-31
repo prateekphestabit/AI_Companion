@@ -2,22 +2,40 @@ const User = require("../models/User");
 const logger = require("../utils/logger");
 
 async function getAllCompanions(req, res) {
-  try {
-    const userId = req.user._id;
-    const user = await User.findById(userId).select("companions");
+    try {
+        const userId = req.user._id;
+        const user = await User.findById(userId).select("companions");
 
-    if (!user) {
-      return res.status(404).json({ success: false, message: "User not found" });
+        if (!user) {
+            return res.status(404).json({ success: false, message: "User not found" });
+        }
+
+        const companionsWithBase64 = user.companions.map(comp => {
+            const compData = { ...comp.toObject() };
+            // Mongoose stores buffers as BSON Binary objects or native Buffers depending on the driver version
+            if (compData.avatar) {
+                let bufferData = null;
+                if (Buffer.isBuffer(compData.avatar)) {
+                    bufferData = compData.avatar;
+                } else if (compData.avatar.buffer) { // Handle BSON Binary
+                    bufferData = compData.avatar.buffer;
+                }
+
+                if (bufferData) {
+                    compData.avatar = `data:image/png;base64,${bufferData.toString('base64')}`;
+                }
+            }
+            return compData;
+        });
+
+        res.status(200).json({
+            success: true,
+            companions: companionsWithBase64
+        });
+    } catch (error) {
+        logger.error("Error in getAllCompanions", error);
+        res.status(500).json({ success: false, message: "Server error", error: error.message });
     }
-
-    res.status(200).json({ 
-        success: true, 
-        companions: user.companions 
-    });
-  } catch (error) {
-    logger.error("Error in getAllCompanions", error);
-    res.status(500).json({ success: false, message: "Server error", error: error.message });
-  }
 }
 
 async function createCompanion(req, res) {
@@ -42,14 +60,29 @@ async function createCompanion(req, res) {
             expertise,
             avatar: req.file ? req.file.buffer : null
         };
-
+        
         user.companions.push(newCompanion);
+        
         await user.save();
+        
+        const createdCompanion = { ...user.companions[user.companions.length - 1].toObject() };
+        if (createdCompanion.avatar) {
+            let bufferData = null;
+            if (Buffer.isBuffer(createdCompanion.avatar)) {
+                bufferData = createdCompanion.avatar;
+            } else if (createdCompanion.avatar.buffer) { 
+                bufferData = createdCompanion.avatar.buffer;
+            }
+
+            if (bufferData) {
+                createdCompanion.avatar = `data:image/png;base64,${bufferData.toString('base64')}`;
+            }
+        }
 
         res.status(201).json({
             success: true,
             message: "Companion created successfully",
-            companion: user.companions[user.companions.length - 1]
+            companion: createdCompanion
         });
 
     } catch (error) {
@@ -86,7 +119,7 @@ async function deleteCompanion(req, res) {
 }
 
 module.exports = {
-  getAllCompanions,
-  createCompanion,
-  deleteCompanion
+    getAllCompanions,
+    createCompanion,
+    deleteCompanion
 };
