@@ -1,0 +1,37 @@
+{
+  "id": "chatcmpl-b4c438bee9ce5b4b",
+  "object": "chat.completion",
+  "created": 1775040789,
+  "model": "mistralai/devstral-2-123b-instruct-2512",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "**Title: \"Request for Concise Response\"**",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning": null,
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 31,
+    "total_tokens": 42,
+    "completion_tokens": 11,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

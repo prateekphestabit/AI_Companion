@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
 import { checkAuth } from '../auth/auth';
 import Sidebar from '../components/chatPage/sidebar';
 
@@ -237,9 +238,38 @@ const Chat = () => {
                           ? 'bg-[#131320] border border-white/8 text-slate-100 rounded-2xl rounded-tr-sm px-5 py-3.5'
                           : 'text-slate-200 py-1'
                         }`}>
-                        <p className={`whitespace-pre-wrap leading-7 text-[15px] ${!isUser ? 'font-light' : ''}`}>
-                          {msg.text}
-                        </p>
+                        {isUser ? (
+                          <p className={`whitespace-pre-wrap leading-7 text-[15px]`}>
+                            {msg.text}
+                          </p>
+                        ) : (
+                          <ReactMarkdown
+                            components={{
+                              h1: ({ node, ...props }) => <h1 className="text-2xl font-bold mt-4 mb-2 text-indigo-300" {...props} />,
+                              h2: ({ node, ...props }) => <h2 className="text-xl font-bold mt-3 mb-2 text-indigo-300" {...props} />,
+                              h3: ({ node, ...props }) => <h3 className="text-lg font-bold mt-2 mb-1.5 text-indigo-300" {...props} />,
+                              h4: ({ node, ...props }) => <h4 className="text-base font-bold mt-2 mb-1 text-indigo-300" {...props} />,
+                              h5: ({ node, ...props }) => <h5 className="font-bold text-indigo-300" {...props} />,
+                              h6: ({ node, ...props }) => <h6 className="font-bold text-indigo-300" {...props} />,
+                              strong: ({ node, ...props }) => <strong className="font-semibold text-slate-100" {...props} />,
+                              em: ({ node, ...props }) => <em className="italic text-slate-300" {...props} />,
+                              p: ({ node, ...props }) => <p className="leading-7 text-[15px] my-2" {...props} />,
+                              ul: ({ node, ...props }) => <ul className="list-disc list-inside my-2 space-y-1" {...props} />,
+                              ol: ({ node, ...props }) => <ol className="list-decimal list-inside my-2 space-y-1" {...props} />,
+                              li: ({ node, ...props }) => <li className="text-[15px]" {...props} />,
+                              code: ({ node, inline, ...props }) => 
+                                inline ? (
+                                  <code className="bg-white/10 text-amber-300 px-1.5 py-0.5 rounded text-sm font-mono" {...props} />
+                                ) : (
+                                  <code className="bg-white/5 block p-3 rounded-lg text-amber-300 font-mono text-sm overflow-x-auto my-2" {...props} />
+                                ),
+                              blockquote: ({ node, ...props }) => <blockquote className="border-l-4 border-indigo-500 pl-4 italic text-slate-300 my-2" {...props} />,
+                              a: ({ node, ...props }) => <a className="text-indigo-400 hover:underline" {...props} />,
+                            }}
+                          >
+                            {msg.text}
+                          </ReactMarkdown>
+                        )}
                       </div>
                     </div>
                   </div>

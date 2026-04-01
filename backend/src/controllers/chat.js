@@ -1,5 +1,6 @@
 const User = require("../models/User");
 const logger = require("../utils/logger");
+const { llmResponse } = require("../services/chat");
 
 async function getHistory(req, res) {
   try {
@@ -82,14 +83,30 @@ async function sendMessage(req, res) {
       return res.status(404).json({ success: false, message: "Companion not found" });
     }
 
+    const messages = [{"role": "system", "content": companion.systemPrompt}]
+
     // Simulated AI response
-    const aiReply = `This is a simulated response from ${companion.name}. Backend AI integration coming soon!`;
+    let aiReply = `This is a simulated response from ${companion.name}. Backend AI integration coming soon!`;
 
     let activeHistoryId = historyId;
 
     if (!historyId) {
+      messages.push({ "role": "user", "content": message.trim() });
+      aiReply = await llmResponse(messages);
+
+      const contentForTitle = `
+        Generate a short title (max 5 words).
+        Return ONLY plain text. No quotes, no formatting.
+
+        Message:
+        ${message}
+
+        response:
+        ${aiReply}
+      `;
+      const title = await llmResponse([{ "role": "user", "content": contentForTitle }]);
       // New chat — create a new history entry
-      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+
       companion.history.push({
         title,
         chatHistory: [
@@ -99,8 +116,26 @@ async function sendMessage(req, res) {
       });
       await user.save();
       activeHistoryId = companion.history[companion.history.length - 1]._id;
-    } else {
+    } 
+    else {
       // Existing chat — push to chatHistory
+      const chats = companion.history.id(historyId).chatHistory;
+      const recentChats = chats.slice(-20); 
+
+      for (const chat of recentChats) {
+        messages.push({
+          role: chat.role,
+          content: chat.content
+        });
+      }
+
+      messages.push({
+        role: 'user',
+        content: message.trim()
+      });
+      
+      aiReply = await llmResponse(messages);
+
       const historyEntry = companion.history.id(historyId);
       if (!historyEntry) {
         return res.status(404).json({ success: false, message: "Chat not found" });

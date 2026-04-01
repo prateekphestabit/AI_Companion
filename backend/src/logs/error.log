@@ -1,898 +1,7 @@
-yyyy-03-00 19:30:59 [ERROR]: uncaughtException: Unexpected token ')'
-/home/prateek/AI_Companion/backend/src/routes/dev.js:31
-, upload.single('avatar'), createNewCompanion); // create new companion
-                                             ^
-
-SyntaxError: Unexpected token ')'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:3:19)
-yyyy-03-00 19:31:01 [ERROR]: uncaughtException: Unexpected token ')'
-/home/prateek/AI_Companion/backend/src/routes/dev.js:31
- upload.single('avatar'), createNewCompanion); // create new companion
-                                            ^
-
-SyntaxError: Unexpected token ')'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:3:19)
-yyyy-03-00 19:31:03 [ERROR]: uncaughtException: Unexpected token ')'
-/home/prateek/AI_Companion/backend/src/routes/dev.js:31
-.postupload.single('avatar'), createNewCompanion); // create new companion
-                                                ^
-
-SyntaxError: Unexpected token ')'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:3:19)
-yyyy-03-00 19:31:07 [ERROR]: uncaughtException: Unexpected token ')'
-/home/prateek/AI_Companion/backend/src/routes/dev.js:31
-    .postupload.single('avatar'), createNewCompanion); // create new companion
-                                                    ^
-
-SyntaxError: Unexpected token ')'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:3:19)
-yyyy-03-01 11:10:59 [ERROR]: Error in creating new user bcrypt is not defined
-yyyy-03-01 11:11:11 [ERROR]: uncaughtException: Missing initializer in const declaration
-/home/prateek/AI_Companion/backend/src/controllers/devUser.js:3
-const bcrypt
-      ^^^^^^
-
-SyntaxError: Missing initializer in const declaration
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/dev.js:14:5)
-yyyy-03-01 11:11:14 [ERROR]: uncaughtException: requier is not defined
-ReferenceError: requier is not defined
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/devUser.js:3:16)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/dev.js:14:5)
-yyyy-03-01 11:11:15 [ERROR]: uncaughtException: requie is not defined
-ReferenceError: requie is not defined
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/devUser.js:3:16)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/dev.js:14:5)
-yyyy-03-01 11:11:19 [ERROR]: uncaughtException: The "id" argument must be of type string. Received undefined
-TypeError [ERR_INVALID_ARG_TYPE]: The "id" argument must be of type string. Received undefined
-    at Module.require (node:internal/modules/cjs/loader:1497:3)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/devUser.js:3:16)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-yyyy-03-01 11:11:20 [ERROR]: uncaughtException: The argument 'id' must be a non-empty string. Received ''
-TypeError [ERR_INVALID_ARG_VALUE]: The argument 'id' must be a non-empty string. Received ''
-    at Module.require (node:internal/modules/cjs/loader:1499:11)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/devUser.js:3:16)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-yyyy-03-01 11:11:23 [ERROR]: uncaughtException: Cannot find module 'by'
-Require stack:
-- /home/prateek/AI_Companion/backend/src/controllers/devUser.js
-- /home/prateek/AI_Companion/backend/src/routes/dev.js
-- /home/prateek/AI_Companion/backend/src/loaders/routes.js
-- /home/prateek/AI_Companion/backend/src/loaders/loader.js
-- /home/prateek/AI_Companion/backend/src/app.js
-Error: Cannot find module 'by'
-Require stack:
-- /home/prateek/AI_Companion/backend/src/controllers/devUser.js
-- /home/prateek/AI_Companion/backend/src/routes/dev.js
-- /home/prateek/AI_Companion/backend/src/loaders/routes.js
-- /home/prateek/AI_Companion/backend/src/loaders/loader.js
-- /home/prateek/AI_Companion/backend/src/app.js
-    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
-    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
-    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
-    at Module._load (node:internal/modules/cjs/loader:1227:37)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/devUser.js:3:16)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-yyyy-03-01 11:11:34 [ERROR]: uncaughtException: Invalid or unexpected token
-/home/prateek/AI_Companion/backend/src/controllers/devUser.js:3
-const bcrypt = require("bcryptjs')
-                       ^^^^^^^^^^^
-
-SyntaxError: Invalid or unexpected token
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/dev.js:14:5)
-yyyy-03-01 11:24:41 [ERROR]: uncaughtException: Invalid left-hand side in assignment
-/home/prateek/AI_Companion/backend/src/middlewares/auth.js:24
-    const user = await 
-
-SyntaxError: Invalid left-hand side in assignment
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/middleware.js:5:24)
-yyyy-03-01 13:46:29 [ERROR]: Error in auth jwt malformed
-yyyy-03-01 13:46:29 [ERROR]: Error in auth jwt malformed
-yyyy-03-01 14:02:24 [ERROR]: uncaughtException: mongoose is not defined
-ReferenceError: mongoose is not defined
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/models/Companion.js:3:25)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/models/User.js:2:25)
-yyyy-03-01 17:20:18 [ERROR]: uncaughtException: argument handler must be a function
-TypeError: argument handler must be a function
-    at Route.<computed> [as post] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
-    at Router.<computed> [as post] (/home/prateek/AI_Companion/backend/node_modules/router/index.js:448:19)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:12:15)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-yyyy-03-01 17:59:35 [ERROR]: uncaughtException: accountRouterroute is not defined
-ReferenceError: accountRouterroute is not defined
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:13:1)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:4:23)
-yyyy-03-01 17:59:38 [ERROR]: uncaughtException: accountRouter.route.post is not a function
-TypeError: accountRouter.route.post is not a function
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:13:21)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:4:23)
-yyyy-03-01 17:59:41 [ERROR]: uncaughtException: argument handler must be a function
-TypeError: argument handler must be a function
-    at Route.<computed> [as post] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:13:23)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-yyyy-03-01 17:59:46 [ERROR]: uncaughtException: argument handler must be a function
-TypeError: argument handler must be a function
-    at Route.<computed> [as post] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:13:32)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-yyyy-03-01 17:59:49 [ERROR]: uncaughtException: argument handler must be a function
-TypeError: argument handler must be a function
-    at Route.<computed> [as post] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:14:2)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-yyyy-03-01 17:59:51 [ERROR]: uncaughtException: argument handler must be a function
-TypeError: argument handler must be a function
-    at Route.<computed> [as post] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:14:6)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-yyyy-03-01 18:00:02 [ERROR]: uncaughtException: Invalid or unexpected token
-/home/prateek/AI_Companion/backend/src/routes/account.js:15
-    \
-    ^
-
-SyntaxError: Invalid or unexpected token
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:4:23)
-yyyy-03-01 18:00:08 [ERROR]: uncaughtException: getAvatar is not defined
-ReferenceError: getAvatar is not defined
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:15:10)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:4:23)
-yyyy-03-01 18:00:36 [ERROR]: uncaughtException: argument handler must be a function
-TypeError: argument handler must be a function
-    at Route.<computed> [as get] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:16:6)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-yyyy-03-01 18:00:42 [ERROR]: uncaughtException: getAvatar is not defined
-ReferenceError: getAvatar is not defined
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/account.js:50:3)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-01 18:03:31 [ERROR]: uncaughtException: argument handler must be a function
-TypeError: argument handler must be a function
-    at Route.<computed> [as get] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:16:6)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-yyyy-03-01 18:03:36 [ERROR]: uncaughtException: a is not defined
-ReferenceError: a is not defined
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/account.js:47:1)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-01 18:03:38 [ERROR]: uncaughtException: argument handler must be a function
-TypeError: argument handler must be a function
-    at Route.<computed> [as get] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:16:6)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-yyyy-03-01 18:04:14 [ERROR]: Error in createCompanion createdCompanion is not defined
-yyyy-03-01 18:05:14 [ERROR]: Error in createCompanion createdCompanion is not defined
-yyyy-03-01 18:05:51 [ERROR]: Error in createCompanion createdCompanion is not defined
-yyyy-03-01 18:06:48 [ERROR]: Error in createCompanion createdCompanion is not defined
-yyyy-03-01 18:07:25 [ERROR]: uncaughtException: Unexpected identifier 'user'
-/home/prateek/AI_Companion/backend/src/controllers/companion.js:67
-        await user.save();
-              ^^^^
-
-SyntaxError: Unexpected identifier 'user'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/companion.js:9:5)
-yyyy-03-01 18:07:28 [ERROR]: uncaughtException: Unexpected identifier 'user'
-/home/prateek/AI_Companion/backend/src/controllers/companion.js:67
-        await user.save();
-              ^^^^
-
-SyntaxError: Unexpected identifier 'user'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/companion.js:9:5)
-yyyy-03-01 18:07:41 [ERROR]: Error in createCompanion createdCompanion is not defined
-yyyy-03-01 18:09:22 [ERROR]: Error in createCompanion createdCompanion is not defined
-yyyy-03-01 18:09:52 [ERROR]: Error in createCompanion createdCompanion is not defined
-yyyy-03-01 18:12:45 [ERROR]: Error in createCompanion createdCompanion is not defined
-yyyy-03-02 12:44:52 [ERROR]: uncaughtException: getAccount is not defined
-ReferenceError: getAccount is not defined
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:12:10)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/loaders/routes.js:4:23)
-yyyy-03-02 12:45:00 [ERROR]: uncaughtException: argument handler must be a function
-TypeError: argument handler must be a function
-    at Route.<computed> [as get] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:13:6)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-yyyy-03-02 12:45:06 [ERROR]: uncaughtException: as is not defined
-ReferenceError: as is not defined
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/account.js:46:1)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 12:45:09 [ERROR]: uncaughtException: Unexpected token '.'
-/home/prateek/AI_Companion/backend/src/controllers/account.js:47
-module.exports = {
-      ^
-
-SyntaxError: Unexpected token '.'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 12:45:10 [ERROR]: uncaughtException: Unexpected identifier 'module'
-/home/prateek/AI_Companion/backend/src/controllers/account.js:47
-module.exports = {
-^^^^^^
-
-SyntaxError: Unexpected identifier 'module'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 12:45:17 [ERROR]: uncaughtException: argument handler must be a function
-TypeError: argument handler must be a function
-    at Route.<computed> [as get] (/home/prateek/AI_Companion/backend/node_modules/router/lib/route.js:228:15)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:13:6)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-yyyy-03-02 12:45:29 [ERROR]: uncaughtException: Missing catch or finally after try
-/home/prateek/AI_Companion/backend/src/controllers/account.js:49
-}
-^
-
-SyntaxError: Missing catch or finally after try
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 12:45:32 [ERROR]: uncaughtException: Missing catch or finally after try
-/home/prateek/AI_Companion/backend/src/controllers/account.js:50
-}
-^
-
-SyntaxError: Missing catch or finally after try
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 12:45:36 [ERROR]: uncaughtException: Missing catch or finally after try
-/home/prateek/AI_Companion/backend/src/controllers/account.js:51
-}
-^
-
-SyntaxError: Missing catch or finally after try
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 12:45:41 [ERROR]: uncaughtException: Unexpected end of input
-/home/prateek/AI_Companion/backend/src/controllers/account.js:59
-
-
-
-SyntaxError: Unexpected end of input
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 12:45:42 [ERROR]: uncaughtException: Unexpected end of input
-/home/prateek/AI_Companion/backend/src/controllers/account.js:60
-
-
-
-SyntaxError: Unexpected end of input
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 12:45:45 [ERROR]: uncaughtException: Missing catch or finally after try
-/home/prateek/AI_Companion/backend/src/controllers/account.js:54
-}
-^
-
-SyntaxError: Missing catch or finally after try
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 12:45:46 [ERROR]: uncaughtException: missing ) after argument list
-/home/prateek/AI_Companion/backend/src/controllers/account.js:55
-}
-^
-
-SyntaxError: missing ) after argument list
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 12:45:48 [ERROR]: uncaughtException: missing ) after argument list
-/home/prateek/AI_Companion/backend/src/controllers/account.js:56
-}
-^
-
-SyntaxError: missing ) after argument list
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 12:45:50 [ERROR]: uncaughtException: missing ) after argument list
-/home/prateek/AI_Companion/backend/src/controllers/account.js:57
-}
-^
-
-SyntaxError: missing ) after argument list
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 12:45:52 [ERROR]: uncaughtException: Missing catch or finally after try
-/home/prateek/AI_Companion/backend/src/controllers/account.js:58
-}
-^
-
-SyntaxError: Missing catch or finally after try
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 12:45:54 [ERROR]: uncaughtException: Unexpected end of input
-/home/prateek/AI_Companion/backend/src/controllers/account.js:66
-
-
-
-SyntaxError: Unexpected end of input
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 12:45:56 [ERROR]: uncaughtException: Unexpected end of input
-/home/prateek/AI_Companion/backend/src/controllers/account.js:67
-
-
-
-SyntaxError: Unexpected end of input
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 12:45:59 [ERROR]: uncaughtException: Unexpected end of input
-/home/prateek/AI_Companion/backend/src/controllers/account.js:68
-
-
-
-SyntaxError: Unexpected end of input
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 13:09:23 [ERROR]: uncaughtException: Unexpected identifier 'res'
-/home/prateek/AI_Companion/backend/src/controllers/account.js:74
-    res.status(200).json({
-    ^^^
-
-SyntaxError: Unexpected identifier 'res'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 13:09:24 [ERROR]: uncaughtException: Unexpected token ')'
-/home/prateek/AI_Companion/backend/src/controllers/account.js:73
-    if()
-       ^
-
-SyntaxError: Unexpected token ')'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 13:09:32 [ERROR]: uncaughtException: Missing initializer in const declaration
-/home/prateek/AI_Companion/backend/src/controllers/account.js:74
-    res.status(200).json({
-    ^^^
-
-SyntaxError: Missing initializer in const declaration
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 13:09:36 [ERROR]: uncaughtException: Unexpected token '.'
-/home/prateek/AI_Companion/backend/src/controllers/account.js:75
-    res.status(200).json({
-       ^
-
-SyntaxError: Unexpected token '.'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 13:09:55 [ERROR]: uncaughtException: Unexpected token '.'
-/home/prateek/AI_Companion/backend/src/controllers/account.js:76
-    res.status(200).json({
-       ^
-
-SyntaxError: Unexpected token '.'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 13:10:47 [ERROR]: uncaughtException: Unexpected identifier 'res'
-/home/prateek/AI_Companion/backend/src/controllers/account.js:76
-    res.status(200).json({
-    ^^^
-
-SyntaxError: Unexpected identifier 'res'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 13:10:56 [ERROR]: uncaughtException: Unexpected token ')'
-/home/prateek/AI_Companion/backend/src/controllers/account.js:74
-    if ()
-        ^
-
-SyntaxError: Unexpected token ')'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 13:11:15 [ERROR]: uncaughtException: Unexpected token 'catch'
-/home/prateek/AI_Companion/backend/src/controllers/account.js:82
-  } catch (error) {
-    ^^^^^
-
-SyntaxError: Unexpected token 'catch'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 13:11:42 [ERROR]: uncaughtException: Unexpected token 'catch'
-/home/prateek/AI_Companion/backend/src/controllers/account.js:84
-  } catch (error) {
-    ^^^^^
-
-SyntaxError: Unexpected token 'catch'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/account.js:10:5)
-yyyy-03-02 16:00:11 [ERROR]: Failed To Load Cors is not defined
-yyyy-03-02 19:09:49 [ERROR]: uncaughtException: Unexpected identifier 'aiReply'
-/home/prateek/AI_Companion/backend/src/controllers/chat.js:87
-    const aiReply = `This is a simulated response from ${companion.name}. Backend AI integration coming soon!`;
-          ^^^^^^^
-
-SyntaxError: Unexpected identifier 'aiReply'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
-yyyy-03-02 19:10:16 [ERROR]: uncaughtException: Unexpected identifier 'history'
-/home/prateek/AI_Companion/backend/src/controllers/chat.js:86
-    cosnt history
-          ^^^^^^^
-
-SyntaxError: Unexpected identifier 'history'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
-yyyy-03-02 19:13:22 [ERROR]: uncaughtException: Unexpected token ')'
-/home/prateek/AI_Companion/backend/src/controllers/chat.js:88
-    if()
-       ^
-
-SyntaxError: Unexpected token ')'
-    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
-    at Module._compile (node:internal/modules/cjs/loader:1735:20)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
-yyyy-03-02 19:13:25 [ERROR]: uncaughtException: Unexpected token 'const'
-/home/prateek/AI_Companion/backend/src/controllers/chat.js:89
-    const aiReply = `This is a simulated response from ${companion.name}. Backend AI integration coming soon!`;
-    ^^^^^
+yyyy-04-03 15:38:00 [ERROR]: uncaughtException: Unexpected token 'const'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+      ^^^^^
 
 SyntaxError: Unexpected token 'const'
     at wrapSafe (node:internal/modules/cjs/loader:1692:18)
@@ -905,12 +14,12 @@ SyntaxError: Unexpected token 'const'
     at Module.require (node:internal/modules/cjs/loader:1504:12)
     at require (node:internal/modules/helpers:152:16)
     at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
-yyyy-03-02 19:13:28 [ERROR]: uncaughtException: Unexpected token 'catch'
-/home/prateek/AI_Companion/backend/src/controllers/chat.js:122
-  } catch (error) {
-    ^^^^^
+yyyy-04-03 15:38:05 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
 
-SyntaxError: Unexpected token 'catch'
+SyntaxError: Identifier 'title' has already been declared
     at wrapSafe (node:internal/modules/cjs/loader:1692:18)
     at Module._compile (node:internal/modules/cjs/loader:1735:20)
     at Object..js (node:internal/modules/cjs/loader:1893:10)
@@ -921,10 +30,685 @@ SyntaxError: Unexpected token 'catch'
     at Module.require (node:internal/modules/cjs/loader:1504:12)
     at require (node:internal/modules/helpers:152:16)
     at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
-yyyy-03-02 19:19:29 [ERROR]: uncaughtException: Unexpected token ';'
-/home/prateek/AI_Companion/backend/src/controllers/chat.js:75
-    const user = await User.findById(userId).;
-                                             ^
+yyyy-04-03 15:38:13 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:38:15 [ERROR]: uncaughtException: Unexpected string
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:94
+      const title = await llmResponse([{""}""]);
+                                        ^^
+
+SyntaxError: Unexpected string
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:38:17 [ERROR]: uncaughtException: Unexpected string
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:94
+      const title = await llmResponse([{"role"}""]);
+                                        ^^^^^^
+
+SyntaxError: Unexpected string
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:38:20 [ERROR]: uncaughtException: Unexpected string
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:94
+      const title = await llmResponse([{"role": user}""]);
+                                                     ^^
+
+SyntaxError: Unexpected string
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:38:31 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:38:41 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:38:44 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:38:46 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:39:12 [ERROR]: uncaughtException: Unexpected token '}'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:94
+      const title = await llmResponse([{"role": "user", "content": }]);
+                                                                   ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:39:13 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:39:17 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:39:24 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:39:29 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:39:31 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:39:33 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:39:35 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:39:50 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:39:54 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:40:20 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:40:27 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:40:32 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:40:39 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:40:43 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:40:45 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:40:46 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:40:57 [ERROR]: uncaughtException: Identifier 'title' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const title = message.trim().substring(0, 50) + (message.trim().length > 50 ? "..." : "");
+            ^
+
+SyntaxError: Identifier 'title' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 15:41:53 [ERROR]: Error in sendMessage User validation failed: companions.0.history.2.title: Path `title` is required.
+yyyy-04-03 15:46:56 [ERROR]: uncaughtException: Missing initializer in const declaration
+/home/prateek/AI_Companion/backend/src/services/chat.js:4
+const logger.
+      ^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/chat.js:3:25)
+yyyy-04-03 15:46:58 [ERROR]: uncaughtException: Missing initializer in const declaration
+/home/prateek/AI_Companion/backend/src/services/chat.js:4
+const logger 
+      ^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/chat.js:3:25)
+yyyy-04-03 16:03:41 [ERROR]: uncaughtException: Missing initializer in const declaration
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:94
+      const content
+            ^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 16:03:44 [ERROR]: uncaughtException: Unexpected token 'const'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:95
+      const title = await llmResponse([{ "role": "user", "content": `analyse the message below and and give me a title for this conversation \n\n message: ${message} i want you to only give title no extra output` }]);
+      ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 16:03:55 [ERROR]: uncaughtException: Unexpected token 'const'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:95
+      const title = await llmResponse([{ "role": "user", "content":  }]);
+      ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 16:04:08 [ERROR]: uncaughtException: Unexpected token 'const'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:95
+      const title = await llmResponse([{ "role": "user", "content":  }]);
+      ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 16:04:10 [ERROR]: uncaughtException: Unexpected token '}'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:95
+      const title = await llmResponse([{ "role": "user", "content":  }]);
+                                                                     ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 16:07:10 [ERROR]: Error in sendMessage Cannot access 'title' before initialization
+yyyy-04-03 16:07:26 [ERROR]: Error in sendMessage Cannot access 'title' before initialization
+yyyy-04-03 16:18:41 [ERROR]: uncaughtException: Unexpected token 'return'
+/home/prateek/AI_Companion/backend/src/services/chat.js:25
+    return completion.choices[0].message.content;
+    ^^^^^^
+
+SyntaxError: Unexpected token 'return'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/chat.js:3:25)
+yyyy-04-03 16:18:44 [ERROR]: uncaughtException: Missing initializer in const declaration
+/home/prateek/AI_Companion/backend/src/services/chat.js:24
+    const ge
+          ^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/chat.js:3:25)
+yyyy-04-03 16:18:46 [ERROR]: uncaughtException: Unexpected token 'return'
+/home/prateek/AI_Companion/backend/src/services/chat.js:25
+    return completion.choices[0].message.content;
+    ^^^^^^
+
+SyntaxError: Unexpected token 'return'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/chat.js:3:25)
+yyyy-04-03 16:18:52 [ERROR]: uncaughtException: Unexpected token 'return'
+/home/prateek/AI_Companion/backend/src/services/chat.js:25
+    return 
+    ^^^^^^
+
+SyntaxError: Unexpected token 'return'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/chat.js:3:25)
+yyyy-04-03 16:29:01 [ERROR]: uncaughtException: Unexpected end of input
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:135
+
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:05:17 [ERROR]: uncaughtException: Unexpected token 'const'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const contentForTitle = `
+      ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:05:19 [ERROR]: uncaughtException: Unexpected token 'const'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:96
+      const contentForTitle = `
+      ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:24:03 [ERROR]: uncaughtException: Missing initializer in const declaration
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:122
+      const currentNumber
+            ^^^^^^^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:24:07 [ERROR]: uncaughtException: Unexpected token 'const'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:123
+      const historyEntry = companion.history.id(historyId);
+      ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:24:36 [ERROR]: uncaughtException: Unexpected token ';'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:122
+      const currentNumberOfChats = companion.history.id(historyId).;
+                                                                   ^
 
 SyntaxError: Unexpected token ';'
     at wrapSafe (node:internal/modules/cjs/loader:1692:18)
@@ -937,10 +721,203 @@ SyntaxError: Unexpected token ';'
     at Module.require (node:internal/modules/cjs/loader:1504:12)
     at require (node:internal/modules/helpers:152:16)
     at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
-yyyy-03-02 19:27:30 [ERROR]: uncaughtException: Unexpected token ')'
-/home/prateek/AI_Companion/backend/src/controllers/chat.js:85
-    console.log(companion.)
-                          ^
+yyyy-04-03 17:24:54 [ERROR]: Error in sendMessage companion.history.id(...).length is not a function
+yyyy-04-03 17:29:48 [ERROR]: uncaughtException: Missing initializer in const declaration
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:124
+      console.log(chats);
+      ^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:29:53 [ERROR]: uncaughtException: Missing initializer in const declaration
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:123
+      const numberOfChat
+            ^^^^^^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:30:36 [ERROR]: uncaughtException: Missing initializer in const declaration
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:126
+      const start
+            ^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:30:38 [ERROR]: uncaughtException: Unexpected token 'const'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:127
+      const historyEntry = companion.history.id(historyId);
+      ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:30:55 [ERROR]: uncaughtException: Unexpected token 'const'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:127
+      const historyEntry = companion.history.id(historyId);
+      ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:31:24 [ERROR]: uncaughtException: Missing initializer in const declaration
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:127
+      const end
+            ^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:31:29 [ERROR]: uncaughtException: Unexpected token 'const'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:129
+      const historyEntry = companion.history.id(historyId);
+      ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:31:34 [ERROR]: uncaughtException: Unexpected token 'const'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:129
+      const historyEntry = companion.history.id(historyId);
+      ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:31:39 [ERROR]: uncaughtException: Unexpected token 'const'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:129
+      const historyEntry = companion.history.id(historyId);
+      ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:31:51 [ERROR]: uncaughtException: Unexpected token 'const'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:131
+      const historyEntry = companion.history.id(historyId);
+      ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:32:12 [ERROR]: uncaughtException: Unexpected token 'const'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:131
+      const historyEntry = companion.history.id(historyId);
+      ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:32:21 [ERROR]: uncaughtException: Unexpected token 'const'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:130
+      const historyEntry = companion.history.id(historyId);
+      ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:32:58 [ERROR]: uncaughtException: Unexpected token ')'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:130
+      for()
+          ^
 
 SyntaxError: Unexpected token ')'
     at wrapSafe (node:internal/modules/cjs/loader:1692:18)
@@ -953,36 +930,12 @@ SyntaxError: Unexpected token ')'
     at Module.require (node:internal/modules/cjs/loader:1504:12)
     at require (node:internal/modules/helpers:152:16)
     at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
-yyyy-03-02 19:30:22 [ERROR]: uncaughtException: s is not defined
-ReferenceError: s is not defined
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/models/History.js:14:9)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/models/Companion.js:2:23)
-yyyy-03-02 19:40:15 [ERROR]: uncaughtException: messageSchema is not defined
-ReferenceError: messageSchema is not defined
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/models/History.js:6:19)
-    at Module._compile (node:internal/modules/cjs/loader:1761:14)
-    at Object..js (node:internal/modules/cjs/loader:1893:10)
-    at Module.load (node:internal/modules/cjs/loader:1481:32)
-    at Module._load (node:internal/modules/cjs/loader:1300:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
-    at Module.require (node:internal/modules/cjs/loader:1504:12)
-    at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/models/Companion.js:2:23)
-yyyy-03-02 19:40:21 [ERROR]: uncaughtException: Missing initializer in const declaration
-/home/prateek/AI_Companion/backend/src/models/History.js:2
-const mess
-      ^^^^
+yyyy-04-03 17:33:04 [ERROR]: uncaughtException: Unexpected token ')'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:130
+      for(let i)
+               ^
 
-SyntaxError: Missing initializer in const declaration
+SyntaxError: Unexpected token ')'
     at wrapSafe (node:internal/modules/cjs/loader:1692:18)
     at Module._compile (node:internal/modules/cjs/loader:1735:20)
     at Object..js (node:internal/modules/cjs/loader:1893:10)
@@ -992,12 +945,13 @@ SyntaxError: Missing initializer in const declaration
     at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
     at Module.require (node:internal/modules/cjs/loader:1504:12)
     at require (node:internal/modules/helpers:152:16)
-    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/models/Companion.js:2:23)
-yyyy-04-03 11:37:08 [ERROR]: uncaughtException: missing ) after argument list
-/home/prateek/AI_Companion/backend/src/controllers/chat.js:85
-    console.log(user.companion.h`istory[0].chatHistory);
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/chat.js:7:5)
+yyyy-04-03 17:33:05 [ERROR]: uncaughtException: Unexpected token ')'
+/home/prateek/AI_Companion/backend/src/controllers/chat.js:130
+      for(let i = )
+                  ^
 
-SyntaxError: missing ) after argument list
+SyntaxError: Unexpected token ')'
     at wrapSafe (node:internal/modules/cjs/loader:1692:18)
     at Module._compile (node:internal/modules/cjs/loader:1735:20)
     at Object..js (node:internal/modules/cjs/loader:1893:10)

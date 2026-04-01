@@ -52,12 +52,19 @@ async function createCompanion(req, res) {
             return res.status(404).json({ success: false, message: "User not found" });
         }
 
+        const systemPrompt = `Your name is ${name}, 
+        you have a ${personality} personality,
+        your communication style should be ${communicationStyle},
+        and you are an expert in ${expertise}.
+        always give answers in this tone and personaity`;
+
         const newCompanion = {
             name,
             description: description || "",
             personality,
             communicationStyle,
             expertise,
+            systemPrompt: systemPrompt,
             avatar: req.file ? req.file.buffer : null
         };
         
