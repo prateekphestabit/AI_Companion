@@ -118,9 +118,10 @@ async function sendMessage(req, res) {
       activeHistoryId = companion.history[companion.history.length - 1]._id;
     } 
     else {
+      const numberOfMessagesInMemoary = 100;
       // Existing chat — push to chatHistory
       const chats = companion.history.id(historyId).chatHistory;
-      const recentChats = chats.slice(-20); 
+      const recentChats = chats.slice(-numberOfMessagesInMemoary); 
 
       for (const chat of recentChats) {
         messages.push({
