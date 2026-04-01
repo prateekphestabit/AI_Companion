@@ -1,18 +1,10 @@
 const mongoose = require("mongoose");
-
+const messageSchema = require("./Message");
+  
 const historySchema = new mongoose.Schema(
   {
     title: { type: String, required: true, trim: true },
-    chatHistory: [
-      {
-        role: { 
-          type: String, 
-          enum: ["system", "user", "assistant", "agent"], 
-          required: true 
-        },
-        content: { type: String, required: true },
-      },
-    ],
+    chatHistory: [messageSchema],
   },
   { timestamps: true }
 );

@@ -4,6 +4,8 @@ const devRouter = require('../routes/dev.js');
 const accountRouter = require('../routes/account.js');
 const companionRouter = require('../routes/companion.js');
 const chatRouter = require('../routes/chat.js');
+const listRouter = require('../routes/list.js');
+const noteRouter = require('../routes/note.js');
 
 class RoutesLoader {
     constructor() {
@@ -12,7 +14,9 @@ class RoutesLoader {
             { path: '/auth', router: authRouter, name: 'Auth Router' },
             { path: '/account', router: accountRouter, name: 'Account Router' },
             { path: '/companion', router: companionRouter, name: 'Companion Router' },
-            { path: '/chat', router: chatRouter, name: 'Chat Router' }
+            { path: '/chat', router: chatRouter, name: 'Chat Router' },
+            { path: '/list', router: listRouter, name: 'List Router' },
+            { path: '/note', router: noteRouter, name: 'Note Router' }
         ];
     }
 

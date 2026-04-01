@@ -1,12 +1,19 @@
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { checkAuth } from '../auth/auth.js';
-import Companion from '../components/Companion.jsx';
+import CompanionGrid from '../components/Dashboard/CompanionGrid.jsx';
+import ListGrid from '../components/Dashboard/ListGrid.jsx';
+import NoteGrid from '../components/Dashboard/NoteGrid.jsx';
+
+const LIST_API = import.meta.env.VITE_LIST_API_URL;
+const NOTE_API = import.meta.env.VITE_NOTE_API_URL;
 
 const Dashboard = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
   const [companions, setCompanions] = useState([]);
+  const [lists, setLists] = useState([]);
+  const [notes, setNotes] = useState([]);
   const [userName, setUserName] = useState('');
   const [userAvatar, setUserAvatar] = useState(null);
 
@@ -17,18 +24,38 @@ const Dashboard = () => {
         navigate('/login', { replace: true });
       } else {
         try {
-          const rest = await fetch(import.meta.env.VITE_GET_USER_API_URL,{
+          // Fetch user data (companions come from here)
+          const userRes = await fetch(import.meta.env.VITE_GET_USER_API_URL, {
             method: "GET",
             headers: { "Content-Type": "application/json" },
             credentials: "include"
           });
-          const data = await rest.json();
-          const User = data.user;
+          const userData = await userRes.json();
+          const User = userData.user;
           setUserName(User.name);
           setUserAvatar(User.avatar);
           setCompanions(User.companions);
+
+          // Fetch lists
+          const listRes = await fetch(`${LIST_API}/getAll`, {
+            method: "GET",
+            headers: { "Content-Type": "application/json" },
+            credentials: "include"
+          });
+          const listData = await listRes.json();
+          if (listData.success) setLists(listData.lists);
+
+          // Fetch notes
+          const noteRes = await fetch(`${NOTE_API}/getAll`, {
+            method: "GET",
+            headers: { "Content-Type": "application/json" },
+            credentials: "include"
+          });
+          const noteData = await noteRes.json();
+          if (noteData.success) setNotes(noteData.notes);
+
         } catch (error) {
-          console.error("Failed to load companions:", error);
+          console.error("Failed to load Data:", error);
         }
         setLoading(false);
       }
@@ -40,7 +67,7 @@ const Dashboard = () => {
     <div className="min-h-screen flex items-center justify-center bg-[#0a0a0f]">
       <div className="flex flex-col items-center gap-4">
         <div className="w-12 h-12 rounded-full border-2 border-indigo-500/30 border-t-indigo-500 animate-spin" />
-        <p className="text-slate-400 text-sm">Loading your companions...</p>
+        <p className="text-slate-400 text-sm">Loading your dashboard...</p>
       </div>
     </div>
   );
@@ -61,6 +88,44 @@ const Dashboard = () => {
       }
     } catch (error) {
       console.error("Delete companion failed:", error);
+    }
+  };
+
+  const handleDeleteList = async (listId) => {
+    try {
+      const res = await fetch(`${LIST_API}/delete`, {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ listId }),
+        credentials: "include"
+      });
+      const data = await res.json();
+      if (data.success) {
+        setLists(prev => prev.filter(l => l._id !== listId));
+      } else {
+        alert(data.message);
+      }
+    } catch (error) {
+      console.error("Delete list failed:", error);
+    }
+  };
+
+  const handleDeleteNote = async (noteId) => {
+    try {
+      const res = await fetch(`${NOTE_API}/delete`, {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ noteId }),
+        credentials: "include"
+      });
+      const data = await res.json();
+      if (data.success) {
+        setNotes(prev => prev.filter(n => n._id !== noteId));
+      } else {
+        alert(data.message);
+      }
+    } catch (error) {
+      console.error("Delete note failed:", error);
     }
   };
 
@@ -108,62 +173,93 @@ const Dashboard = () => {
       </header>
 
       {/* Main content */}
-      <main className="relative z-10 max-w-7xl mx-auto px-6 py-10">
-        {/* Page header */}
-        <div className="flex items-center justify-between mb-8">
-          <div>
-            <h1 className="text-3xl font-bold text-white tracking-tight">My Companions</h1>
-            <p className="text-slate-400 text-sm mt-1">
-              {companions.length === 0
-                ? "You don't have any companions yet"
-                : `${companions.length} companion${companions.length !== 1 ? 's' : ''} in your squad`
-              }
-            </p>
-          </div>
-          <button
-            onClick={() => navigate("/createCompanion")}
-            className="flex items-center gap-2 bg-gradient-to-r from-indigo-500 to-violet-600 hover:from-indigo-400 hover:to-violet-500 text-white font-semibold py-2.5 px-5 rounded-xl shadow-lg shadow-indigo-500/25 transition-all duration-200 hover:shadow-indigo-500/40 hover:-translate-y-0.5 active:translate-y-0 text-sm"
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-            </svg>
-            Add Companion
-          </button>
-        </div>
+      <main className="relative z-10 max-w-7xl mx-auto px-6 py-10 space-y-14">
 
-        {/* Companions grid */}
-        {companions.length === 0 ? (
-          <div className="flex flex-col items-center justify-center py-24 text-center">
-            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-violet-600/20 border border-white/10 flex items-center justify-center mb-6">
-              <svg className="w-10 h-10 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-              </svg>
+        {/* ═══ Companions Section ═══ */}
+        <section>
+          <div className="flex items-center justify-between mb-6">
+            <div>
+              <h1 className="text-2xl font-bold text-white tracking-tight">My Companions</h1>
+              <p className="text-slate-400 text-sm mt-1">
+                {companions.length === 0
+                  ? "You don't have any companions yet"
+                  : `${companions.length} companion${companions.length !== 1 ? 's' : ''} in your squad`
+                }
+              </p>
             </div>
-            <h2 className="text-xl font-semibold text-white mb-2">Ready to meet your AI squad?</h2>
-            <p className="text-slate-400 text-sm mb-6 max-w-xs">Create your first companion and start building your personal AI team.</p>
             <button
               onClick={() => navigate("/createCompanion")}
-              className="flex items-center gap-2 bg-gradient-to-r from-indigo-500 to-violet-600 hover:from-indigo-400 hover:to-violet-500 text-white font-semibold py-2.5 px-5 rounded-xl shadow-lg shadow-indigo-500/25 transition-all duration-200 hover:shadow-indigo-500/40 hover:-translate-y-0.5 text-sm"
+              className="flex items-center gap-2 bg-gradient-to-r from-indigo-500 to-violet-600 hover:from-indigo-400 hover:to-violet-500 text-white font-semibold py-2.5 px-5 rounded-xl shadow-lg shadow-indigo-500/25 transition-all duration-200 hover:shadow-indigo-500/40 hover:-translate-y-0.5 active:translate-y-0 text-sm"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
               </svg>
-              Create First Companion
+              Add Companion
             </button>
           </div>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-            {companions.map((comp, index) => (
-              <Companion
-                key={comp._id || index}
-                companion={comp}
-                onDelete={handleDeleteCompanion}
-              />
-            ))}
-          </div>
-        )}
-      </main>
+          <CompanionGrid
+            companions={companions}
+            onDelete={handleDeleteCompanion}
+          />
+        </section>
 
+        {/* ═══ To-Do Lists Section ═══ */}
+        <section>
+          <div className="flex items-center justify-between mb-6">
+            <div>
+              <h2 className="text-2xl font-bold text-white tracking-tight">My Lists</h2>
+              <p className="text-slate-400 text-sm mt-1">
+                {lists.length === 0
+                  ? "You don't have any to-do lists yet"
+                  : `${lists.length} list${lists.length !== 1 ? 's' : ''}`
+                }
+              </p>
+            </div>
+            <button
+              onClick={() => navigate("/createList")}
+              className="flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white font-semibold py-2.5 px-5 rounded-xl shadow-lg shadow-emerald-500/25 transition-all duration-200 hover:shadow-emerald-500/40 hover:-translate-y-0.5 active:translate-y-0 text-sm"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+              </svg>
+              Add List
+            </button>
+          </div>
+          <ListGrid
+            lists={lists}
+            onDelete={handleDeleteList}
+          />
+        </section>
+
+        {/* ═══ Notes Section ═══ */}
+        <section>
+          <div className="flex items-center justify-between mb-6">
+            <div>
+              <h2 className="text-2xl font-bold text-white tracking-tight">My Notes</h2>
+              <p className="text-slate-400 text-sm mt-1">
+                {notes.length === 0
+                  ? "You don't have any notes yet"
+                  : `${notes.length} note${notes.length !== 1 ? 's' : ''}`
+                }
+              </p>
+            </div>
+            <button
+              onClick={() => navigate("/createNote")}
+              className="flex items-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-semibold py-2.5 px-5 rounded-xl shadow-lg shadow-amber-500/25 transition-all duration-200 hover:shadow-amber-500/40 hover:-translate-y-0.5 active:translate-y-0 text-sm"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+              </svg>
+              Add Note
+            </button>
+          </div>
+          <NoteGrid
+            notes={notes}
+            onDelete={handleDeleteNote}
+          />
+        </section>
+
+      </main>
     </div>
   );
 };
