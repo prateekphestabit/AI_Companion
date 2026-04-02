@@ -4034,3 +4034,2008 @@ yyyy-04-03 17:42:46 [INFO]: Note Router mounted at: /note
 yyyy-04-03 17:42:46 [INFO]: Routes Mounted... 
 
 yyyy-04-03 17:42:46 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 18:13:13 [INFO]: Loading App... 
+
+yyyy-04-03 18:13:13 [INFO]: MongoDB connected 
+
+yyyy-04-03 18:13:13 [INFO]: Loading Middlewares...
+yyyy-04-03 18:13:13 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 18:13:13 [INFO]: Mounting Routes...
+yyyy-04-03 18:13:13 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 18:13:13 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 18:13:13 [INFO]: Account Router mounted at: /account
+yyyy-04-03 18:13:13 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 18:13:13 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 18:13:13 [INFO]: List Router mounted at: /list
+yyyy-04-03 18:13:13 [INFO]: Note Router mounted at: /note
+yyyy-04-03 18:13:13 [INFO]: Routes Mounted... 
+
+yyyy-04-03 18:13:13 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 18:23:10 [INFO]: Loading App... 
+
+yyyy-04-03 18:23:10 [INFO]: MongoDB connected 
+
+yyyy-04-03 18:23:10 [INFO]: Loading Middlewares...
+yyyy-04-03 18:23:10 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 18:23:10 [INFO]: Mounting Routes...
+yyyy-04-03 18:23:10 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 18:23:10 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 18:23:10 [INFO]: Account Router mounted at: /account
+yyyy-04-03 18:23:10 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 18:23:10 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 18:23:10 [INFO]: List Router mounted at: /list
+yyyy-04-03 18:23:10 [INFO]: Note Router mounted at: /note
+yyyy-04-03 18:23:10 [INFO]: Routes Mounted... 
+
+yyyy-04-03 18:23:10 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 18:23:12 [INFO]: Loading App... 
+
+yyyy-04-03 18:23:12 [INFO]: MongoDB connected 
+
+yyyy-04-03 18:23:12 [INFO]: Loading Middlewares...
+yyyy-04-03 18:23:12 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 18:23:12 [INFO]: Mounting Routes...
+yyyy-04-03 18:23:12 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 18:23:12 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 18:23:12 [INFO]: Account Router mounted at: /account
+yyyy-04-03 18:23:12 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 18:23:12 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 18:23:12 [INFO]: List Router mounted at: /list
+yyyy-04-03 18:23:12 [INFO]: Note Router mounted at: /note
+yyyy-04-03 18:23:12 [INFO]: Routes Mounted... 
+
+yyyy-04-03 18:23:12 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 18:23:18 [INFO]: Loading App... 
+
+yyyy-04-03 18:23:18 [INFO]: MongoDB connected 
+
+yyyy-04-03 18:23:18 [INFO]: Loading Middlewares...
+yyyy-04-03 18:23:18 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 18:23:18 [INFO]: Mounting Routes...
+yyyy-04-03 18:23:18 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 18:23:18 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 18:23:18 [INFO]: Account Router mounted at: /account
+yyyy-04-03 18:23:18 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 18:23:18 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 18:23:18 [INFO]: List Router mounted at: /list
+yyyy-04-03 18:23:18 [INFO]: Note Router mounted at: /note
+yyyy-04-03 18:23:18 [INFO]: Routes Mounted... 
+
+yyyy-04-03 18:23:18 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:38:05 [INFO]: Loading App... 
+
+yyyy-04-03 19:38:05 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:38:05 [INFO]: Loading Middlewares...
+yyyy-04-03 19:38:05 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:38:05 [INFO]: Mounting Routes...
+yyyy-04-03 19:38:05 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:38:05 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:38:05 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:38:05 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:38:05 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:38:05 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:38:05 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:38:05 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:38:05 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:38:08 [INFO]: Loading App... 
+
+yyyy-04-03 19:38:08 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:38:08 [INFO]: Loading Middlewares...
+yyyy-04-03 19:38:08 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:38:08 [INFO]: Mounting Routes...
+yyyy-04-03 19:38:08 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:38:08 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:38:08 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:38:08 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:38:08 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:38:08 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:38:08 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:38:08 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:38:08 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:39:41 [INFO]: Loading App... 
+
+yyyy-04-03 19:39:41 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:39:41 [INFO]: Loading Middlewares...
+yyyy-04-03 19:39:41 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:39:41 [INFO]: Mounting Routes...
+yyyy-04-03 19:39:41 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:39:41 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:39:41 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:39:41 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:39:41 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:39:41 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:39:41 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:39:41 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:39:41 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:39:50 [INFO]: Loading App... 
+
+yyyy-04-03 19:39:50 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:39:50 [INFO]: Loading Middlewares...
+yyyy-04-03 19:39:50 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:39:50 [INFO]: Mounting Routes...
+yyyy-04-03 19:39:50 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:39:50 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:39:50 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:39:50 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:39:50 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:39:50 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:39:50 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:39:50 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:39:50 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:40:04 [INFO]: Loading App... 
+
+yyyy-04-03 19:40:04 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:40:04 [INFO]: Loading Middlewares...
+yyyy-04-03 19:40:04 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:40:04 [INFO]: Mounting Routes...
+yyyy-04-03 19:40:04 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:40:04 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:40:04 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:40:04 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:40:04 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:40:04 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:40:04 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:40:04 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:40:04 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:40:39 [INFO]: Loading App... 
+
+yyyy-04-03 19:40:39 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:40:39 [INFO]: Loading Middlewares...
+yyyy-04-03 19:40:39 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:40:39 [INFO]: Mounting Routes...
+yyyy-04-03 19:40:39 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:40:39 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:40:39 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:40:39 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:40:39 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:40:39 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:40:39 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:40:39 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:40:39 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:41:37 [INFO]: Loading App... 
+
+yyyy-04-03 19:41:37 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:41:37 [INFO]: Loading Middlewares...
+yyyy-04-03 19:41:37 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:41:37 [INFO]: Mounting Routes...
+yyyy-04-03 19:41:37 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:41:37 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:41:37 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:41:37 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:41:37 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:41:37 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:41:37 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:41:37 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:41:37 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:41:45 [INFO]: Loading App... 
+
+yyyy-04-03 19:41:45 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:41:45 [INFO]: Loading Middlewares...
+yyyy-04-03 19:41:45 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:41:45 [INFO]: Mounting Routes...
+yyyy-04-03 19:41:45 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:41:45 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:41:45 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:41:45 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:41:45 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:41:45 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:41:45 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:41:45 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:41:45 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:41:52 [INFO]: Loading App... 
+
+yyyy-04-03 19:41:52 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:41:52 [INFO]: Loading Middlewares...
+yyyy-04-03 19:41:52 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:41:52 [INFO]: Mounting Routes...
+yyyy-04-03 19:41:52 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:41:52 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:41:52 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:41:52 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:41:52 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:41:52 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:41:52 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:41:52 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:41:52 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:41:59 [INFO]: Loading App... 
+
+yyyy-04-03 19:41:59 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:41:59 [INFO]: Loading Middlewares...
+yyyy-04-03 19:41:59 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:41:59 [INFO]: Mounting Routes...
+yyyy-04-03 19:41:59 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:41:59 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:41:59 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:41:59 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:41:59 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:41:59 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:41:59 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:41:59 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:41:59 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:42:03 [INFO]: Loading App... 
+
+yyyy-04-03 19:42:03 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:42:03 [INFO]: Loading Middlewares...
+yyyy-04-03 19:42:03 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:42:03 [INFO]: Mounting Routes...
+yyyy-04-03 19:42:03 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:42:03 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:42:03 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:42:03 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:42:03 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:42:03 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:42:03 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:42:03 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:42:03 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:42:34 [INFO]: Loading App... 
+
+yyyy-04-03 19:42:34 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:42:34 [INFO]: Loading Middlewares...
+yyyy-04-03 19:42:34 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:42:34 [INFO]: Mounting Routes...
+yyyy-04-03 19:42:34 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:42:34 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:42:34 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:42:34 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:42:34 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:42:34 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:42:34 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:42:34 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:42:34 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:42:36 [INFO]: Loading App... 
+
+yyyy-04-03 19:42:36 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:42:36 [INFO]: Loading Middlewares...
+yyyy-04-03 19:42:36 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:42:36 [INFO]: Mounting Routes...
+yyyy-04-03 19:42:36 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:42:36 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:42:36 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:42:36 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:42:36 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:42:36 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:42:36 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:42:36 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:42:36 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:42:42 [INFO]: Loading App... 
+
+yyyy-04-03 19:42:42 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:42:42 [INFO]: Loading Middlewares...
+yyyy-04-03 19:42:42 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:42:42 [INFO]: Mounting Routes...
+yyyy-04-03 19:42:42 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:42:42 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:42:42 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:42:42 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:42:42 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:42:42 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:42:42 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:42:42 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:42:42 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:42:52 [INFO]: Loading App... 
+
+yyyy-04-03 19:42:52 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:42:52 [INFO]: Loading Middlewares...
+yyyy-04-03 19:42:52 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:42:52 [INFO]: Mounting Routes...
+yyyy-04-03 19:42:52 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:42:52 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:42:52 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:42:52 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:42:52 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:42:52 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:42:52 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:42:52 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:42:52 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:42:55 [INFO]: Loading App... 
+
+yyyy-04-03 19:42:55 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:42:55 [INFO]: Loading Middlewares...
+yyyy-04-03 19:42:55 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:42:55 [INFO]: Mounting Routes...
+yyyy-04-03 19:42:55 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:42:55 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:42:55 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:42:55 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:42:55 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:42:55 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:42:55 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:42:55 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:42:55 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:43:06 [INFO]: Loading App... 
+
+yyyy-04-03 19:43:06 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:43:06 [INFO]: Loading Middlewares...
+yyyy-04-03 19:43:06 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:43:06 [INFO]: Mounting Routes...
+yyyy-04-03 19:43:06 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:43:06 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:43:06 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:43:06 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:43:06 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:43:06 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:43:06 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:43:06 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:43:06 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:43:12 [INFO]: Loading App... 
+
+yyyy-04-03 19:43:12 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:43:12 [INFO]: Loading Middlewares...
+yyyy-04-03 19:43:12 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:43:12 [INFO]: Mounting Routes...
+yyyy-04-03 19:43:12 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:43:12 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:43:12 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:43:12 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:43:12 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:43:12 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:43:12 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:43:12 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:43:12 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:43:58 [INFO]: Loading App... 
+
+yyyy-04-03 19:43:58 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:43:58 [INFO]: Loading Middlewares...
+yyyy-04-03 19:43:58 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:43:58 [INFO]: Mounting Routes...
+yyyy-04-03 19:43:58 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:43:58 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:43:58 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:43:58 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:43:58 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:43:58 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:43:58 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:43:58 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:43:58 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:51:14 [INFO]: Loading App... 
+
+yyyy-04-03 19:51:14 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:51:14 [INFO]: Loading Middlewares...
+yyyy-04-03 19:51:14 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:51:14 [INFO]: Mounting Routes...
+yyyy-04-03 19:51:14 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:51:14 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:51:14 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:51:14 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:51:14 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:51:14 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:51:14 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:51:14 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:51:14 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:51:19 [INFO]: Loading App... 
+
+yyyy-04-03 19:51:20 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:51:20 [INFO]: Loading Middlewares...
+yyyy-04-03 19:51:20 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:51:20 [INFO]: Mounting Routes...
+yyyy-04-03 19:51:20 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:51:20 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:51:20 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:51:20 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:51:20 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:51:20 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:51:20 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:51:20 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:51:20 [INFO]: Server is running at http://localhost:4000
+yyyy-04-03 19:54:58 [INFO]: Loading App... 
+
+yyyy-04-03 19:54:58 [INFO]: MongoDB connected 
+
+yyyy-04-03 19:54:58 [INFO]: Loading Middlewares...
+yyyy-04-03 19:54:58 [INFO]: All Middlewares Loaded...
+
+yyyy-04-03 19:54:58 [INFO]: Mounting Routes...
+yyyy-04-03 19:54:58 [INFO]: Dev Router mounted at: /dev
+yyyy-04-03 19:54:58 [INFO]: Auth Router mounted at: /auth
+yyyy-04-03 19:54:58 [INFO]: Account Router mounted at: /account
+yyyy-04-03 19:54:58 [INFO]: Companion Router mounted at: /companion
+yyyy-04-03 19:54:58 [INFO]: Chat Router mounted at: /chat
+yyyy-04-03 19:54:58 [INFO]: List Router mounted at: /list
+yyyy-04-03 19:54:58 [INFO]: Note Router mounted at: /note
+yyyy-04-03 19:54:58 [INFO]: Routes Mounted... 
+
+yyyy-04-03 19:54:58 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 11:28:48 [INFO]: Loading App... 
+
+yyyy-04-04 11:28:48 [INFO]: MongoDB connected 
+
+yyyy-04-04 11:28:48 [INFO]: Loading Middlewares...
+yyyy-04-04 11:28:48 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 11:28:48 [INFO]: Mounting Routes...
+yyyy-04-04 11:28:48 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 11:28:48 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 11:28:48 [INFO]: Account Router mounted at: /account
+yyyy-04-04 11:28:48 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 11:28:48 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 11:28:48 [INFO]: List Router mounted at: /list
+yyyy-04-04 11:28:48 [INFO]: Note Router mounted at: /note
+yyyy-04-04 11:28:48 [INFO]: Routes Mounted... 
+
+yyyy-04-04 11:28:48 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 11:29:05 [INFO]: Loading App... 
+
+yyyy-04-04 11:29:05 [INFO]: MongoDB connected 
+
+yyyy-04-04 11:29:05 [INFO]: Loading Middlewares...
+yyyy-04-04 11:29:05 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 11:29:05 [INFO]: Mounting Routes...
+yyyy-04-04 11:29:05 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 11:29:05 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 11:29:05 [INFO]: Account Router mounted at: /account
+yyyy-04-04 11:29:05 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 11:29:05 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 11:29:05 [INFO]: List Router mounted at: /list
+yyyy-04-04 11:29:05 [INFO]: Note Router mounted at: /note
+yyyy-04-04 11:29:05 [INFO]: Routes Mounted... 
+
+yyyy-04-04 11:29:05 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 11:29:06 [INFO]: Loading App... 
+
+yyyy-04-04 11:29:06 [INFO]: MongoDB connected 
+
+yyyy-04-04 11:29:06 [INFO]: Loading Middlewares...
+yyyy-04-04 11:29:06 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 11:29:06 [INFO]: Mounting Routes...
+yyyy-04-04 11:29:06 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 11:29:06 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 11:29:06 [INFO]: Account Router mounted at: /account
+yyyy-04-04 11:29:06 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 11:29:06 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 11:29:06 [INFO]: List Router mounted at: /list
+yyyy-04-04 11:29:06 [INFO]: Note Router mounted at: /note
+yyyy-04-04 11:29:06 [INFO]: Routes Mounted... 
+
+yyyy-04-04 11:29:06 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 12:58:40 [INFO]: Executing tool: create_list
+yyyy-04-04 12:58:40 [INFO]: Creating list: Skin Care Routine
+yyyy-04-04 12:58:41 [ERROR]: Error creating completion: 400 Cannot set `add_generation_prompt` to True when the last message is from the assistant. Consider using `continue_final_message` instead. Cannot set `add_generation_prompt` to True when the last message is from the assistant. Consider using `continue_final_message` instead.
+yyyy-04-04 12:59:44 [INFO]: Executing tool: create_list
+yyyy-04-04 12:59:44 [INFO]: Creating list: Skin Care Routine
+yyyy-04-04 12:59:45 [ERROR]: Error creating completion: 400 Cannot set `add_generation_prompt` to True when the last message is from the assistant. Consider using `continue_final_message` instead. Cannot set `add_generation_prompt` to True when the last message is from the assistant. Consider using `continue_final_message` instead.
+yyyy-04-04 13:06:56 [INFO]: Executing tool: create_list
+yyyy-04-04 13:06:56 [INFO]: Creating list: Skin Care Routine
+yyyy-04-04 13:16:33 [INFO]: Executing tool: create_list
+yyyy-04-04 13:16:33 [INFO]: Creating list: Skin Care Routine
+yyyy-04-04 13:16:33 [INFO]: Executing tool: create_Note
+yyyy-04-04 13:16:33 [INFO]: Creating note: Skin Care Routine Timing
+yyyy-04-04 15:26:07 [INFO]: Loading App... 
+
+yyyy-04-04 15:26:07 [INFO]: MongoDB connected 
+
+yyyy-04-04 15:26:07 [INFO]: Loading Middlewares...
+yyyy-04-04 15:26:07 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 15:26:07 [INFO]: Mounting Routes...
+yyyy-04-04 15:26:07 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 15:26:07 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 15:26:07 [INFO]: Account Router mounted at: /account
+yyyy-04-04 15:26:07 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 15:26:07 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 15:26:07 [INFO]: List Router mounted at: /list
+yyyy-04-04 15:26:07 [INFO]: Note Router mounted at: /note
+yyyy-04-04 15:26:07 [INFO]: Routes Mounted... 
+
+yyyy-04-04 15:26:07 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 15:30:05 [INFO]: Executing tool: create_list
+yyyy-04-04 15:30:05 [INFO]: Creating list: Testing Protocol for Assistant
+yyyy-04-04 15:30:05 [INFO]: Executing tool: create_Note
+yyyy-04-04 15:30:05 [INFO]: Creating note: How to Test the Assistant Effectively
+yyyy-04-04 15:30:34 [ERROR]: Error in sendMessage No matching document found for id "69cce619dda3a36029768ded" version 41 modifiedPaths "companions, companions.2, companions.2.history"
+yyyy-04-04 15:42:26 [INFO]: Loading App... 
+
+yyyy-04-04 15:42:27 [INFO]: MongoDB connected 
+
+yyyy-04-04 15:42:27 [INFO]: Loading Middlewares...
+yyyy-04-04 15:42:27 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 15:42:27 [INFO]: Mounting Routes...
+yyyy-04-04 15:42:27 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 15:42:27 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 15:42:27 [INFO]: Account Router mounted at: /account
+yyyy-04-04 15:42:27 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 15:42:27 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 15:42:27 [INFO]: List Router mounted at: /list
+yyyy-04-04 15:42:27 [INFO]: Note Router mounted at: /note
+yyyy-04-04 15:42:27 [INFO]: Routes Mounted... 
+
+yyyy-04-04 15:42:27 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 15:47:16 [INFO]: Loading App... 
+
+yyyy-04-04 15:47:16 [INFO]: MongoDB connected 
+
+yyyy-04-04 15:47:16 [INFO]: Loading Middlewares...
+yyyy-04-04 15:47:16 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 15:47:16 [INFO]: Mounting Routes...
+yyyy-04-04 15:47:16 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 15:47:16 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 15:47:16 [INFO]: Account Router mounted at: /account
+yyyy-04-04 15:47:16 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 15:47:16 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 15:47:16 [INFO]: List Router mounted at: /list
+yyyy-04-04 15:47:16 [INFO]: Note Router mounted at: /note
+yyyy-04-04 15:47:16 [INFO]: Routes Mounted... 
+
+yyyy-04-04 15:47:16 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 15:48:02 [INFO]: Loading App... 
+
+yyyy-04-04 15:48:02 [INFO]: MongoDB connected 
+
+yyyy-04-04 15:48:02 [INFO]: Loading Middlewares...
+yyyy-04-04 15:48:02 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 15:48:02 [INFO]: Mounting Routes...
+yyyy-04-04 15:48:02 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 15:48:02 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 15:48:02 [INFO]: Account Router mounted at: /account
+yyyy-04-04 15:48:02 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 15:48:02 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 15:48:02 [INFO]: List Router mounted at: /list
+yyyy-04-04 15:48:02 [INFO]: Note Router mounted at: /note
+yyyy-04-04 15:48:02 [INFO]: Routes Mounted... 
+
+yyyy-04-04 15:48:02 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 15:48:12 [INFO]: Loading App... 
+
+yyyy-04-04 15:48:12 [INFO]: MongoDB connected 
+
+yyyy-04-04 15:48:12 [INFO]: Loading Middlewares...
+yyyy-04-04 15:48:12 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 15:48:12 [INFO]: Mounting Routes...
+yyyy-04-04 15:48:12 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 15:48:12 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 15:48:12 [INFO]: Account Router mounted at: /account
+yyyy-04-04 15:48:12 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 15:48:12 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 15:48:12 [INFO]: List Router mounted at: /list
+yyyy-04-04 15:48:12 [INFO]: Note Router mounted at: /note
+yyyy-04-04 15:48:12 [INFO]: Routes Mounted... 
+
+yyyy-04-04 15:48:12 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 15:48:14 [INFO]: Loading App... 
+
+yyyy-04-04 15:48:14 [INFO]: MongoDB connected 
+
+yyyy-04-04 15:48:14 [INFO]: Loading Middlewares...
+yyyy-04-04 15:48:14 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 15:48:14 [INFO]: Mounting Routes...
+yyyy-04-04 15:48:14 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 15:48:14 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 15:48:14 [INFO]: Account Router mounted at: /account
+yyyy-04-04 15:48:14 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 15:48:14 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 15:48:14 [INFO]: List Router mounted at: /list
+yyyy-04-04 15:48:14 [INFO]: Note Router mounted at: /note
+yyyy-04-04 15:48:14 [INFO]: Routes Mounted... 
+
+yyyy-04-04 15:48:14 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 15:48:23 [INFO]: Loading App... 
+
+yyyy-04-04 15:48:23 [INFO]: MongoDB connected 
+
+yyyy-04-04 15:48:23 [INFO]: Loading Middlewares...
+yyyy-04-04 15:48:23 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 15:48:23 [INFO]: Mounting Routes...
+yyyy-04-04 15:48:23 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 15:48:23 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 15:48:23 [INFO]: Account Router mounted at: /account
+yyyy-04-04 15:48:23 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 15:48:23 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 15:48:23 [INFO]: List Router mounted at: /list
+yyyy-04-04 15:48:23 [INFO]: Note Router mounted at: /note
+yyyy-04-04 15:48:23 [INFO]: Routes Mounted... 
+
+yyyy-04-04 15:48:23 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 15:48:25 [INFO]: Loading App... 
+
+yyyy-04-04 15:48:25 [INFO]: MongoDB connected 
+
+yyyy-04-04 15:48:25 [INFO]: Loading Middlewares...
+yyyy-04-04 15:48:25 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 15:48:25 [INFO]: Mounting Routes...
+yyyy-04-04 15:48:25 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 15:48:25 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 15:48:25 [INFO]: Account Router mounted at: /account
+yyyy-04-04 15:48:25 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 15:48:25 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 15:48:25 [INFO]: List Router mounted at: /list
+yyyy-04-04 15:48:25 [INFO]: Note Router mounted at: /note
+yyyy-04-04 15:48:25 [INFO]: Routes Mounted... 
+
+yyyy-04-04 15:48:25 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 15:48:48 [INFO]: Loading App... 
+
+yyyy-04-04 15:48:48 [INFO]: MongoDB connected 
+
+yyyy-04-04 15:48:48 [INFO]: Loading Middlewares...
+yyyy-04-04 15:48:48 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 15:48:48 [INFO]: Mounting Routes...
+yyyy-04-04 15:48:48 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 15:48:48 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 15:48:48 [INFO]: Account Router mounted at: /account
+yyyy-04-04 15:48:48 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 15:48:48 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 15:48:48 [INFO]: List Router mounted at: /list
+yyyy-04-04 15:48:48 [INFO]: Note Router mounted at: /note
+yyyy-04-04 15:48:48 [INFO]: Routes Mounted... 
+
+yyyy-04-04 15:48:48 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 15:48:56 [INFO]: Loading App... 
+
+yyyy-04-04 15:48:56 [INFO]: MongoDB connected 
+
+yyyy-04-04 15:48:56 [INFO]: Loading Middlewares...
+yyyy-04-04 15:48:56 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 15:48:56 [INFO]: Mounting Routes...
+yyyy-04-04 15:48:56 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 15:48:56 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 15:48:56 [INFO]: Account Router mounted at: /account
+yyyy-04-04 15:48:56 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 15:48:56 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 15:48:56 [INFO]: List Router mounted at: /list
+yyyy-04-04 15:48:56 [INFO]: Note Router mounted at: /note
+yyyy-04-04 15:48:56 [INFO]: Routes Mounted... 
+
+yyyy-04-04 15:48:56 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 15:49:47 [INFO]: Loading App... 
+
+yyyy-04-04 15:49:47 [INFO]: MongoDB connected 
+
+yyyy-04-04 15:49:47 [INFO]: Loading Middlewares...
+yyyy-04-04 15:49:47 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 15:49:47 [INFO]: Mounting Routes...
+yyyy-04-04 15:49:47 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 15:49:47 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 15:49:47 [INFO]: Account Router mounted at: /account
+yyyy-04-04 15:49:47 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 15:49:47 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 15:49:47 [INFO]: List Router mounted at: /list
+yyyy-04-04 15:49:47 [INFO]: Note Router mounted at: /note
+yyyy-04-04 15:49:47 [INFO]: Routes Mounted... 
+
+yyyy-04-04 15:49:47 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 15:49:50 [INFO]: Loading App... 
+
+yyyy-04-04 15:49:50 [INFO]: MongoDB connected 
+
+yyyy-04-04 15:49:50 [INFO]: Loading Middlewares...
+yyyy-04-04 15:49:50 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 15:49:50 [INFO]: Mounting Routes...
+yyyy-04-04 15:49:50 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 15:49:50 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 15:49:50 [INFO]: Account Router mounted at: /account
+yyyy-04-04 15:49:50 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 15:49:50 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 15:49:50 [INFO]: List Router mounted at: /list
+yyyy-04-04 15:49:50 [INFO]: Note Router mounted at: /note
+yyyy-04-04 15:49:50 [INFO]: Routes Mounted... 
+
+yyyy-04-04 15:49:50 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 15:50:10 [INFO]: Loading App... 
+
+yyyy-04-04 15:50:10 [INFO]: MongoDB connected 
+
+yyyy-04-04 15:50:10 [INFO]: Loading Middlewares...
+yyyy-04-04 15:50:10 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 15:50:10 [INFO]: Mounting Routes...
+yyyy-04-04 15:50:10 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 15:50:10 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 15:50:10 [INFO]: Account Router mounted at: /account
+yyyy-04-04 15:50:10 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 15:50:10 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 15:50:10 [INFO]: List Router mounted at: /list
+yyyy-04-04 15:50:10 [INFO]: Note Router mounted at: /note
+yyyy-04-04 15:50:10 [INFO]: Routes Mounted... 
+
+yyyy-04-04 15:50:10 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 15:59:04 [INFO]: Loading App... 
+
+yyyy-04-04 15:59:04 [INFO]: MongoDB connected 
+
+yyyy-04-04 15:59:04 [INFO]: Loading Middlewares...
+yyyy-04-04 15:59:04 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 15:59:04 [INFO]: Mounting Routes...
+yyyy-04-04 15:59:04 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 15:59:04 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 15:59:04 [INFO]: Account Router mounted at: /account
+yyyy-04-04 15:59:04 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 15:59:04 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 15:59:04 [INFO]: List Router mounted at: /list
+yyyy-04-04 15:59:04 [INFO]: Note Router mounted at: /note
+yyyy-04-04 15:59:04 [INFO]: Routes Mounted... 
+
+yyyy-04-04 15:59:04 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:00:29 [INFO]: Loading App... 
+
+yyyy-04-04 16:00:29 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:00:29 [INFO]: Loading Middlewares...
+yyyy-04-04 16:00:29 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:00:29 [INFO]: Mounting Routes...
+yyyy-04-04 16:00:29 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:00:29 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:00:29 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:00:29 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:00:29 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:00:29 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:00:29 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:00:29 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:00:29 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:00:51 [INFO]: Loading App... 
+
+yyyy-04-04 16:00:51 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:00:51 [INFO]: Loading Middlewares...
+yyyy-04-04 16:00:51 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:00:51 [INFO]: Mounting Routes...
+yyyy-04-04 16:00:51 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:00:51 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:00:51 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:00:51 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:00:51 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:00:51 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:00:51 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:00:51 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:00:51 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:00:55 [INFO]: Loading App... 
+
+yyyy-04-04 16:00:55 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:00:55 [INFO]: Loading Middlewares...
+yyyy-04-04 16:00:55 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:00:55 [INFO]: Mounting Routes...
+yyyy-04-04 16:00:55 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:00:55 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:00:55 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:00:55 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:00:55 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:00:55 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:00:55 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:00:55 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:00:55 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:01:17 [INFO]: Loading App... 
+
+yyyy-04-04 16:01:17 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:01:17 [INFO]: Loading Middlewares...
+yyyy-04-04 16:01:17 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:01:17 [INFO]: Mounting Routes...
+yyyy-04-04 16:01:17 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:01:17 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:01:17 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:01:17 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:01:17 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:01:17 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:01:17 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:01:17 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:01:17 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:01:24 [INFO]: Loading App... 
+
+yyyy-04-04 16:01:24 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:01:24 [INFO]: Loading Middlewares...
+yyyy-04-04 16:01:24 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:01:24 [INFO]: Mounting Routes...
+yyyy-04-04 16:01:24 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:01:24 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:01:24 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:01:24 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:01:24 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:01:24 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:01:24 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:01:24 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:01:24 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:01:26 [INFO]: Loading App... 
+
+yyyy-04-04 16:01:26 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:01:26 [INFO]: Loading Middlewares...
+yyyy-04-04 16:01:26 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:01:26 [INFO]: Mounting Routes...
+yyyy-04-04 16:01:26 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:01:26 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:01:26 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:01:26 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:01:26 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:01:26 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:01:26 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:01:26 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:01:26 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:01:29 [INFO]: Loading App... 
+
+yyyy-04-04 16:01:29 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:01:29 [INFO]: Loading Middlewares...
+yyyy-04-04 16:01:29 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:01:29 [INFO]: Mounting Routes...
+yyyy-04-04 16:01:29 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:01:29 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:01:29 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:01:29 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:01:29 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:01:29 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:01:29 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:01:29 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:01:29 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:01:46 [INFO]: Loading App... 
+
+yyyy-04-04 16:01:46 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:01:46 [INFO]: Loading Middlewares...
+yyyy-04-04 16:01:46 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:01:46 [INFO]: Mounting Routes...
+yyyy-04-04 16:01:46 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:01:46 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:01:46 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:01:46 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:01:46 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:01:46 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:01:46 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:01:46 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:01:46 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:01:47 [INFO]: Loading App... 
+
+yyyy-04-04 16:01:47 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:01:47 [INFO]: Loading Middlewares...
+yyyy-04-04 16:01:47 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:01:47 [INFO]: Mounting Routes...
+yyyy-04-04 16:01:47 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:01:47 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:01:47 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:01:47 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:01:47 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:01:47 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:01:47 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:01:47 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:01:47 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:01:50 [INFO]: Loading App... 
+
+yyyy-04-04 16:01:50 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:01:50 [INFO]: Loading Middlewares...
+yyyy-04-04 16:01:50 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:01:50 [INFO]: Mounting Routes...
+yyyy-04-04 16:01:50 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:01:50 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:01:50 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:01:50 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:01:50 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:01:50 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:01:50 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:01:50 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:01:50 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:01:52 [INFO]: Loading App... 
+
+yyyy-04-04 16:01:52 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:01:52 [INFO]: Loading Middlewares...
+yyyy-04-04 16:01:52 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:01:52 [INFO]: Mounting Routes...
+yyyy-04-04 16:01:52 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:01:52 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:01:52 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:01:52 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:01:52 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:01:52 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:01:52 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:01:52 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:01:52 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:01:54 [INFO]: Loading App... 
+
+yyyy-04-04 16:01:54 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:01:54 [INFO]: Loading Middlewares...
+yyyy-04-04 16:01:54 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:01:54 [INFO]: Mounting Routes...
+yyyy-04-04 16:01:54 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:01:54 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:01:54 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:01:54 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:01:54 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:01:54 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:01:54 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:01:54 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:01:54 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:01:57 [INFO]: Loading App... 
+
+yyyy-04-04 16:01:57 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:01:57 [INFO]: Loading Middlewares...
+yyyy-04-04 16:01:57 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:01:57 [INFO]: Mounting Routes...
+yyyy-04-04 16:01:57 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:01:57 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:01:57 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:01:57 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:01:57 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:01:57 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:01:57 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:01:57 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:01:57 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:02:06 [INFO]: Loading App... 
+
+yyyy-04-04 16:02:06 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:02:06 [INFO]: Loading Middlewares...
+yyyy-04-04 16:02:06 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:02:06 [INFO]: Mounting Routes...
+yyyy-04-04 16:02:06 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:02:06 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:02:06 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:02:06 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:02:06 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:02:06 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:02:06 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:02:06 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:02:06 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:02:08 [INFO]: Loading App... 
+
+yyyy-04-04 16:02:08 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:02:08 [INFO]: Loading Middlewares...
+yyyy-04-04 16:02:08 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:02:08 [INFO]: Mounting Routes...
+yyyy-04-04 16:02:08 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:02:08 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:02:08 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:02:08 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:02:08 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:02:08 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:02:08 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:02:08 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:02:08 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:02:32 [INFO]: Loading App... 
+
+yyyy-04-04 16:02:32 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:02:32 [INFO]: Loading Middlewares...
+yyyy-04-04 16:02:32 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:02:32 [INFO]: Mounting Routes...
+yyyy-04-04 16:02:32 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:02:32 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:02:32 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:02:32 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:02:32 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:02:32 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:02:32 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:02:32 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:02:32 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:02:37 [INFO]: Loading App... 
+
+yyyy-04-04 16:02:37 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:02:37 [INFO]: Loading Middlewares...
+yyyy-04-04 16:02:37 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:02:37 [INFO]: Mounting Routes...
+yyyy-04-04 16:02:37 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:02:37 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:02:37 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:02:37 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:02:37 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:02:37 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:02:37 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:02:37 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:02:37 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:02:39 [INFO]: Loading App... 
+
+yyyy-04-04 16:02:39 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:02:39 [INFO]: Loading Middlewares...
+yyyy-04-04 16:02:39 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:02:39 [INFO]: Mounting Routes...
+yyyy-04-04 16:02:39 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:02:39 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:02:39 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:02:39 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:02:39 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:02:39 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:02:39 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:02:39 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:02:39 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:02:42 [INFO]: Loading App... 
+
+yyyy-04-04 16:02:42 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:02:42 [INFO]: Loading Middlewares...
+yyyy-04-04 16:02:42 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:02:42 [INFO]: Mounting Routes...
+yyyy-04-04 16:02:42 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:02:42 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:02:42 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:02:42 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:02:42 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:02:42 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:02:42 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:02:42 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:02:42 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:04:20 [INFO]: Loading App... 
+
+yyyy-04-04 16:04:20 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:04:20 [INFO]: Loading Middlewares...
+yyyy-04-04 16:04:20 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:04:20 [INFO]: Mounting Routes...
+yyyy-04-04 16:04:20 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:04:20 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:04:20 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:04:20 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:04:20 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:04:20 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:04:20 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:04:20 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:04:20 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:06:07 [INFO]: Loading App... 
+
+yyyy-04-04 16:06:07 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:06:07 [INFO]: Loading Middlewares...
+yyyy-04-04 16:06:07 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:06:07 [INFO]: Mounting Routes...
+yyyy-04-04 16:06:07 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:06:07 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:06:07 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:06:07 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:06:07 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:06:07 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:06:07 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:06:07 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:06:07 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:06:11 [INFO]: Loading App... 
+
+yyyy-04-04 16:06:11 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:06:11 [INFO]: Loading Middlewares...
+yyyy-04-04 16:06:11 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:06:11 [INFO]: Mounting Routes...
+yyyy-04-04 16:06:11 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:06:11 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:06:11 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:06:11 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:06:11 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:06:11 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:06:11 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:06:11 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:06:11 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:06:34 [INFO]: Loading App... 
+
+yyyy-04-04 16:06:34 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:06:34 [INFO]: Loading Middlewares...
+yyyy-04-04 16:06:34 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:06:34 [INFO]: Mounting Routes...
+yyyy-04-04 16:06:34 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:06:34 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:06:34 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:06:34 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:06:34 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:06:34 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:06:34 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:06:34 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:06:34 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:15:06 [INFO]: Loading App... 
+
+yyyy-04-04 16:15:06 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:15:06 [INFO]: Loading Middlewares...
+yyyy-04-04 16:15:06 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:15:06 [INFO]: Mounting Routes...
+yyyy-04-04 16:15:06 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:15:06 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:15:06 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:15:06 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:15:06 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:15:06 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:15:06 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:15:06 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:15:06 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:16:51 [INFO]: Executing tool: create_list
+yyyy-04-04 16:16:51 [INFO]: Creating list: Fruits to Eat in Summers
+yyyy-04-04 16:16:51 [INFO]: Executing tool: create_Note
+yyyy-04-04 16:16:51 [INFO]: Creating note: Why You Should Eat These Fruits in Summers
+yyyy-04-04 16:18:29 [INFO]: Loading App... 
+
+yyyy-04-04 16:18:29 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:18:29 [INFO]: Loading Middlewares...
+yyyy-04-04 16:18:29 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:18:29 [INFO]: Mounting Routes...
+yyyy-04-04 16:18:29 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:18:29 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:18:29 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:18:29 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:18:29 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:18:29 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:18:29 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:18:29 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:18:29 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:18:36 [INFO]: Loading App... 
+
+yyyy-04-04 16:18:36 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:18:36 [INFO]: Loading Middlewares...
+yyyy-04-04 16:18:36 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:18:36 [INFO]: Mounting Routes...
+yyyy-04-04 16:18:36 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:18:36 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:18:36 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:18:36 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:18:36 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:18:36 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:18:36 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:18:36 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:18:36 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:18:37 [INFO]: Loading App... 
+
+yyyy-04-04 16:18:37 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:18:37 [INFO]: Loading Middlewares...
+yyyy-04-04 16:18:37 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:18:37 [INFO]: Mounting Routes...
+yyyy-04-04 16:18:37 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:18:37 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:18:37 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:18:37 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:18:37 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:18:37 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:18:37 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:18:37 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:18:37 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:18:41 [INFO]: Loading App... 
+
+yyyy-04-04 16:18:41 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:18:41 [INFO]: Loading Middlewares...
+yyyy-04-04 16:18:41 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:18:41 [INFO]: Mounting Routes...
+yyyy-04-04 16:18:41 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:18:41 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:18:41 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:18:41 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:18:41 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:18:41 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:18:41 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:18:41 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:18:41 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:18:45 [INFO]: Loading App... 
+
+yyyy-04-04 16:18:45 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:18:45 [INFO]: Loading Middlewares...
+yyyy-04-04 16:18:45 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:18:45 [INFO]: Mounting Routes...
+yyyy-04-04 16:18:45 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:18:45 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:18:45 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:18:45 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:18:45 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:18:45 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:18:45 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:18:45 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:18:45 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:18:48 [INFO]: Loading App... 
+
+yyyy-04-04 16:18:48 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:18:48 [INFO]: Loading Middlewares...
+yyyy-04-04 16:18:48 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:18:48 [INFO]: Mounting Routes...
+yyyy-04-04 16:18:48 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:18:48 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:18:48 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:18:48 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:18:48 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:18:48 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:18:48 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:18:48 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:18:48 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:19:28 [INFO]: Loading App... 
+
+yyyy-04-04 16:19:28 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:19:28 [INFO]: Loading Middlewares...
+yyyy-04-04 16:19:28 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:19:28 [INFO]: Mounting Routes...
+yyyy-04-04 16:19:28 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:19:28 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:19:28 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:19:28 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:19:28 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:19:28 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:19:28 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:19:28 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:19:28 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:19:40 [INFO]: Loading App... 
+
+yyyy-04-04 16:19:40 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:19:40 [INFO]: Loading Middlewares...
+yyyy-04-04 16:19:40 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:19:40 [INFO]: Mounting Routes...
+yyyy-04-04 16:19:40 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:19:40 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:19:40 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:19:40 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:19:40 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:19:40 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:19:40 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:19:40 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:19:40 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:19:45 [INFO]: Loading App... 
+
+yyyy-04-04 16:19:45 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:19:45 [INFO]: Loading Middlewares...
+yyyy-04-04 16:19:45 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:19:45 [INFO]: Mounting Routes...
+yyyy-04-04 16:19:45 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:19:45 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:19:45 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:19:45 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:19:45 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:19:45 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:19:45 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:19:45 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:19:45 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:19:50 [INFO]: Loading App... 
+
+yyyy-04-04 16:19:50 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:19:50 [INFO]: Loading Middlewares...
+yyyy-04-04 16:19:50 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:19:50 [INFO]: Mounting Routes...
+yyyy-04-04 16:19:50 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:19:50 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:19:50 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:19:50 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:19:50 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:19:50 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:19:50 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:19:50 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:19:50 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:19:51 [INFO]: Loading App... 
+
+yyyy-04-04 16:19:51 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:19:51 [INFO]: Loading Middlewares...
+yyyy-04-04 16:19:51 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:19:51 [INFO]: Mounting Routes...
+yyyy-04-04 16:19:51 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:19:51 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:19:51 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:19:51 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:19:51 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:19:51 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:19:51 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:19:51 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:19:51 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:19:56 [INFO]: Loading App... 
+
+yyyy-04-04 16:19:56 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:19:56 [INFO]: Loading Middlewares...
+yyyy-04-04 16:19:56 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:19:56 [INFO]: Mounting Routes...
+yyyy-04-04 16:19:56 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:19:56 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:19:56 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:19:56 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:19:56 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:19:56 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:19:56 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:19:56 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:19:56 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:20:01 [INFO]: Loading App... 
+
+yyyy-04-04 16:20:01 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:20:01 [INFO]: Loading Middlewares...
+yyyy-04-04 16:20:01 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:20:01 [INFO]: Mounting Routes...
+yyyy-04-04 16:20:01 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:20:01 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:20:01 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:20:01 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:20:01 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:20:01 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:20:01 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:20:01 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:20:01 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:20:06 [INFO]: Loading App... 
+
+yyyy-04-04 16:20:06 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:20:06 [INFO]: Loading Middlewares...
+yyyy-04-04 16:20:06 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:20:06 [INFO]: Mounting Routes...
+yyyy-04-04 16:20:06 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:20:06 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:20:06 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:20:06 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:20:06 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:20:06 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:20:06 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:20:06 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:20:06 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:20:08 [INFO]: Loading App... 
+
+yyyy-04-04 16:20:08 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:20:08 [INFO]: Loading Middlewares...
+yyyy-04-04 16:20:08 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:20:08 [INFO]: Mounting Routes...
+yyyy-04-04 16:20:08 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:20:08 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:20:08 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:20:08 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:20:08 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:20:08 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:20:08 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:20:08 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:20:08 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:20:09 [INFO]: Loading App... 
+
+yyyy-04-04 16:20:09 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:20:09 [INFO]: Loading Middlewares...
+yyyy-04-04 16:20:09 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:20:09 [INFO]: Mounting Routes...
+yyyy-04-04 16:20:09 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:20:09 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:20:09 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:20:09 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:20:09 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:20:09 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:20:09 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:20:09 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:20:09 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:21:47 [INFO]: Executing tool: create_list
+yyyy-04-04 16:21:47 [INFO]: Creating list: Beginner-Friendly Gym Exercises
+yyyy-04-04 16:21:47 [INFO]: Executing tool: create_Note
+yyyy-04-04 16:21:47 [INFO]: Creating note: Why These Exercises Are Beneficial for Beginners
+yyyy-04-04 16:23:43 [INFO]: Loading App... 
+
+yyyy-04-04 16:23:43 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:23:43 [INFO]: Loading Middlewares...
+yyyy-04-04 16:23:43 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:23:43 [INFO]: Mounting Routes...
+yyyy-04-04 16:23:43 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:23:43 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:23:43 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:23:43 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:23:43 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:23:43 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:23:43 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:23:43 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:23:43 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:23:48 [INFO]: Loading App... 
+
+yyyy-04-04 16:23:48 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:23:48 [INFO]: Loading Middlewares...
+yyyy-04-04 16:23:48 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:23:48 [INFO]: Mounting Routes...
+yyyy-04-04 16:23:48 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:23:48 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:23:48 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:23:48 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:23:48 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:23:48 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:23:48 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:23:48 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:23:48 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:23:52 [INFO]: Loading App... 
+
+yyyy-04-04 16:23:52 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:23:52 [INFO]: Loading Middlewares...
+yyyy-04-04 16:23:52 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:23:52 [INFO]: Mounting Routes...
+yyyy-04-04 16:23:52 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:23:52 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:23:52 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:23:52 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:23:52 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:23:52 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:23:52 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:23:52 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:23:52 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:24:06 [INFO]: Loading App... 
+
+yyyy-04-04 16:24:06 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:24:06 [INFO]: Loading Middlewares...
+yyyy-04-04 16:24:06 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:24:06 [INFO]: Mounting Routes...
+yyyy-04-04 16:24:06 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:24:06 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:24:06 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:24:06 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:24:06 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:24:06 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:24:06 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:24:06 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:24:06 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:24:13 [INFO]: Loading App... 
+
+yyyy-04-04 16:24:13 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:24:13 [INFO]: Loading Middlewares...
+yyyy-04-04 16:24:13 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:24:13 [INFO]: Mounting Routes...
+yyyy-04-04 16:24:13 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:24:13 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:24:13 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:24:13 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:24:13 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:24:13 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:24:13 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:24:13 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:24:13 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:41:41 [INFO]: Loading App... 
+
+yyyy-04-04 16:41:41 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:41:41 [INFO]: Loading Middlewares...
+yyyy-04-04 16:41:41 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:41:41 [INFO]: Mounting Routes...
+yyyy-04-04 16:41:41 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:41:41 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:41:41 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:41:41 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:41:41 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:41:41 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:41:41 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:41:41 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:41:41 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:41:54 [INFO]: Loading App... 
+
+yyyy-04-04 16:41:54 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:41:54 [INFO]: Loading Middlewares...
+yyyy-04-04 16:41:54 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:41:54 [INFO]: Mounting Routes...
+yyyy-04-04 16:41:54 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:41:54 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:41:54 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:41:54 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:41:54 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:41:54 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:41:54 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:41:54 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:41:54 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:41:55 [INFO]: Loading App... 
+
+yyyy-04-04 16:41:55 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:41:55 [INFO]: Loading Middlewares...
+yyyy-04-04 16:41:55 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:41:55 [INFO]: Mounting Routes...
+yyyy-04-04 16:41:55 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:41:55 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:41:55 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:41:55 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:41:55 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:41:55 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:41:55 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:41:55 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:41:55 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:41:57 [INFO]: Loading App... 
+
+yyyy-04-04 16:41:57 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:41:57 [INFO]: Loading Middlewares...
+yyyy-04-04 16:41:57 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:41:57 [INFO]: Mounting Routes...
+yyyy-04-04 16:41:57 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:41:57 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:41:57 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:41:57 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:41:57 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:41:57 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:41:57 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:41:57 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:41:57 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:41:58 [INFO]: Loading App... 
+
+yyyy-04-04 16:41:58 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:41:58 [INFO]: Loading Middlewares...
+yyyy-04-04 16:41:58 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:41:58 [INFO]: Mounting Routes...
+yyyy-04-04 16:41:58 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:41:58 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:41:58 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:41:58 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:41:58 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:41:58 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:41:58 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:41:58 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:41:58 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:42:00 [INFO]: Loading App... 
+
+yyyy-04-04 16:42:00 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:42:00 [INFO]: Loading Middlewares...
+yyyy-04-04 16:42:00 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:42:00 [INFO]: Mounting Routes...
+yyyy-04-04 16:42:00 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:42:00 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:42:00 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:42:00 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:42:00 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:42:00 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:42:00 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:42:00 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:42:00 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:42:02 [INFO]: Loading App... 
+
+yyyy-04-04 16:42:02 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:42:02 [INFO]: Loading Middlewares...
+yyyy-04-04 16:42:02 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:42:02 [INFO]: Mounting Routes...
+yyyy-04-04 16:42:02 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:42:02 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:42:02 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:42:02 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:42:02 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:42:02 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:42:02 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:42:02 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:42:02 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:42:03 [INFO]: Loading App... 
+
+yyyy-04-04 16:42:03 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:42:03 [INFO]: Loading Middlewares...
+yyyy-04-04 16:42:03 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:42:03 [INFO]: Mounting Routes...
+yyyy-04-04 16:42:03 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:42:03 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:42:03 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:42:03 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:42:03 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:42:03 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:42:03 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:42:03 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:42:03 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:42:05 [INFO]: Loading App... 
+
+yyyy-04-04 16:42:05 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:42:05 [INFO]: Loading Middlewares...
+yyyy-04-04 16:42:05 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:42:05 [INFO]: Mounting Routes...
+yyyy-04-04 16:42:05 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:42:05 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:42:05 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:42:05 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:42:05 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:42:05 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:42:05 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:42:05 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:42:05 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:42:20 [INFO]: Loading App... 
+
+yyyy-04-04 16:42:21 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:42:21 [INFO]: Loading Middlewares...
+yyyy-04-04 16:42:21 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:42:21 [INFO]: Mounting Routes...
+yyyy-04-04 16:42:21 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:42:21 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:42:21 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:42:21 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:42:21 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:42:21 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:42:21 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:42:21 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:42:21 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:42:22 [INFO]: Loading App... 
+
+yyyy-04-04 16:42:22 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:42:22 [INFO]: Loading Middlewares...
+yyyy-04-04 16:42:22 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:42:22 [INFO]: Mounting Routes...
+yyyy-04-04 16:42:22 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:42:22 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:42:22 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:42:22 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:42:22 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:42:22 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:42:22 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:42:22 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:42:22 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:42:24 [INFO]: Loading App... 
+
+yyyy-04-04 16:42:24 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:42:24 [INFO]: Loading Middlewares...
+yyyy-04-04 16:42:24 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:42:24 [INFO]: Mounting Routes...
+yyyy-04-04 16:42:24 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:42:24 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:42:24 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:42:24 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:42:24 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:42:24 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:42:24 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:42:24 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:42:24 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:42:26 [INFO]: Loading App... 
+
+yyyy-04-04 16:42:26 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:42:26 [INFO]: Loading Middlewares...
+yyyy-04-04 16:42:26 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:42:26 [INFO]: Mounting Routes...
+yyyy-04-04 16:42:26 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:42:26 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:42:26 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:42:26 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:42:26 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:42:26 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:42:26 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:42:26 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:42:26 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:42:31 [INFO]: Loading App... 
+
+yyyy-04-04 16:42:31 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:42:31 [INFO]: Loading Middlewares...
+yyyy-04-04 16:42:31 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:42:31 [INFO]: Mounting Routes...
+yyyy-04-04 16:42:31 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:42:31 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:42:31 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:42:31 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:42:31 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:42:31 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:42:31 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:42:31 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:42:31 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:42:34 [INFO]: Loading App... 
+
+yyyy-04-04 16:42:34 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:42:34 [INFO]: Loading Middlewares...
+yyyy-04-04 16:42:34 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:42:34 [INFO]: Mounting Routes...
+yyyy-04-04 16:42:34 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:42:34 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:42:34 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:42:34 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:42:34 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:42:34 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:42:34 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:42:34 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:42:34 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:42:35 [INFO]: Loading App... 
+
+yyyy-04-04 16:42:35 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:42:35 [INFO]: Loading Middlewares...
+yyyy-04-04 16:42:35 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:42:35 [INFO]: Mounting Routes...
+yyyy-04-04 16:42:35 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:42:35 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:42:35 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:42:35 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:42:35 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:42:35 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:42:35 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:42:35 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:42:35 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:42:37 [INFO]: Loading App... 
+
+yyyy-04-04 16:42:37 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:42:37 [INFO]: Loading Middlewares...
+yyyy-04-04 16:42:37 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:42:37 [INFO]: Mounting Routes...
+yyyy-04-04 16:42:37 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:42:37 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:42:37 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:42:37 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:42:37 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:42:37 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:42:37 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:42:37 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:42:37 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:42:40 [INFO]: Loading App... 
+
+yyyy-04-04 16:42:40 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:42:40 [INFO]: Loading Middlewares...
+yyyy-04-04 16:42:40 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:42:40 [INFO]: Mounting Routes...
+yyyy-04-04 16:42:40 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:42:40 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:42:40 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:42:40 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:42:40 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:42:40 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:42:40 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:42:40 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:42:40 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:42:42 [INFO]: Loading App... 
+
+yyyy-04-04 16:42:42 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:42:42 [INFO]: Loading Middlewares...
+yyyy-04-04 16:42:42 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:42:42 [INFO]: Mounting Routes...
+yyyy-04-04 16:42:42 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:42:42 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:42:42 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:42:42 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:42:42 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:42:42 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:42:42 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:42:42 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:42:42 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:42:47 [INFO]: Loading App... 
+
+yyyy-04-04 16:42:47 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:42:47 [INFO]: Loading Middlewares...
+yyyy-04-04 16:42:47 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:42:47 [INFO]: Mounting Routes...
+yyyy-04-04 16:42:47 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:42:47 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:42:47 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:42:47 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:42:47 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:42:47 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:42:47 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:42:47 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:42:47 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:42:53 [INFO]: Loading App... 
+
+yyyy-04-04 16:42:53 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:42:53 [INFO]: Loading Middlewares...
+yyyy-04-04 16:42:53 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:42:53 [INFO]: Mounting Routes...
+yyyy-04-04 16:42:53 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:42:53 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:42:53 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:42:53 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:42:53 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:42:53 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:42:53 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:42:53 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:42:53 [INFO]: Server is running at http://localhost:4000
+yyyy-04-04 16:50:20 [INFO]: Loading App... 
+
+yyyy-04-04 16:50:20 [INFO]: MongoDB connected 
+
+yyyy-04-04 16:50:20 [INFO]: Loading Middlewares...
+yyyy-04-04 16:50:20 [INFO]: All Middlewares Loaded...
+
+yyyy-04-04 16:50:20 [INFO]: Mounting Routes...
+yyyy-04-04 16:50:20 [INFO]: Dev Router mounted at: /dev
+yyyy-04-04 16:50:20 [INFO]: Auth Router mounted at: /auth
+yyyy-04-04 16:50:20 [INFO]: Account Router mounted at: /account
+yyyy-04-04 16:50:20 [INFO]: Companion Router mounted at: /companion
+yyyy-04-04 16:50:20 [INFO]: Chat Router mounted at: /chat
+yyyy-04-04 16:50:20 [INFO]: List Router mounted at: /list
+yyyy-04-04 16:50:20 [INFO]: Note Router mounted at: /note
+yyyy-04-04 16:50:20 [INFO]: Routes Mounted... 
+
+yyyy-04-04 16:50:20 [INFO]: Server is running at http://localhost:4000

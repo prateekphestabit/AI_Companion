@@ -6,7 +6,7 @@ const openai = new OpenAI({
   baseURL: 'https://integrate.api.nvidia.com/v1',
 })
  
-async function llmResponse(messages) {
+async function getTopic(messages) {
   try {
     const completion = await openai.chat.completions.create({
       model: "mistralai/devstral-2-123b-instruct-2512",
@@ -23,4 +23,4 @@ async function llmResponse(messages) {
   }
 }
 
-module.exports = { llmResponse };
+module.exports = { getTopic };

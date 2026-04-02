@@ -1,6 +1,7 @@
 const User = require("../models/User");
 const logger = require("../utils/logger");
-const { llmResponse } = require("../services/chat");
+const { getTopic } = require("../services/chat");
+const { llmResponse } = require("../services/chatWithTools");
 
 async function getHistory(req, res) {
   try {
@@ -73,26 +74,25 @@ async function sendMessage(req, res) {
       return res.status(400).json({ success: false, message: "Message is required" });
     }
 
-    const user = await User.findById(userId);
+    let user = await User.findById(userId);
     if (!user) {
       return res.status(404).json({ success: false, message: "User not found" });
     }
 
-    const companion = user.companions.id(companionId);
+    let companion = user.companions.id(companionId);
     if (!companion) {
       return res.status(404).json({ success: false, message: "Companion not found" });
     }
 
     const messages = [{"role": "system", "content": companion.systemPrompt}]
 
-    // Simulated AI response
-    let aiReply = `This is a simulated response from ${companion.name}. Backend AI integration coming soon!`;
+    let aiReply;
 
     let activeHistoryId = historyId;
 
     if (!historyId) {
       messages.push({ "role": "user", "content": message.trim() });
-      aiReply = await llmResponse(messages);
+      aiReply = await llmResponse(messages, userId);
 
       const contentForTitle = `
         Generate a short title (max 5 words).
@@ -104,9 +104,11 @@ async function sendMessage(req, res) {
         response:
         ${aiReply}
       `;
-      const title = await llmResponse([{ "role": "user", "content": contentForTitle }]);
+      const title = await getTopic([{ "role": "user", "content": contentForTitle }]);
       // New chat — create a new history entry
 
+      user = await User.findById(userId);
+      companion = user.companions.id(companionId);
       companion.history.push({
         title,
         chatHistory: [
@@ -120,6 +122,7 @@ async function sendMessage(req, res) {
     else {
       const numberOfMessagesInMemoary = 100;
       // Existing chat — push to chatHistory
+
       const chats = companion.history.id(historyId).chatHistory;
       const recentChats = chats.slice(-numberOfMessagesInMemoary); 
 
@@ -135,8 +138,9 @@ async function sendMessage(req, res) {
         content: message.trim()
       });
       
-      aiReply = await llmResponse(messages);
-
+      aiReply = await llmResponse(messages, userId);
+      user = await User.findById(userId);
+      companion = user.companions.id(companionId);
       const historyEntry = companion.history.id(historyId);
       if (!historyEntry) {
         return res.status(404).json({ success: false, message: "Chat not found" });

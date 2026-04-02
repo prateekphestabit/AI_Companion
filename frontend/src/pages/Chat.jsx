@@ -281,7 +281,11 @@ const Chat = () => {
                 <div className="flex items-center gap-3">
                   <div className="shrink-0 hidden sm:block">
                     <div className={`w-7 h-7 rounded-full bg-gradient-to-br ${gradient} flex items-center justify-center text-white font-bold text-xs`}>
-                      {avatarLetter}
+                      {companion.avatar ? (
+                        <img src={companion.avatar} alt={companion.name} className="w-7 h-7 rounded-full object-cover" />
+                      ) : (
+                        avatarLetter
+                      )}
                     </div>
                   </div>
                   <div className="flex items-center gap-1.5 py-3">

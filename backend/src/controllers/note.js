@@ -1,5 +1,6 @@
 const User = require("../models/User");
 const logger = require("../utils/logger");
+const {createNoteService} = require("../services/NoteServie");
 
 async function getAllNotes(req, res) {
   try {
@@ -59,14 +60,14 @@ async function createNote(req, res) {
       return res.status(400).json({ success: false, message: "Content is required" });
     }
 
-    const user = await User.findById(userId);
+    let user = await User.findById(userId);
     if (!user) {
       return res.status(404).json({ success: false, message: "User not found" });
     }
 
-    user.notes.push({ title: title.trim(), content: content.trim() });
-    await user.save();
-
+    // createNoteService shared between llmToolCalling and Create Note controller
+    await createNoteService(userId, title.trim(), content.trim());
+    user = await User.findById(userId);
     const createdNote = user.notes[user.notes.length - 1];
     res.status(201).json({ success: true, message: "Note created", note: createdNote });
   } catch (error) {

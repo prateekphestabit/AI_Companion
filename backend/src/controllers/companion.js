@@ -56,7 +56,10 @@ async function createCompanion(req, res) {
         you have a ${personality} personality,
         your communication style should be ${communicationStyle},
         and you are an expert in ${expertise}.
-        always give answers in this tone and personaity`;
+        always give answers in this tone and personaity.
+
+        If you think of creating notes or list,always ask user for
+        permission before creating any list or note.`;
 
         const newCompanion = {
             name,

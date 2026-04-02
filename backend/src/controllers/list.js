@@ -1,5 +1,6 @@
 const User = require("../models/User");
 const logger = require("../utils/logger");
+const {createListService} = require("../services/ListService");
 
 async function getAllLists(req, res) {
   try {
@@ -57,19 +58,14 @@ async function createList(req, res) {
       return res.status(400).json({ success: false, message: "Title is required" });
     }
 
-    const user = await User.findById(userId);
+    let user = await User.findById(userId);
     if (!user) {
       return res.status(404).json({ success: false, message: "User not found" });
     }
 
-    const taskArray = (tasks || []).map((t) => ({
-      task: typeof t === "string" ? t : t.task,
-      state: false,
-    }));
-
-    user.lists.push({ title: title.trim(), tasks: taskArray });
-    await user.save();
-
+    //common service shared between llmToolCall and CreateLIst controller
+    await createListService(userId, title, tasks);
+    user = await User.findById(userId);
     const createdList = user.lists[user.lists.length - 1];
     res.status(201).json({ success: true, message: "List created", list: createdList });
   } catch (error) {
