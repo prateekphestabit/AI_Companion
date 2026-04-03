@@ -21,28 +21,29 @@ const Dashboard = () => {
   const [userName, setUserName] = useState('');
   const [userAvatar, setUserAvatar] = useState(null);
 
-  useEffect(() => {
-    const loadData = async () => {
-      const authData = await checkAuth();
-      if (!authData.success) {
-        navigate('/login', { replace: true });
-      } else {
-        try {
-          const userRes = await fetch(GET_USER_API, {method: "GET", headers: { "Content-Type": "application/json" }, credentials: "include"});
-          const userData = await userRes.json();
-          const User = userData.user;
-          setUserName(User.name);
-          setUserAvatar(User.avatar);
-          setCompanions(User.companions);
-          setLists(User.lists);
-          setNotes(User.notes);
+  const loadData = async () => {
+    const authData = await checkAuth();
+    if (!authData.success) {
+      navigate('/login', { replace: true });
+    } else {
+      try {
+        const userRes = await fetch(GET_USER_API, {method: "GET", headers: { "Content-Type": "application/json" }, credentials: "include"});
+        const userData = await userRes.json();
+        const User = userData.user;
+        setUserName(User.name);
+        setUserAvatar(User.avatar);
+        setCompanions(User.companions);
+        setLists(User.lists);
+        setNotes(User.notes);
 
-        } catch (error) {
-          console.error("Failed to load Data:", error);
-        }
-        setLoading(false);
+      } catch (error) {
+        console.error("Failed to load Data:", error);
       }
-    };
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
     loadData();
   }, [navigate]);
 
@@ -177,6 +178,7 @@ const Dashboard = () => {
           <CompanionGrid
             companions={companions}
             onDelete={handleDeleteCompanion}
+            onRefresh={loadData}
           />
         </section>
 

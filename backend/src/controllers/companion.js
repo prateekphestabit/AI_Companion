@@ -70,17 +70,17 @@ async function createCompanion(req, res) {
             systemPrompt: systemPrompt,
             avatar: req.file ? req.file.buffer : null
         };
-        
+
         user.companions.push(newCompanion);
-        
+
         await user.save();
-        
+
         const createdCompanion = { ...user.companions[user.companions.length - 1].toObject() };
         if (createdCompanion.avatar) {
             let bufferData = null;
             if (Buffer.isBuffer(createdCompanion.avatar)) {
                 bufferData = createdCompanion.avatar;
-            } else if (createdCompanion.avatar.buffer) { 
+            } else if (createdCompanion.avatar.buffer) {
                 bufferData = createdCompanion.avatar.buffer;
             }
 
@@ -128,8 +128,136 @@ async function deleteCompanion(req, res) {
     }
 }
 
+async function editCompanion(req, res) {
+    try {
+        const { companionId, name, description, personality, communicationStyle, expertise } = req.body;
+        const userId = req.user._id;
+
+        if (!companionId || !name) {
+            return res.status(400).json({ success: false, message: "companionId and name are required" });
+        }
+
+        const user = await User.findById(userId);
+        if (!user) {
+            return res.status(404).json({ success: false, message: "User not found" });
+        }
+
+        const companion = user.companions.id(companionId);
+        if (!companion) {
+            return res.status(404).json({ success: false, message: "Companion not found" });
+        }
+
+        const systemPrompt = `Your name is ${name}, 
+        you have a ${personality} personality,
+        your communication style should be ${communicationStyle},
+        and you are an expert in ${expertise}.
+        always give answers in this tone and personaity.
+
+        If you think of creating notes or list,always ask user for
+        permission before creating any list or note.`;
+
+        companion.name = name;
+        companion.description = description || "";
+        companion.personality = personality;
+        companion.communicationStyle = communicationStyle;
+        companion.expertise = expertise;
+        companion.systemPrompt = systemPrompt;
+
+        if (req.file) {
+            companion.avatar = req.file.buffer;
+        } else if (req.body.removeAvatar === 'true') {
+            companion.avatar = undefined;
+        }
+
+        await user.save();
+        
+        let editedCompanion = { ...companion.toObject() };
+        if (editedCompanion.avatar) {
+            let bufferData = null;
+            if (Buffer.isBuffer(editedCompanion.avatar)) {
+                bufferData = editedCompanion.avatar;
+            } else if (editedCompanion.avatar.buffer) { 
+                bufferData = editedCompanion.avatar.buffer;
+            }
+
+            if (bufferData) {
+                editedCompanion.avatar = `data:image/png;base64,${bufferData.toString('base64')}`;
+            }
+        }
+
+        res.status(200).json({ success: true, message: "Companion updated successfully", companion: editedCompanion });
+    } catch (error) {
+        logger.error("Error in editCompanion", error);
+        res.status(500).json({ success: false, message: "Server error", error: error.message });
+    }
+}
+
+async function duplicateCompanion(req, res) {
+    try {
+        const { companionId, name, description, personality, communicationStyle, expertise } = req.body;
+        const userId = req.user._id;
+
+        if (!companionId || !name) {
+            return res.status(400).json({ success: false, message: "companionId and name are required" });
+        }
+
+        const user = await User.findById(userId);
+        if (!user) {
+            return res.status(404).json({ success: false, message: "User not found" });
+        }
+
+        const existingCompanion = user.companions.id(companionId);
+        if (!existingCompanion) {
+            return res.status(404).json({ success: false, message: "Companion to duplicate not found" });
+        }
+
+        const systemPrompt = `Your name is ${name}, 
+        you have a ${personality} personality,
+        your communication style should be ${communicationStyle},
+        and you are an expert in ${expertise}.
+        always give answers in this tone and personaity.
+
+        If you think of creating notes or list,always ask user for
+        permission before creating any list or note.`;
+
+        const newCompanion = {
+            name,
+            description: description || "",
+            personality,
+            communicationStyle,
+            expertise,
+            systemPrompt: systemPrompt,
+            avatar: req.file ? req.file.buffer : (req.body.removeAvatar === 'true' ? undefined : existingCompanion.avatar)
+        };
+
+        user.companions.push(newCompanion);
+        await user.save();
+
+        const createdCompanion = { ...user.companions[user.companions.length - 1].toObject() };
+        if (createdCompanion.avatar) {
+            let bufferData = null;
+            if (Buffer.isBuffer(createdCompanion.avatar)) {
+                bufferData = createdCompanion.avatar;
+            } else if (createdCompanion.avatar.buffer) { 
+                bufferData = createdCompanion.avatar.buffer;
+            }
+
+            if (bufferData) {
+                createdCompanion.avatar = `data:image/png;base64,${bufferData.toString('base64')}`;
+            }
+        }
+
+        res.status(201).json({ success: true, message: "Companion duplicated successfully", companion: createdCompanion });
+    } catch (error) {
+        logger.error("Error in duplicateCompanion", error);
+        res.status(500).json({ success: false, message: "Server error", error: error.message });
+    }
+}
+
 module.exports = {
     getAllCompanions,
     createCompanion,
-    deleteCompanion
+    deleteCompanion,
+    editCompanion,
+    duplicateCompanion
 };

@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import Companion from './Companion';
 
-const CompanionGrid = ({ companions, onDelete }) => {
+const CompanionGrid = ({ companions, onDelete, onRefresh }) => {
     const navigate = useNavigate();
 
     return (
@@ -32,6 +32,7 @@ const CompanionGrid = ({ companions, onDelete }) => {
                         key={comp._id || index}
                         companion={comp}
                         onDelete={onDelete}
+                        onRefresh={onRefresh}
                     />
                 ))}
             </div>
