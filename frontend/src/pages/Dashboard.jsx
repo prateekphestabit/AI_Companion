@@ -4,9 +4,13 @@ import { checkAuth } from '../auth/auth.js';
 import CompanionGrid from '../components/Dashboard/CompanionGrid.jsx';
 import ListGrid from '../components/Dashboard/ListGrid.jsx';
 import NoteGrid from '../components/Dashboard/NoteGrid.jsx';
+import LoadingComponent from '../components/Loading/loading.jsx';
 
 const LIST_API = import.meta.env.VITE_LIST_API_URL;
 const NOTE_API = import.meta.env.VITE_NOTE_API_URL;
+const GET_USER_API = import.meta.env.VITE_GET_USER_API_URL;
+const DELETE_COMPANION_API = import.meta.env.VITE_DELETE_COMPANION_API_URL
+
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -24,35 +28,14 @@ const Dashboard = () => {
         navigate('/login', { replace: true });
       } else {
         try {
-          // Fetch user data (companions come from here)
-          const userRes = await fetch(import.meta.env.VITE_GET_USER_API_URL, {
-            method: "GET",
-            headers: { "Content-Type": "application/json" },
-            credentials: "include"
-          });
+          const userRes = await fetch(GET_USER_API, {method: "GET", headers: { "Content-Type": "application/json" }, credentials: "include"});
           const userData = await userRes.json();
           const User = userData.user;
           setUserName(User.name);
           setUserAvatar(User.avatar);
           setCompanions(User.companions);
-
-          // Fetch lists
-          const listRes = await fetch(`${LIST_API}/getAll`, {
-            method: "GET",
-            headers: { "Content-Type": "application/json" },
-            credentials: "include"
-          });
-          const listData = await listRes.json();
-          if (listData.success) setLists(listData.lists);
-
-          // Fetch notes
-          const noteRes = await fetch(`${NOTE_API}/getAll`, {
-            method: "GET",
-            headers: { "Content-Type": "application/json" },
-            credentials: "include"
-          });
-          const noteData = await noteRes.json();
-          if (noteData.success) setNotes(noteData.notes);
+          setLists(User.lists);
+          setNotes(User.notes);
 
         } catch (error) {
           console.error("Failed to load Data:", error);
@@ -63,18 +46,10 @@ const Dashboard = () => {
     loadData();
   }, [navigate]);
 
-  if (loading) return (
-    <div className="min-h-screen flex items-center justify-center bg-[#0a0a0f]">
-      <div className="flex flex-col items-center gap-4">
-        <div className="w-12 h-12 rounded-full border-2 border-indigo-500/30 border-t-indigo-500 animate-spin" />
-        <p className="text-slate-400 text-sm">Loading your dashboard...</p>
-      </div>
-    </div>
-  );
-
+  
   const handleDeleteCompanion = async (companionId) => {
     try {
-      const res = await fetch(import.meta.env.VITE_DELETE_COMPANION_API_URL, {
+      const res = await fetch(DELETE_COMPANION_API, {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ companionId }),
@@ -90,7 +65,7 @@ const Dashboard = () => {
       console.error("Delete companion failed:", error);
     }
   };
-
+  
   const handleDeleteList = async (listId) => {
     try {
       const res = await fetch(`${LIST_API}/delete`, {
@@ -109,7 +84,7 @@ const Dashboard = () => {
       console.error("Delete list failed:", error);
     }
   };
-
+  
   const handleDeleteNote = async (noteId) => {
     try {
       const res = await fetch(`${NOTE_API}/delete`, {
@@ -128,6 +103,8 @@ const Dashboard = () => {
       console.error("Delete note failed:", error);
     }
   };
+  
+  if (loading) return (<LoadingComponent text="Loading Dashboard"/>);
 
   return (
     <div className="min-h-screen bg-[#0a0a0f] relative overflow-hidden">

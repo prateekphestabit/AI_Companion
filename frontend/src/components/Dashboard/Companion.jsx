@@ -1,9 +1,24 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Companion = ({ companion, onDelete }) => {
-  const [showInfo, setShowInfo] = useState(false);
   const navigate = useNavigate();
+  const [showOptions, setShowOptions] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setShowOptions(false);
+      }
+    };
+    if (showOptions) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [showOptions]);
 
   // Avatar: use image if available, else first letter
   const avatarLetter = companion.name ? companion.name[0].toUpperCase() : '?';
@@ -85,21 +100,55 @@ const Companion = ({ companion, onDelete }) => {
 
       {/* Action row */}
       <div className="flex items-center justify-between pt-3 border-t border-white/5 mt-auto">
-        {/* Info tooltip trigger */}
-        <div className="relative">
+        {/* Options trigger */}
+        <div className="relative" ref={menuRef}>
           <button
-            onClick={(e) => e.stopPropagation()}
-            onMouseEnter={() => setShowInfo(true)}
-            onMouseLeave={() => setShowInfo(false)}
-            className="w-7 h-7 rounded-full border border-white/15 flex items-center justify-center text-slate-400 hover:text-white hover:border-indigo-500/50 hover:bg-indigo-500/10 transition-all duration-150 text-xs font-bold"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowOptions(!showOptions);
+            }}
+            className={`w-7 h-7 rounded-full border transition-all duration-150 flex items-center justify-center ${showOptions ? 'text-white border-indigo-500/50 bg-indigo-500/10' : 'border-white/15 text-slate-400 hover:text-white hover:border-indigo-500/50 hover:bg-indigo-500/10'}`}
           >
-            i
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+            </svg>
           </button>
-          {showInfo && (
-            <div className="absolute bottom-9 left-0 bg-[#131320] border border-white/10 rounded-xl p-3 z-20 shadow-xl shadow-black/50 w-44 text-xs">
-              <p className="text-slate-300 mb-1"><span className="text-slate-500">Personality:</span> <span className="capitalize">{companion.personality}</span></p>
-              <p className="text-slate-300 mb-1"><span className="text-slate-500">Style:</span> <span className="capitalize">{companion.communicationStyle}</span></p>
-              <p className="text-slate-300"><span className="text-slate-500">Expertise:</span> <span className="capitalize">{companion.expertise}</span></p>
+
+          {showOptions && (
+            <div className="absolute bottom-10 left-0 bg-[#0f0f16]/90 backdrop-blur-xl border border-white/10 rounded-2xl p-1.5 z-30 shadow-2xl shadow-black/80 w-40 transform origin-bottom-left transition-all duration-200">
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setShowOptions(false);
+                  console.log('Edit clicked');
+                }}
+                className="w-full flex items-center group text-xs text-slate-300 font-medium px-2 py-2 rounded-xl hover:bg-[#1a1a24] hover:text-white transition-all duration-200"
+              >
+                <div className="w-7 h-7 rounded-lg bg-white/5 border border-white/5 flex items-center justify-center mr-3 group-hover:bg-amber-500/10 group-hover:border-amber-500/20 group-hover:text-amber-400 text-slate-400 transition-all duration-200 shadow-sm">
+                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                  </svg>
+                </div>
+                Edit
+              </button>
+              
+              <div className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent my-1"></div>
+
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setShowOptions(false);
+                  console.log('Duplicate clicked');
+                }}
+                className="w-full flex items-center group text-xs text-slate-300 font-medium px-2 py-2 rounded-xl hover:bg-[#1a1a24] hover:text-white transition-all duration-200"
+              >
+                <div className="w-7 h-7 rounded-lg bg-white/5 border border-white/5 flex items-center justify-center mr-3 group-hover:bg-indigo-500/10 group-hover:border-indigo-500/20 group-hover:text-indigo-400 text-slate-400 transition-all duration-200 shadow-sm">
+                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75" />
+                  </svg>
+                </div>
+                Duplicate
+              </button>
             </div>
           )}
         </div>

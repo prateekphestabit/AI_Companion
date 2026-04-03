@@ -9,12 +9,7 @@ import CreateList from './pages/CreateList';
 import CreateNote from './pages/CreateNote';
 import ListDetail from './pages/ListDetail';
 import NoteDetail from './pages/NoteDetail';
-
-const LandingPage = () => {
-  return (
-    <h1>LandingPage</h1>
-  );
-};
+import LandingPage from './pages/landingPage'
 
 function App() {
   return (
