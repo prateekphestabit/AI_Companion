@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 const ListCard = ({ list, onDelete }) => {
   const navigate = useNavigate();
 
-  const total = list.taskCount || 0;
-  const done = list.doneCount || 0;
+  const total = list.tasks ? list.tasks.length : (list.taskCount || 0);
+  const done = list.tasks ? list.tasks.filter(t => t.state).length : (list.doneCount || 0);
   const progress = total > 0 ? Math.round((done / total) * 100) : 0;
 
   const gradients = [
