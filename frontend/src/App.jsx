@@ -10,6 +10,7 @@ import CreateNote from './pages/CreateNote';
 import ListDetail from './pages/ListDetail';
 import NoteDetail from './pages/NoteDetail';
 import LandingPage from './pages/landingPage'
+import Analytics from './pages/Analytics'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/analytics" element={<Analytics />} />
         <Route path="/createCompanion" element={<CreateCompanion />} />
         <Route path="/createList" element={<CreateList />} />
         <Route path="/createNote" element={<CreateNote />} />
