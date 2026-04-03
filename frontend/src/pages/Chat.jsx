@@ -65,6 +65,24 @@ const Chat = () => {
     init();
   }, [companionId, navigate]);
 
+  // ── Delete a specific chat ──
+  const deleteChat = async (historyId) => {
+    try {
+      const res = await fetch(`${CHAT_API}/${companionId}/history/${historyId}`, {
+        method: 'DELETE', headers: { 'Content-Type': 'application/json' }, credentials: 'include',
+      });
+      const data = await res.json();
+      if (data.success) {
+        setHistoryList(prev => prev.filter(h => h._id !== historyId));
+        if (activeHistoryId === historyId) {
+          startNewChat();
+        }
+      }
+    } catch (err) {
+      console.error('Delete chat failed:', err);
+    }
+  };
+
   // ── Load a specific chat ──
   const loadChat = async (historyId) => {
     try {
@@ -150,6 +168,7 @@ const Chat = () => {
         historyList={historyList}
         activeHistoryId={activeHistoryId}
         loadChat={loadChat}
+        deleteChat={deleteChat}
       />
 
       {/* ═══════════ MAIN CONTENT ═══════════ */}

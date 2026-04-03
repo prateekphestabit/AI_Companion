@@ -6,10 +6,12 @@ const Sidebar = ({
   historyList,
   activeHistoryId,
   loadChat,
+  deleteChat,
 }) => {
   const navigate = useNavigate();
 
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [openMenuId, setOpenMenuId] = useState(null);
 
   return (
     <>
@@ -50,17 +52,54 @@ const Sidebar = ({
                 <p className="text-slate-500 text-xs text-center pt-8">No conversations yet</p>
               ) : (
                 historyList.slice().reverse().map((h) => (
-                  <button
-                    key={h._id}
-                    onClick={() => loadChat(h._id)}
-                    className={`w-full text-left px-4 py-3 rounded-xl text-sm transition-all duration-150 group ${activeHistoryId === h._id
-                        ? 'bg-white/8 text-white border border-white/10'
-                        : 'text-slate-400 hover:bg-white/5 hover:text-slate-200 border border-transparent'
-                      }`}
-                  >
-                    <p className="truncate font-medium">{h.title}</p>
-                    <p className="text-[11px] text-slate-500 mt-1">{new Date(h.createdAt).toLocaleDateString()}</p>
-                  </button>
+                  <div key={h._id} className="relative">
+                    <button
+                      onClick={() => loadChat(h._id)}
+                      className={`w-full text-left pl-4 pr-10 py-3 rounded-xl text-sm transition-all duration-150 group ${activeHistoryId === h._id
+                          ? 'bg-white/8 text-white border border-white/10'
+                          : 'text-slate-400 hover:bg-white/5 hover:text-slate-200 border border-transparent'
+                        }`}
+                    >
+                      <p className="truncate font-medium leading-tight mb-0.5">{h.title}</p>
+                      <p className="text-[11px] text-slate-500">{new Date(h.createdAt).toLocaleDateString()}</p>
+                    </button>
+                    
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setOpenMenuId(openMenuId === h._id ? null : h._id);
+                      }}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-lg flex items-center justify-center text-slate-400 hover:bg-white/10 hover:text-white transition-colors"
+                    >
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                      </svg>
+                    </button>
+
+                    {openMenuId === h._id && (
+                      <>
+                        <div 
+                          className="fixed inset-0 z-40"
+                          onClick={(e) => { e.stopPropagation(); setOpenMenuId(null); }}
+                        ></div>
+                        <div className="absolute right-0 top-12 bg-[#1a1a24] border border-white/10 shadow-2xl shadow-black/80 rounded-xl p-1 z-50 w-36 animate-in fade-in zoom-in-95">
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              deleteChat(h._id);
+                              setOpenMenuId(null);
+                            }}
+                            className="w-full flex items-center gap-2 px-3 py-2 text-xs font-medium text-red-400 hover:bg-red-500/10 rounded-lg transition-colors"
+                          >
+                            <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                            </svg>
+                            Delete Chat
+                          </button>
+                        </div>
+                      </>
+                    )}
+                  </div>
                 ))
               )}
             </nav>

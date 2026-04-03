@@ -4,13 +4,15 @@ const {
   getHistory,
   getChatMessages,
   sendMessage,
+  deleteHistory,
 } = require("../controllers/chat.js");
 
 chatRouter.route("/:companionId/history")
   .get(getHistory);
 
 chatRouter.route("/:companionId/history/:historyId")
-  .get(getChatMessages);
+  .get(getChatMessages)
+  .delete(deleteHistory);
 
 chatRouter.route("/:companionId/send")
   .post(sendMessage);

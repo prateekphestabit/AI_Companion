@@ -161,8 +161,34 @@ async function sendMessage(req, res) {
   }
 }
 
+async function deleteHistory(req, res) {
+  try {
+    const userId = req.user._id;
+    const { companionId, historyId } = req.params;
+
+    const user = await User.findById(userId).select("companions");
+    if (!user) {
+      return res.status(404).json({ success: false, message: "User not found" });
+    }
+
+    const companion = user.companions.id(companionId);
+    if (!companion) {
+      return res.status(404).json({ success: false, message: "Companion not found" });
+    }
+
+    companion.history.pull(historyId);
+    await user.save();
+
+    res.status(200).json({ success: true, message: "Chat deleted" });
+  } catch (error) {
+    logger.error("Error in deleteHistory", error);
+    res.status(500).json({ success: false, message: "Server error", error: error.message });
+  }
+}
+
 module.exports = {
   getHistory,
   getChatMessages,
   sendMessage,
+  deleteHistory,
 };
