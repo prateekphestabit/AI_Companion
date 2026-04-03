@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import { checkAuth } from '../auth/auth';
 import Sidebar from '../components/chatPage/sidebar';
+import { jsPDF } from "jspdf";
 
 const CHAT_API = import.meta.env.VITE_CHAT_API_URL;
 
@@ -80,6 +81,70 @@ const Chat = () => {
       }
     } catch (err) {
       console.error('Delete chat failed:', err);
+    }
+  };
+
+  // ── Export a specific chat ──
+  const exportChat = async (historyId, format) => {
+    try {
+      const res = await fetch(`${CHAT_API}/${companionId}/history/${historyId}`, {
+        method: 'GET', headers: { 'Content-Type': 'application/json' }, credentials: 'include',
+      });
+      const data = await res.json();
+      if (!data.success) throw new Error("Failed to fetch chat for export");
+
+      // Use a sanitized title for filename
+      const title = (data.title || 'conversation').replace(/[^a-zA-Z0-9]/g, '_');
+      
+      let content = '';
+
+      if (format === 'json') {
+        content = JSON.stringify(data.chatHistory, null, 2);
+        const blob = new Blob([content], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.json`;
+        a.click();
+        URL.revokeObjectURL(url);
+      } else if (format === 'txt') {
+        content = data.chatHistory.map(m => `${m.role.toUpperCase()}:\n${m.content}\n`).join('\n');
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title}.txt`;
+        a.click();
+        URL.revokeObjectURL(url);
+      } else if (format === 'pdf') {
+        const doc = new jsPDF();
+        let y = 10;
+        doc.setFontSize(16);
+        doc.text(title, 10, y);
+        y += 10;
+        doc.setFontSize(12);
+
+        for (const m of data.chatHistory) {
+          doc.setFont(undefined, 'bold');
+          doc.text(`${m.role.toUpperCase()}:`, 10, y);
+          y += 6;
+          doc.setFont(undefined, 'normal');
+          
+          const lines = doc.splitTextToSize(m.content, 180);
+          for (let i = 0; i < lines.length; i++) {
+            if (y > 280) {
+              doc.addPage();
+              y = 10;
+            }
+            doc.text(lines[i], 10, y);
+            y += 6;
+          }
+          y += 4;
+        }
+        doc.save(`${title}.pdf`);
+      }
+    } catch (err) {
+      console.error('Export failed:', err);
     }
   };
 
@@ -169,6 +234,7 @@ const Chat = () => {
         activeHistoryId={activeHistoryId}
         loadChat={loadChat}
         deleteChat={deleteChat}
+        exportChat={exportChat}
       />
 
       {/* ═══════════ MAIN CONTENT ═══════════ */}

@@ -7,6 +7,7 @@ const Sidebar = ({
   activeHistoryId,
   loadChat,
   deleteChat,
+  exportChat,
 }) => {
   const navigate = useNavigate();
 
@@ -104,7 +105,49 @@ const Sidebar = ({
                           className="fixed inset-0 z-40"
                           onClick={(e) => { e.stopPropagation(); setOpenMenuId(null); }}
                         ></div>
-                        <div className="absolute right-0 top-12 bg-[#1a1a24] border border-white/10 shadow-2xl shadow-black/80 rounded-xl p-1 z-50 w-36 animate-in fade-in zoom-in-95">
+                        <div className="absolute right-0 top-12 bg-[#1a1a24] border border-white/10 shadow-2xl shadow-black/80 rounded-xl p-1 z-50 w-44 animate-in fade-in zoom-in-95">
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              exportChat(h._id, 'txt');
+                              setOpenMenuId(null);
+                            }}
+                            className="w-full flex items-center gap-2 px-3 py-2 text-xs font-medium text-slate-300 hover:bg-white/5 hover:text-white rounded-lg transition-colors"
+                          >
+                            <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            Export as TXT
+                          </button>
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              exportChat(h._id, 'pdf');
+                              setOpenMenuId(null);
+                            }}
+                            className="w-full flex items-center gap-2 px-3 py-2 text-xs font-medium text-slate-300 hover:bg-white/5 hover:text-white rounded-lg transition-colors"
+                          >
+                            <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            Export as PDF
+                          </button>
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              exportChat(h._id, 'json');
+                              setOpenMenuId(null);
+                            }}
+                            className="w-full flex items-center gap-2 px-3 py-2 text-xs font-medium text-slate-300 hover:bg-white/5 hover:text-white rounded-lg transition-colors"
+                          >
+                            <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                            Export as JSON
+                          </button>
+                          
+                          <div className="h-px bg-white/10 my-1 mx-1"></div>
+
                           <button
                             onClick={(e) => {
                               e.stopPropagation();
