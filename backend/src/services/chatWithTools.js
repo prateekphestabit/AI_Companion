@@ -109,8 +109,12 @@ async function llmResponse(messages, userId) {
             }
             
         } catch (error) {
-            logger.error("Error creating completion:", error);
-            break;
+            let err;
+            if(error.message) err = error.message.toString();
+            else err = error.toString();
+            
+            logger.error("Error creating completion in llmResponse:", err);
+            return "I apologize, but I am currently experiencing connection issues. Please try again later.";
         }
     }
 }

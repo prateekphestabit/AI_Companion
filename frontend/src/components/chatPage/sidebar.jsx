@@ -12,6 +12,11 @@ const Sidebar = ({
 
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [openMenuId, setOpenMenuId] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const filteredHistory = historyList.filter(h => 
+    h.title?.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <>
@@ -36,7 +41,7 @@ const Sidebar = ({
         {sidebarOpen && (
           <div className="flex flex-col flex-1 overflow-hidden">
             {/* New Chat Button */}
-            <div className="p-3 shrink-0">
+            <div className="p-3 shrink-0 flex flex-col gap-3">
               <button
                 onClick={startNewChat}
                 className="w-full flex items-center gap-3 px-4 py-3 rounded-xl bg-gradient-to-r from-indigo-500/15 to-violet-600/15 border border-indigo-500/20 text-indigo-300 hover:from-indigo-500/25 hover:to-violet-600/25 hover:text-indigo-200 transition-all duration-200 text-sm font-medium"
@@ -44,14 +49,31 @@ const Sidebar = ({
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
                 New Chat
               </button>
+
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <svg className="w-4 h-4 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Search chats..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full bg-[#1a1a24] border border-white/5 rounded-lg pl-9 pr-3 py-2 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-500/50 transition-colors"
+                />
+              </div>
             </div>
 
             {/* History List */}
             <nav className="flex-1 overflow-y-auto px-3 pb-4 space-y-1">
-              {historyList.length === 0 ? (
-                <p className="text-slate-500 text-xs text-center pt-8">No conversations yet</p>
+              {filteredHistory.length === 0 ? (
+                <p className="text-slate-500 text-xs text-center pt-8">
+                  {historyList.length === 0 ? "No conversations yet" : "No chats found"}
+                </p>
               ) : (
-                historyList.slice().reverse().map((h) => (
+                filteredHistory.slice().reverse().map((h) => (
                   <div key={h._id} className="relative">
                     <button
                       onClick={() => loadChat(h._id)}

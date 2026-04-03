@@ -19,7 +19,8 @@ async function getTopic(messages) {
     const generated = completion.choices[0].message.content;
     return generated;
   } catch (error) {
-    logger.error("Error creating completion:", error);
+    logger.error("Error creating completion in getTopic:", error.message || error);
+    return "New Conversation";
   }
 }
 

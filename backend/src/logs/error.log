@@ -1289,3 +1289,77 @@ Error: write EIO
     at Console.log (/home/prateek/AI_Companion/backend/node_modules/winston/lib/winston/transports/console.js:87:23)
     at Console._write (/home/prateek/AI_Companion/backend/node_modules/winston-transport/modern.js:82:19)
     at doWrite (/home/prateek/AI_Companion/backend/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+yyyy-04-05 14:42:12 [ERROR]: Error creating completion: 500 status code (no body)
+yyyy-04-05 14:42:14 [ERROR]: Error creating completion: 500 status code (no body)
+yyyy-04-05 14:42:14 [ERROR]: Error in sendMessage User validation failed: companions.2.history.1.chatHistory.1.content: Path `content` is required., companions.2.history.1.title: Path `title` is required.
+yyyy-04-05 14:46:05 [ERROR]: Error creating completion: 400 status code (no body)
+yyyy-04-05 14:46:05 [ERROR]: Error creating completion: 400 status code (no body)
+yyyy-04-05 14:46:05 [ERROR]: Error in sendMessage User validation failed: companions.2.history.1.chatHistory.1.content: Path `content` is required., companions.2.history.1.title: Path `title` is required.
+yyyy-04-05 14:46:52 [ERROR]: Error creating completion: 400 status code (no body)
+yyyy-04-05 14:46:52 [ERROR]: Error creating completion: 400 status code (no body)
+yyyy-04-05 14:46:52 [ERROR]: Error in sendMessage User validation failed: companions.2.history.1.chatHistory.1.content: Path `content` is required., companions.2.history.1.title: Path `title` is required.
+yyyy-04-05 14:48:38 [ERROR]: Error creating completion in llmResponse:
+yyyy-04-05 14:56:05 [ERROR]: uncaughtException: Unexpected token ')'
+/home/prateek/AI_Companion/backend/src/services/chatWithTools.js:113
+            console.log(error.)
+                              ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/chat.js:4:25)
+yyyy-04-05 15:01:45 [ERROR]: uncaughtException: Unexpected token ')'
+/home/prateek/AI_Companion/backend/src/services/chatWithTools.js:112
+            if()
+               ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/chat.js:4:25)
+yyyy-04-05 15:01:48 [ERROR]: uncaughtException: Unexpected token ')'
+/home/prateek/AI_Companion/backend/src/services/chatWithTools.js:112
+            if(error.)
+                     ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/chat.js:4:25)
+yyyy-04-05 15:02:11 [ERROR]: uncaughtException: Unexpected token 'if'
+/home/prateek/AI_Companion/backend/src/services/chatWithTools.js:113
+            if(error.message)
+            ^^
+
+SyntaxError: Unexpected token 'if'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/controllers/chat.js:4:25)
