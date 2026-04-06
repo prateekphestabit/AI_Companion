@@ -13,7 +13,7 @@ const stepMeta = [
   { title: "Choose a personality", subtitle: "What defines their character?" },
   { title: "Communication style", subtitle: "How do they talk?" },
   { title: "Area of expertise", subtitle: "What are they best at?" },
-  { title: "A short bio", subtitle: "Tell us about them (optional)" },
+  { title: "A short bio", subtitle: "For what you will be using this companion?" },
   { title: "Upload an avatar", subtitle: "A face for your companion (optional)" },
 ];
 
@@ -255,7 +255,7 @@ const CreateCompanion = () => {
                 <textarea
                   id="companionDescription"
                   name="companionDescription"
-                  placeholder="Helpful, experienced, and always ready to assist..."
+                  placeholder="Diet and fitness coach, Code reviewer, Itenary planner, etc..."
                   value={formData.description}
                   maxLength={100}
                   onChange={(e) => setFormData({ ...formData, description: e.target.value })}
