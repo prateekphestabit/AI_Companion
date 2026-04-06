@@ -14,6 +14,20 @@ async function getAnalytics(req, res) {
 
     // ── Per-companion stats ──
     const companionStats = companions.map((comp) => {
+
+      comp = {...comp.toObject()}
+      if (comp.avatar){
+        let bufferData = null;
+        if (Buffer.isBuffer(comp.avatar)) {
+          bufferData = comp.avatar;
+        } else if (comp.avatar.buffer) {
+          bufferData = comp.avatar.buffer;
+        }
+        if (bufferData) {
+          comp.avatar = `data:image/png;base64,${bufferData.toString('base64')}`;
+        }
+      }
+
       const totalConversations = comp.history.length;
       let totalMessages = 0;
       let userMessages = 0;
@@ -50,7 +64,7 @@ async function getAnalytics(req, res) {
 
       const avgConversationLength =
         totalConversations > 0
-          ? Math.round((totalMessages / totalConversations) * 10) / 10
+          ? Math.round((totalMessages / totalConversations))
           : 0;
 
       // Last active

@@ -1579,3 +1579,259 @@ Error: write EIO
     at Console.log (/home/prateek/AI_Companion/backend/node_modules/winston/lib/winston/transports/console.js:87:23)
     at Console._write (/home/prateek/AI_Companion/backend/node_modules/winston-transport/modern.js:82:19)
     at doWrite (/home/prateek/AI_Companion/backend/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+yyyy-04-01 10:52:55 [ERROR]: uncaughtException: Unexpected token ')'
+/home/prateek/AI_Companion/backend/src/controllers/analytics.js:66
+      if()
+         ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/analytics.js:2:26)
+yyyy-04-01 10:55:01 [ERROR]: uncaughtException: Identifier 'comp' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/analytics.js:66
+      const comp = {...comp.toObject()}
+            ^
+
+SyntaxError: Identifier 'comp' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/analytics.js:2:26)
+yyyy-04-01 10:55:07 [ERROR]: uncaughtException: Identifier 'comp' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/analytics.js:66
+      const comp = {...comp.toObject()}
+            ^
+
+SyntaxError: Identifier 'comp' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/analytics.js:2:26)
+yyyy-04-01 10:55:18 [ERROR]: uncaughtException: Identifier 'comp' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/analytics.js:66
+      const comp = {...comp.toObject()}
+            ^
+
+SyntaxError: Identifier 'comp' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/analytics.js:2:26)
+yyyy-04-01 10:55:19 [ERROR]: uncaughtException: Identifier 'comp' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/analytics.js:66
+      const comp = {...comp.toObject()}
+            ^
+
+SyntaxError: Identifier 'comp' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/analytics.js:2:26)
+yyyy-04-01 10:55:22 [ERROR]: uncaughtException: Identifier 'comp' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/analytics.js:66
+      const comp = {...comp.toObject()}
+            ^
+
+SyntaxError: Identifier 'comp' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/analytics.js:2:26)
+yyyy-04-01 10:55:30 [ERROR]: uncaughtException: Identifier 'comp' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/analytics.js:66
+      const comp = {...comp.toObject()}
+            ^
+
+SyntaxError: Identifier 'comp' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/analytics.js:2:26)
+yyyy-04-01 10:55:45 [ERROR]: uncaughtException: Identifier 'comp' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/analytics.js:66
+      const comp = {...comp.toObject()}
+            ^
+
+SyntaxError: Identifier 'comp' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/analytics.js:2:26)
+yyyy-04-01 10:55:53 [ERROR]: uncaughtException: Identifier 'comp' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/analytics.js:66
+      const comp = {...comp.toObject()}
+            ^
+
+SyntaxError: Identifier 'comp' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/analytics.js:2:26)
+yyyy-04-01 10:56:01 [ERROR]: uncaughtException: Identifier 'comp' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/analytics.js:66
+      const comp = {...comp.toObject()}
+            ^
+
+SyntaxError: Identifier 'comp' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/analytics.js:2:26)
+yyyy-04-01 10:56:05 [ERROR]: uncaughtException: Identifier 'comp' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/analytics.js:66
+      const comp = {...comp.toObject()}
+            ^
+
+SyntaxError: Identifier 'comp' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/analytics.js:2:26)
+yyyy-04-01 10:56:07 [ERROR]: uncaughtException: Identifier 'comp' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/analytics.js:66
+      const comp = {...comp.toObject()}
+            ^
+
+SyntaxError: Identifier 'comp' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/analytics.js:2:26)
+yyyy-04-01 10:56:12 [ERROR]: uncaughtException: Identifier 'comp' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/analytics.js:66
+      const comp = {...comp.toObject()}
+            ^
+
+SyntaxError: Identifier 'comp' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/analytics.js:2:26)
+yyyy-04-01 10:56:33 [ERROR]: uncaughtException: Identifier 'comp' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/analytics.js:66
+      const comp = {...comp.toObject()}
+            ^
+
+SyntaxError: Identifier 'comp' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/analytics.js:2:26)
+yyyy-04-01 10:57:02 [ERROR]: uncaughtException: Identifier 'comp' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/analytics.js:18
+const comp = {...comp.toObject()}
+      ^
+
+SyntaxError: Identifier 'comp' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/analytics.js:2:26)
+yyyy-04-01 10:57:05 [ERROR]: uncaughtException: Identifier 'comp' has already been declared
+/home/prateek/AI_Companion/backend/src/controllers/analytics.js:18
+      const comp = {...comp.toObject()}
+            ^
+
+SyntaxError: Identifier 'comp' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/analytics.js:2:26)

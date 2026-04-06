@@ -361,14 +361,20 @@ const Analytics = () => {
                       {/* Top row: avatar + name + arrow */}
                       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 24 }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-                          <div style={{
+                          {comp.avatar ? (
+                            <img
+                              src={comp.avatar}
+                              alt={comp.name}
+                              className="w-12 h-12 rounded-xl object-cover border border-white/10 flex-shrink-0"
+                            />
+                          ) : (                          <div style={{
                             width: 48, height: 48, borderRadius: 14, background: grad,
                             display: 'flex', alignItems: 'center', justifyContent: 'center',
                             color: '#fff', fontWeight: 700, fontSize: 20,
                             boxShadow: `0 6px 20px ${color}30`,
                           }}>
                             {comp.name[0].toUpperCase()}
-                          </div>
+                          </div>)}
                           <div>
                             <h4 style={{ color: '#f1f5f9', fontWeight: 600, fontSize: 16, lineHeight: 1.2, marginBottom: 3 }}>{comp.name}</h4>
                             <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
