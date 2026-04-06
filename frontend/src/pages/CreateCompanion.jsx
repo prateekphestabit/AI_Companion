@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { checkAuth } from '../auth/auth.js';
 
-const TOTAL_STEPS = 6;
+const TOTAL_STEPS = 7;
 
 const personalities = ['friendly', 'professional', 'humorous', 'empathetic', 'supportive', 'creative'];
 const styles = ['casual', 'formal', 'enthusiastic', 'calm', 'playful'];
@@ -14,6 +14,7 @@ const stepMeta = [
   { title: "Communication style", subtitle: "How do they talk?" },
   { title: "Area of expertise", subtitle: "What are they best at?" },
   { title: "A short bio", subtitle: "For what you will be using this companion?" },
+  { title: "Advance Personality", subtitle: "Personalize your Companion's personality" },
   { title: "Upload an avatar", subtitle: "A face for your companion (optional)" },
 ];
 
@@ -43,6 +44,7 @@ const emojiMap = {
 const CreateCompanion = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
+  const [userName, setUserName] = useState('');
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     name: '',
@@ -50,6 +52,7 @@ const CreateCompanion = () => {
     communicationStyle: '',
     expertise: '',
     description: '',
+    systemPrompt: '',
     avatar: null
   });
   const [avatarPreview, setAvatarPreview] = useState(null);
@@ -59,6 +62,9 @@ const CreateCompanion = () => {
       if (!auth.success) {
         navigate('/login', { replace: true });
       } else {
+        if (auth.user) {
+          setUserName(auth.user.name);
+        }
         setLoading(false);
       }
     });
@@ -76,6 +82,20 @@ const CreateCompanion = () => {
     if (step === 3 && !formData.communicationStyle) return alert("Please select a communication style");
     if (step === 4 && !formData.expertise) return alert("Please select expertise");
     if (step === 5 && formData.description.length > 100) return alert("Description must be 100 characters or less");
+    
+    if (step === 5 && !formData.systemPrompt) {
+      const generatedPrompt = `Your name is ${formData.name}, 
+you have a ${formData.personality} personality,
+your communication style should be ${formData.communicationStyle},
+and you are an expert in ${formData.expertise}.
+always give answers in this tone and personaity.
+
+If you think of creating notes or list, always ask user for permission before creating any list or note.
+
+user's name is ${userName}.`;
+      setFormData(prev => ({ ...prev, systemPrompt: generatedPrompt }));
+    }
+
     setStep(step + 1);
   };
 
@@ -96,6 +116,9 @@ const CreateCompanion = () => {
     data.append('communicationStyle', formData.communicationStyle);
     data.append('expertise', formData.expertise);
     data.append('description', formData.description);
+    if (formData.systemPrompt) {
+      data.append('systemPrompt', formData.systemPrompt);
+    }
     if (formData.avatar) {
       data.append('avatar', formData.avatar);
     }
@@ -281,8 +304,26 @@ const CreateCompanion = () => {
             </div>
           )}
 
-          {/* Step 6: Avatar */}
+          {/* Step 6: Advance Personality */}
           {step === 6 && (
+            <div className="space-y-4">
+              <label className="block text-sm font-medium text-slate-300">
+                You can edit this system prompt to further tune your companion's behavior:
+              </label>
+              <textarea
+                value={formData.systemPrompt}
+                onChange={(e) => setFormData({ ...formData, systemPrompt: e.target.value })}
+                rows={10}
+                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/60 focus:border-indigo-500/60 transition-all duration-200 resize-none font-mono"
+              />
+              <button onClick={handleNext} className="w-full bg-gradient-to-r from-indigo-500 to-violet-600 hover:from-indigo-400 hover:to-violet-500 text-white font-semibold py-3 rounded-xl shadow-lg shadow-indigo-500/25 transition-all duration-200 hover:-translate-y-0.5">
+                Continue →
+              </button>
+            </div>
+          )}
+
+          {/* Step 7: Avatar */}
+          {step === 7 && (
             <div className="space-y-5">
               <label className="flex flex-col items-center justify-center w-full border-2 border-dashed border-white/15 rounded-2xl cursor-pointer hover:border-indigo-500/40 hover:bg-indigo-500/5 transition-all duration-200 overflow-hidden">
                 {avatarPreview ? (

@@ -60,6 +60,7 @@ const Companion = ({ companion, onDelete, onRefresh }) => {
       communicationStyle: companion.communicationStyle || '',
       expertise: companion.expertise || '',
       description: companion.description || '',
+      systemPrompt: companion.systemPrompt || '',
       avatar: null,
       removeAvatar: false
     });
@@ -86,6 +87,9 @@ const Companion = ({ companion, onDelete, onRefresh }) => {
     data.append('communicationStyle', formData.communicationStyle);
     data.append('expertise', formData.expertise);
     data.append('description', formData.description);
+    if (formData.systemPrompt) {
+      data.append('systemPrompt', formData.systemPrompt);
+    }
     if (formData.avatar) {
       data.append('avatar', formData.avatar);
     }
@@ -333,6 +337,17 @@ const Companion = ({ companion, onDelete, onRefresh }) => {
                   onChange={(e) => setFormData({...formData, description: e.target.value})}
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-white text-sm focus:border-indigo-500/60 outline-none resize-none"
                   rows={2}
+                />
+              </div>
+
+              {/* System Prompt */}
+              <div>
+                <label className="block text-xs font-medium text-slate-400 mb-1">System Prompt</label>
+                <textarea 
+                  value={formData.systemPrompt || ''} 
+                  onChange={(e) => setFormData({...formData, systemPrompt: e.target.value})}
+                  className="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-white text-[13px] font-mono focus:border-indigo-500/60 outline-none resize-y"
+                  rows={4}
                 />
               </div>
 

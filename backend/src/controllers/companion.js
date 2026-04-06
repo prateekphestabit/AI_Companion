@@ -40,7 +40,7 @@ async function getAllCompanions(req, res) {
 
 async function createCompanion(req, res) {
     try {
-        const { name, description, personality, communicationStyle, expertise } = req.body;
+        const { name, description, personality, communicationStyle, expertise, systemPrompt } = req.body;
         const userId = req.user._id;
 
         if (!name) {
@@ -52,14 +52,15 @@ async function createCompanion(req, res) {
             return res.status(404).json({ success: false, message: "User not found" });
         }
 
-        const systemPrompt = `Your name is ${name}, 
-        you have a ${personality} personality,
-        your communication style should be ${communicationStyle},
-        and you are an expert in ${expertise}.
-        always give answers in this tone and personaity.
+        const finalSystemPrompt = systemPrompt || `Your name is ${name}, 
+you have a ${personality} personality,
+your communication style should be ${communicationStyle},
+and you are an expert in ${expertise}.
+always give answers in this tone and personaity.
 
-        If you think of creating notes or list,always ask user for
-        permission before creating any list or note.`;
+If you think of creating notes or list, always ask user for permission before creating any list or note.
+
+user's name is ${user.name}.`;
 
         const newCompanion = {
             name,
@@ -67,7 +68,7 @@ async function createCompanion(req, res) {
             personality,
             communicationStyle,
             expertise,
-            systemPrompt: systemPrompt,
+            systemPrompt: finalSystemPrompt,
             avatar: req.file ? req.file.buffer : null
         };
 
@@ -130,7 +131,7 @@ async function deleteCompanion(req, res) {
 
 async function editCompanion(req, res) {
     try {
-        const { companionId, name, description, personality, communicationStyle, expertise } = req.body;
+        const { companionId, name, description, personality, communicationStyle, expertise, systemPrompt } = req.body;
         const userId = req.user._id;
 
         if (!companionId || !name) {
@@ -147,21 +148,22 @@ async function editCompanion(req, res) {
             return res.status(404).json({ success: false, message: "Companion not found" });
         }
 
-        const systemPrompt = `Your name is ${name}, 
-        you have a ${personality} personality,
-        your communication style should be ${communicationStyle},
-        and you are an expert in ${expertise}.
-        always give answers in this tone and personaity.
+        const finalSystemPrompt = systemPrompt || `Your name is ${name}, 
+you have a ${personality} personality,
+your communication style should be ${communicationStyle},
+and you are an expert in ${expertise}.
+always give answers in this tone and personaity.
 
-        If you think of creating notes or list,always ask user for
-        permission before creating any list or note.`;
+If you think of creating notes or list, always ask user for permission before creating any list or note.
+
+user's name is ${user.name}.`;
 
         companion.name = name;
         companion.description = description || "";
         companion.personality = personality;
         companion.communicationStyle = communicationStyle;
         companion.expertise = expertise;
-        companion.systemPrompt = systemPrompt;
+        companion.systemPrompt = finalSystemPrompt;
 
         if (req.file) {
             companion.avatar = req.file.buffer;
@@ -194,7 +196,7 @@ async function editCompanion(req, res) {
 
 async function duplicateCompanion(req, res) {
     try {
-        const { companionId, name, description, personality, communicationStyle, expertise } = req.body;
+        const { companionId, name, description, personality, communicationStyle, expertise, systemPrompt } = req.body;
         const userId = req.user._id;
 
         if (!companionId || !name) {
@@ -211,14 +213,15 @@ async function duplicateCompanion(req, res) {
             return res.status(404).json({ success: false, message: "Companion to duplicate not found" });
         }
 
-        const systemPrompt = `Your name is ${name}, 
-        you have a ${personality} personality,
-        your communication style should be ${communicationStyle},
-        and you are an expert in ${expertise}.
-        always give answers in this tone and personaity.
+        const finalSystemPrompt = systemPrompt || `Your name is ${name}, 
+you have a ${personality} personality,
+your communication style should be ${communicationStyle},
+and you are an expert in ${expertise}.
+always give answers in this tone and personaity.
 
-        If you think of creating notes or list,always ask user for
-        permission before creating any list or note.`;
+If you think of creating notes or list, always ask user for permission before creating any list or note.
+
+user's name is ${user.name}.`;
 
         const newCompanion = {
             name,
@@ -226,7 +229,7 @@ async function duplicateCompanion(req, res) {
             personality,
             communicationStyle,
             expertise,
-            systemPrompt: systemPrompt,
+            systemPrompt: finalSystemPrompt,
             avatar: req.file ? req.file.buffer : (req.body.removeAvatar === 'true' ? undefined : existingCompanion.avatar)
         };
 
