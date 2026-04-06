@@ -156,7 +156,7 @@ const Chat = () => {
       });
       const data = await res.json();
       if (data.success) {
-        setMessages(data.chatHistory.map(m => ({ role: m.role, text: m.content })));
+        setMessages(data.chatHistory.map(m => ({ role: m.role, text: m.content, createdAt: m.createdAt })));
         setActiveHistoryId(historyId);
       }
     } catch (err) {
@@ -177,7 +177,7 @@ const Chat = () => {
 
     const text = inputText.trim();
     setInputText('');
-    setMessages(prev => [...prev, { role: 'user', text }]);
+    setMessages(prev => [...prev, { role: 'user', text, createdAt: new Date().toISOString() }]);
     setSending(true);
 
     try {
@@ -224,6 +224,15 @@ const Chat = () => {
 
   const isNewChat = messages.length === 0;
   const firstName = userName ? userName.split(' ')[0] : '';
+
+  const formatTime = (isoString) => {
+    if (!isoString) return '';
+    const d = new Date(isoString);
+    const day = d.getDate().toString().padStart(2, '0');
+    const month = d.toLocaleString('en-US', { month: 'short' }).toUpperCase();
+    const time = d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
+    return `${day} ${month} ${time}`;
+  };
 
   return (
     <div className="flex h-screen bg-[#0a0a0f] text-slate-100 overflow-hidden">
@@ -324,9 +333,16 @@ const Chat = () => {
                           : 'text-slate-200 py-1'
                         }`}>
                         {isUser ? (
-                          <p className={`whitespace-pre-wrap leading-7 text-[15px]`}>
-                            {msg.text}
-                          </p>
+                          <div className="flex flex-col">
+                            <p className="whitespace-pre-wrap leading-7 text-[15px]">
+                              {msg.text}
+                            </p>
+                            {msg.createdAt && (
+                              <span className="text-[10px] text-white/40 self-end mt-1.5 font-medium tracking-wide">
+                                {formatTime(msg.createdAt)}
+                              </span>
+                            )}
+                          </div>
                         ) : (
                           <ReactMarkdown
                             components={{
