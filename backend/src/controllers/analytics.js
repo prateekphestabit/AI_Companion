@@ -1,22 +1,21 @@
-const User = require("../models/User");
+const Companion = require("../models/Companion");
+const History = require("../models/History");
 const logger = require("../utils/logger");
 
 async function getAnalytics(req, res) {
   try {
     const userId = req.user._id;
 
-    const user = await User.findById(userId).select("companions");
-    if (!user) {
-      return res.status(404).json({ success: false, message: "User not found" });
-    }
-
-    const companions = user.companions;
+    const companions = await Companion.find({ userId });
 
     // ── Per-companion stats ──
-    const companionStats = companions.map((comp) => {
+    const companionStats = [];
 
-      comp = {...comp.toObject()}
-      if (comp.avatar){
+    for (const rawComp of companions) {
+      const comp = { ...rawComp.toObject() };
+
+      // Convert avatar to base64
+      if (comp.avatar) {
         let bufferData = null;
         if (Buffer.isBuffer(comp.avatar)) {
           bufferData = comp.avatar;
@@ -28,7 +27,10 @@ async function getAnalytics(req, res) {
         }
       }
 
-      const totalConversations = comp.history.length;
+      // Fetch all histories for this companion with populated messages
+      const histories = await History.find({ companionId: comp._id }).populate("chatHistory");
+
+      const totalConversations = histories.length;
       let totalMessages = 0;
       let userMessages = 0;
       let assistantMessages = 0;
@@ -37,7 +39,7 @@ async function getAnalytics(req, res) {
       const dailyActivity = {};
       const weeklyActivity = {};
 
-      comp.history.forEach((h) => {
+      histories.forEach((h) => {
         const msgCount = h.chatHistory.length;
         totalMessages += msgCount;
 
@@ -69,15 +71,15 @@ async function getAnalytics(req, res) {
 
       // Last active
       let lastActive = null;
-      if (comp.history.length > 0) {
-        const dates = comp.history
+      if (histories.length > 0) {
+        const dates = histories
           .map((h) => h.updatedAt || h.createdAt)
           .filter(Boolean)
           .map((d) => new Date(d).getTime());
         if (dates.length > 0) lastActive = new Date(Math.max(...dates));
       }
 
-      return {
+      companionStats.push({
         companionId: comp._id,
         name: comp.name,
         avatar: comp.avatar,
@@ -93,8 +95,8 @@ async function getAnalytics(req, res) {
         lastActive,
         dailyActivity,
         weeklyActivity,
-      };
-    });
+      });
+    }
 
     // ── Overall stats ──
     const totalConversations = companionStats.reduce(

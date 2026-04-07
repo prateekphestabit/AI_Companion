@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 
 const messageSchema = new mongoose.Schema(
     {
+        historyId: { type: mongoose.Schema.Types.ObjectId, ref: "History", required: true },
         role: { 
             type: String, 
             enum: ["system", "user", "assistant", "agent"], 
@@ -11,4 +12,4 @@ const messageSchema = new mongoose.Schema(
     }, { timestamps: true }
 );
 
-module.exports = messageSchema;
+module.exports = mongoose.model("Message", messageSchema);

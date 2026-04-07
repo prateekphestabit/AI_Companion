@@ -1,10 +1,12 @@
-const companionSchema = require("../models/Companion.js");
 const User = require("../models/User");
+const Companion = require("../models/Companion");
 const logger = require('../utils/logger.js');
 
 async function deleteAccount(req, res){
   try {
     const userId = req.user._id;
+    // findByIdAndDelete triggers User's pre('findOneAndDelete') cascade hook
+    // which deletes all Companions → Histories → Messages
     const user = await User.findByIdAndDelete(userId);
     
     if (!user) {
@@ -52,7 +54,9 @@ async function getAccount(req, res) {
       return res.status(404).json({ success: false, message: "User not found" });
     }
 
-    const userWithBase64 = {...user.toObject()}
+    const userWithBase64 = {...user.toObject()};
+
+    // Convert user avatar
     if (userWithBase64.avatar){
       let bufferData = null;
       if (Buffer.isBuffer(userWithBase64.avatar)) {
@@ -65,21 +69,23 @@ async function getAccount(req, res) {
       }
     }
 
-    userWithBase64.companions = userWithBase64.companions.map(comp => {
-      // Mongoose stores buffers as BSON Binary objects or native Buffers depending on the driver version
-      if (comp.avatar) {
+    // Fetch companions separately (they are now in their own collection)
+    const companions = await Companion.find({ userId });
+    userWithBase64.companions = companions.map(comp => {
+      const compData = { ...comp.toObject() };
+      if (compData.avatar) {
         let bufferData = null;
-        if (Buffer.isBuffer(comp.avatar)) {
-          bufferData = comp.avatar;
-        } else if (comp.avatar.buffer) { // Handle BSON Binary
-          bufferData = comp.avatar.buffer;
+        if (Buffer.isBuffer(compData.avatar)) {
+          bufferData = compData.avatar;
+        } else if (compData.avatar.buffer) {
+          bufferData = compData.avatar.buffer;
         }
 
         if (bufferData) {
-          comp.avatar = `data:image/png;base64,${bufferData.toString('base64')}`;
+          compData.avatar = `data:image/png;base64,${bufferData.toString('base64')}`;
         }
       }
-      return comp;
+      return compData;
     });
     
     res.status(200).json({

@@ -1,23 +1,20 @@
 const User = require("../models/User");
+const Companion = require("../models/Companion");
 const logger = require("../utils/logger");
 
 async function getAllCompanions(req, res) {
     try {
         const userId = req.user._id;
-        const user = await User.findById(userId).select("companions");
 
-        if (!user) {
-            return res.status(404).json({ success: false, message: "User not found" });
-        }
+        const companions = await Companion.find({ userId });
 
-        const companionsWithBase64 = user.companions.map(comp => {
+        const companionsWithBase64 = companions.map(comp => {
             const compData = { ...comp.toObject() };
-            // Mongoose stores buffers as BSON Binary objects or native Buffers depending on the driver version
             if (compData.avatar) {
                 let bufferData = null;
                 if (Buffer.isBuffer(compData.avatar)) {
                     bufferData = compData.avatar;
-                } else if (compData.avatar.buffer) { // Handle BSON Binary
+                } else if (compData.avatar.buffer) {
                     bufferData = compData.avatar.buffer;
                 }
 
@@ -62,7 +59,8 @@ If you think of creating notes or list, always ask user for permission before cr
 
 user's name is ${user.name}.`;
 
-        const newCompanion = {
+        const companion = await Companion.create({
+            userId,
             name,
             description: description || "",
             personality,
@@ -70,13 +68,13 @@ user's name is ${user.name}.`;
             expertise,
             systemPrompt: finalSystemPrompt,
             avatar: req.file ? req.file.buffer : null
-        };
+        });
 
-        user.companions.push(newCompanion);
-
+        // Push companion ID into user's companions array
+        user.companions.push(companion._id);
         await user.save();
 
-        const createdCompanion = { ...user.companions[user.companions.length - 1].toObject() };
+        const createdCompanion = { ...companion.toObject() };
         if (createdCompanion.avatar) {
             let bufferData = null;
             if (Buffer.isBuffer(createdCompanion.avatar)) {
@@ -111,15 +109,16 @@ async function deleteCompanion(req, res) {
             return res.status(400).json({ success: false, message: "companionId is required" });
         }
 
-        const user = await User.findByIdAndUpdate(
-            userId,
-            { $pull: { companions: { _id: companionId } } },
-            { returnDocument: 'after' }
-        );
-
-        if (!user) {
-            return res.status(404).json({ success: false, message: "User not found" });
+        const companion = await Companion.findOne({ _id: companionId, userId });
+        if (!companion) {
+            return res.status(404).json({ success: false, message: "Companion not found" });
         }
+
+        // deleteOne triggers cascade hook (deletes Histories → Messages)
+        await companion.deleteOne();
+
+        // Pull companion ID from user's companions array
+        await User.findByIdAndUpdate(userId, { $pull: { companions: companionId } });
 
         res.status(200).json({ success: true, message: "Companion deleted successfully" });
 
@@ -143,7 +142,7 @@ async function editCompanion(req, res) {
             return res.status(404).json({ success: false, message: "User not found" });
         }
 
-        const companion = user.companions.id(companionId);
+        const companion = await Companion.findOne({ _id: companionId, userId });
         if (!companion) {
             return res.status(404).json({ success: false, message: "Companion not found" });
         }
@@ -171,7 +170,7 @@ user's name is ${user.name}.`;
             companion.avatar = undefined;
         }
 
-        await user.save();
+        await companion.save();
         
         let editedCompanion = { ...companion.toObject() };
         if (editedCompanion.avatar) {
@@ -208,7 +207,7 @@ async function duplicateCompanion(req, res) {
             return res.status(404).json({ success: false, message: "User not found" });
         }
 
-        const existingCompanion = user.companions.id(companionId);
+        const existingCompanion = await Companion.findOne({ _id: companionId, userId });
         if (!existingCompanion) {
             return res.status(404).json({ success: false, message: "Companion to duplicate not found" });
         }
@@ -223,7 +222,8 @@ If you think of creating notes or list, always ask user for permission before cr
 
 user's name is ${user.name}.`;
 
-        const newCompanion = {
+        const newCompanion = await Companion.create({
+            userId,
             name,
             description: description || "",
             personality,
@@ -231,12 +231,13 @@ user's name is ${user.name}.`;
             expertise,
             systemPrompt: finalSystemPrompt,
             avatar: req.file ? req.file.buffer : (req.body.removeAvatar === 'true' ? undefined : existingCompanion.avatar)
-        };
+        });
 
-        user.companions.push(newCompanion);
+        // Push new companion ID into user's companions array
+        user.companions.push(newCompanion._id);
         await user.save();
 
-        const createdCompanion = { ...user.companions[user.companions.length - 1].toObject() };
+        const createdCompanion = { ...newCompanion.toObject() };
         if (createdCompanion.avatar) {
             let bufferData = null;
             if (Buffer.isBuffer(createdCompanion.avatar)) {

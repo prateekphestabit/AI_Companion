@@ -1835,3 +1835,40 @@ SyntaxError: Identifier 'comp' has already been declared
     at Module.require (node:internal/modules/cjs/loader:1504:12)
     at require (node:internal/modules/helpers:152:16)
     at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/routes/analytics.js:2:26)
+yyyy-04-01 21:41:28 [ERROR]: Error creating completion in llmResponse:
+yyyy-04-02 09:53:14 [ERROR]: uncaughtException: Invalid schema configuration: `model` is not a valid type within the array `chatHistory`.See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+TypeError: Invalid schema configuration: `model` is not a valid type within the array `chatHistory`.See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+    at Schema.interpretAsType (/home/prateek/AI_Companion/backend/node_modules/mongoose/lib/schema.js:1741:15)
+    at Schema.path (/home/prateek/AI_Companion/backend/node_modules/mongoose/lib/schema.js:1341:27)
+    at Schema.add (/home/prateek/AI_Companion/backend/node_modules/mongoose/lib/schema.js:847:12)
+    at new Schema (/home/prateek/AI_Companion/backend/node_modules/mongoose/lib/schema.js:147:10)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/models/History.js:4:23)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+yyyy-04-02 09:53:30 [ERROR]: uncaughtException: Invalid schema configuration: `model` is not a valid type within the array `history`.See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+TypeError: Invalid schema configuration: `model` is not a valid type within the array `history`.See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+    at Schema.interpretAsType (/home/prateek/AI_Companion/backend/node_modules/mongoose/lib/schema.js:1741:15)
+    at Schema.path (/home/prateek/AI_Companion/backend/node_modules/mongoose/lib/schema.js:1341:27)
+    at Schema.add (/home/prateek/AI_Companion/backend/node_modules/mongoose/lib/schema.js:847:12)
+    at new Schema (/home/prateek/AI_Companion/backend/node_modules/mongoose/lib/schema.js:147:10)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/models/Companion.js:4:25)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+yyyy-04-02 09:54:12 [ERROR]: uncaughtException: Invalid schema configuration: `model` is not a valid type within the array `companions`.See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+TypeError: Invalid schema configuration: `model` is not a valid type within the array `companions`.See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+    at Schema.interpretAsType (/home/prateek/AI_Companion/backend/node_modules/mongoose/lib/schema.js:1741:15)
+    at Schema.path (/home/prateek/AI_Companion/backend/node_modules/mongoose/lib/schema.js:1341:27)
+    at Schema.add (/home/prateek/AI_Companion/backend/node_modules/mongoose/lib/schema.js:847:12)
+    at new Schema (/home/prateek/AI_Companion/backend/node_modules/mongoose/lib/schema.js:147:10)
+    at Object.<anonymous> (/home/prateek/AI_Companion/backend/src/models/User.js:6:20)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)

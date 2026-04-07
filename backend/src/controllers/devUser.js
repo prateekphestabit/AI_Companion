@@ -1,4 +1,7 @@
 const User = require('../models/User');
+const Companion = require('../models/Companion');
+const History = require('../models/History');
+const Message = require('../models/Message');
 const logger = require('../utils/logger');
 const bcrypt = require("bcryptjs");
 
@@ -6,11 +9,18 @@ const bcrypt = require("bcryptjs");
 async function getUserWithId(req, res) {
     try {
         const { id } = req.params;
-        const user = await User.findById(id).select('-password -companions.avatar');
+        const user = await User.findById(id).select('-password');
         if (!user) {
             return res.status(404).json({ success: false, message: "User not found" });
         }
-        res.status(200).json({ success: true, user });
+
+        const userObj = user.toObject();
+
+        // Fetch companions separately (without avatar for lightweight response)
+        const companions = await Companion.find({ userId: id }).select('-avatar');
+        userObj.companions = companions;
+
+        res.status(200).json({ success: true, user: userObj });
     } catch (error) {
         logger.error("Error in getUserWithId", req.params.id,  error);
         res.status(500).json({ success: false, message: "Server error", error: error.message });
@@ -21,6 +31,7 @@ async function getUserWithId(req, res) {
 async function deleteUserWithId(req, res) {
     try {
         const { id } = req.params;
+        // findByIdAndDelete triggers User's pre('findOneAndDelete') cascade hook
         const user = await User.findByIdAndDelete(id);
         if (!user) {
             return res.status(404).json({ success: false, message: "User not found" });
@@ -35,7 +46,7 @@ async function deleteUserWithId(req, res) {
 // get all users
 async function getAllUsers(req, res) {
     try {
-        const users = await User.find().select('-password -avatar -companions.avatar');
+        const users = await User.find().select('-password -avatar');
         res.status(200).json(users);
     } catch (error) {
         logger.error("Error in getAllUsers", error);
@@ -46,6 +57,10 @@ async function getAllUsers(req, res) {
 // delete all users
 async function deleteAllUser(req, res) {
     try {
+        // deleteMany doesn't trigger per-document hooks, so clean up all collections manually
+        await Message.deleteMany({});
+        await History.deleteMany({});
+        await Companion.deleteMany({});
         const result = await User.deleteMany({});
         res.status(200).json({
             success: true,
@@ -132,22 +147,24 @@ async function createNewCompanion(req, res) {
             return res.status(404).json({ success: false, message: "User not found" });
         }
 
-        const newCompanion = {
+        const companion = await Companion.create({
+            userId,
             name,
             description,
             personality,
             communicationStyle,
             expertise,
             avatar: req.file ? req.file.buffer : null
-        };
+        });
 
-        user.companions.push(newCompanion);
+        // Push companion ID into user's companions array
+        user.companions.push(companion._id);
         await user.save();
 
         res.status(201).json({ 
             success: true, 
             message: "Companion created and added to user", 
-            companion: user.companions[user.companions.length - 1] 
+            companion 
         });
 
     } catch (error) {
@@ -164,15 +181,16 @@ async function deleteCompanion(req, res) {
             return res.status(400).json({ success: false, message: "userId and companionId are required" });
         }
 
-        const user = await User.findByIdAndUpdate(
-            userId,
-            { $pull: { companions: { _id: companionId } } },
-            { returnDocument: 'after' }
-        );
-
-        if (!user) {
-            return res.status(404).json({ success: false, message: "User not found" });
+        const companion = await Companion.findOne({ _id: companionId, userId });
+        if (!companion) {
+            return res.status(404).json({ success: false, message: "Companion not found" });
         }
+
+        // deleteOne triggers cascade hook (deletes Histories → Messages)
+        await companion.deleteOne();
+
+        // Pull companion ID from user's companions array
+        await User.findByIdAndUpdate(userId, { $pull: { companions: companionId } });
 
         res.status(200).json({ success: true, message: "Companion deleted successfully" });
 
