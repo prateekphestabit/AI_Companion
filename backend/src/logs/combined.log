@@ -7198,3 +7198,22 @@ yyyy-04-02 10:34:04 [INFO]: Analytics Router mounted at: /analytics
 yyyy-04-02 10:34:04 [INFO]: Routes Mounted... 
 
 yyyy-04-02 10:34:04 [INFO]: Server is running at http://localhost:4000
+yyyy-04-02 10:59:02 [INFO]: Loading App... 
+
+yyyy-04-02 10:59:02 [INFO]: MongoDB connected 
+
+yyyy-04-02 10:59:02 [INFO]: Loading Middlewares...
+yyyy-04-02 10:59:02 [INFO]: All Middlewares Loaded...
+
+yyyy-04-02 10:59:02 [INFO]: Mounting Routes...
+yyyy-04-02 10:59:02 [INFO]: Dev Router mounted at: /dev
+yyyy-04-02 10:59:02 [INFO]: Auth Router mounted at: /auth
+yyyy-04-02 10:59:02 [INFO]: Account Router mounted at: /account
+yyyy-04-02 10:59:02 [INFO]: Companion Router mounted at: /companion
+yyyy-04-02 10:59:02 [INFO]: Chat Router mounted at: /chat
+yyyy-04-02 10:59:02 [INFO]: List Router mounted at: /list
+yyyy-04-02 10:59:02 [INFO]: Note Router mounted at: /note
+yyyy-04-02 10:59:02 [INFO]: Analytics Router mounted at: /analytics
+yyyy-04-02 10:59:02 [INFO]: Routes Mounted... 
+
+yyyy-04-02 10:59:02 [INFO]: Server is running at http://localhost:4000

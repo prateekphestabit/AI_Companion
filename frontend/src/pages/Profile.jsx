@@ -125,17 +125,17 @@ const Profile = () => {
 
         {/* Account Info Card (TBD) */}
         <div className="flex items-center gap-4 mb-10">
-          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center text-white text-2xl font-bold border-2 border-[#0a0a0f] shadow-lg shadow-indigo-500/20 overflow-hidden shrink-0">
+          <div className="w-24 h-24 rounded-full bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center text-white text-5xl font-bold border-2 border-[#0a0a0f] shadow-lg shadow-indigo-500/20 overflow-hidden shrink-0">
             {user && user.avatar ? (
               <img src={user.avatar} alt="Profile" className="w-full h-full object-cover" />
             ) : (
-              <span className="text-white font-semibold text-3xl">
+              <span className="text-white font-semibold text-5xl">
                 {user && user.name ? user.name.charAt(0).toUpperCase() : '?'}
               </span>
             )}
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-white tracking-tight">My Account</h1>
+            <h1 className="text-2xl font-bold text-white tracking-tight">{user && user.name ? `${user.name}'s Account` : 'My Account'}</h1>
             <p className="text-slate-400 text-sm">Manage your profile and active sessions</p>
           </div>
         </div>

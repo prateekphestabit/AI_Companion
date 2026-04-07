@@ -172,15 +172,15 @@ const Companion = ({ companion, onDelete, onRefresh }) => {
           <img
             src={companion.avatar}
             alt={companion.name}
-            className="w-12 h-12 rounded-xl object-cover border border-white/10 flex-shrink-0"
+            className="w-16 h-16 rounded-xl object-cover border border-white/10 flex-shrink-0"
           />
         ) : (
-          <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${gradient} flex items-center justify-center text-white font-bold text-lg shadow-lg flex-shrink-0`}>
+          <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${gradient} flex items-center justify-center text-white font-bold text-2xl shadow-lg flex-shrink-0`}>
             {avatarLetter}
           </div>
         )}
         <div className="min-w-0">
-          <h2 className="text-white font-semibold text-base truncate">{companion.name}</h2>
+          <h2 className="text-white font-semibold text-lg truncate">{companion.name}</h2>
           <span className={`inline-flex items-center text-xs font-medium px-2 py-0.5 rounded-full border ${personalityColor} capitalize`}>
             {companion.personality}
           </span>
@@ -189,7 +189,7 @@ const Companion = ({ companion, onDelete, onRefresh }) => {
 
       {/* Description */}
       {companion.description && (
-        <p className="text-slate-400 text-xs leading-relaxed line-clamp-2">{companion.description}</p>
+        <p className="text-slate-400 text-sm leading-relaxed line-clamp-2">{companion.description}</p>
       )}
 
       {/* Stats row */}
@@ -280,7 +280,7 @@ const Companion = ({ companion, onDelete, onRefresh }) => {
           onClick={(e) => { e.stopPropagation(); setIsModalOpen(false); }}
         >
           <div 
-            className="bg-[#0f0f16] border border-white/10 rounded-2xl w-full max-w-md p-6 shadow-2xl overflow-y-auto max-h-[90vh]"
+            className="bg-[#0f0f16] border border-white/10 rounded-2xl w-full max-w-2xl p-8 shadow-2xl overflow-y-auto max-h-[90vh]"
             onClick={(e) => e.stopPropagation()}
           >
             <h3 className="text-xl font-bold text-white mb-6">
@@ -356,9 +356,9 @@ const Companion = ({ companion, onDelete, onRefresh }) => {
                 <label className="block text-xs font-medium text-slate-400 mb-1">Avatar (optional)</label>
                 <div className="flex items-center gap-4 mt-2">
                   {avatarPreview ? (
-                    <img src={avatarPreview} alt="Preview" className="w-12 h-12 rounded-xl object-cover border border-white/10 shadow-lg shadow-indigo-500/10" />
+                    <img src={avatarPreview} alt="Preview" className="w-16 h-16 rounded-xl object-cover border border-white/10 shadow-lg shadow-indigo-500/10" />
                   ) : (
-                    <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-500 shadow-inner">
+                    <div className="w-16 h-16 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-500 shadow-inner">
                       ?
                     </div>
                   )}
