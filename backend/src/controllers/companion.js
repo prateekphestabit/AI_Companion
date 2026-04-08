@@ -1,7 +1,7 @@
 const User = require("../models/User");
 const Companion = require("../models/Companion");
 const logger = require("../utils/logger");
-
+const { delete_all_memories } = require("../services/tools");
 async function getAllCompanions(req, res) {
     try {
         const userId = req.user._id;
@@ -119,6 +119,10 @@ async function deleteCompanion(req, res) {
 
         // Pull companion ID from user's companions array
         await User.findByIdAndUpdate(userId, { $pull: { companions: companionId } });
+
+        //delete companions memoary from mem0
+        const delRes = await delete_all_memories(userId, companionId);
+        logger.info(delRes);
 
         res.status(200).json({ success: true, message: "Companion deleted successfully" });
 

@@ -68,7 +68,8 @@ async function sendMessage(req, res) {
       return res.status(404).json({ success: false, message: "Companion not found" });
     }
 
-    const messages = [{"role": "system", "content": companion.systemPrompt}];
+    const systemInstruction = companion.systemPrompt + "\n\nCRITICAL CONTEXT: You have a long-term memory system. If the user asks about their name, preferences, or past information that isn't in this immediate chat window, you MUST proactively call the 'search_memories' tool to retrieve it before answering. Do not say you don't know without searching first.";
+    const messages = [{ "role": "system", "content": systemInstruction }];
 
     let aiReply;
     let activeHistoryId = historyId;
@@ -76,7 +77,7 @@ async function sendMessage(req, res) {
     if (!historyId) {
       // ── New conversation ──
       messages.push({ "role": "user", "content": message.trim() });
-      aiReply = await llmResponse(messages, userId);
+      aiReply = await llmResponse(messages, userId, companionId);
 
       const contentForTitle = `
         Generate a short title (max 5 words).
@@ -110,7 +111,7 @@ async function sendMessage(req, res) {
       await companion.save();
 
       activeHistoryId = history._id;
-    } 
+    }
     else {
       // ── Existing conversation ──
       const numberOfMessagesInMemory = 100;
@@ -134,8 +135,8 @@ async function sendMessage(req, res) {
         role: 'user',
         content: message.trim()
       });
-      
-      aiReply = await llmResponse(messages, userId);
+
+      aiReply = await llmResponse(messages, userId, companionId);
 
       // Create Message docs
       const userMsg = await Message.create({ historyId, role: "user", content: message.trim() });

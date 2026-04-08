@@ -1,0 +1,137 @@
+const tools = [
+  {
+    type: "function",
+    function: {
+      name: "create_list",
+      description: `Creates a To-Do list for the user. 
+        Use this to break down a topic into actionable steps.
+        Call this multiple times if tasks can be grouped (e.g. Morning and Evening routines = 2 separate lists).
+        Each task should be a short, actionable step.
+        or user can ask you to create lists only`,
+      parameters: {
+        type: "object",
+        properties: {
+          title: {
+            type: "string",
+            description: "A specific title for this group of tasks e.g. 'Morning Skin Care Routine'"
+          },
+          tasks: {
+            type: "array",
+            items: { type: "string" },
+            description: "Short actionable steps e.g. ['Apply Cleanser', 'Apply Toner']"
+          }
+        },
+        required: ["title", "tasks"]
+      }
+    }
+  },
+  {
+    type: "function",
+    function: {
+      name: "create_Note",
+      description: `Creates a Note for the user.
+        Use this to explain the WHY behind the tasks in the to-do lists.
+        For example, explain why each step is important, what order to follow, and any tips.
+        or user can ask you to create notes only`,
+      parameters: {
+        type: "object",
+        properties: {
+          title: {
+            type: "string",
+            description: "Title of the note e.g. 'Why This Skin Care Routine Works'"
+          },
+          content: {
+            type: "string",
+            description: "A detailed explanation of the topic. Explain the reasoning, benefits, and tips."
+          }
+        },
+        required: ["title", "content"]
+      }
+    }
+  },
+  {
+    type: "function",
+    function: {
+      name: "add_memory",
+      description: `Store a new fact, preference, or insight about the user into long-term memory. Call this whenever the user shares something worth remembering across sessions (e.g. name, preferences, goals, habits, personal facts).`,
+      parameters: {
+        type: "object",
+        properties: {
+          text:     { type: "string", description: "Plain sentence summarizing what to store. e.g. 'User loves horror movies'" },
+        },
+        required: ["text"], // pass user id and companion id manually
+      }
+    }
+  },
+  {
+    type: "function",
+    function: {
+      name: "search_memories",
+      description: `Search long-term memory for facts relevant to the current conversation.
+Call this at the start of every response to recall what you know about this user.
+The results contain an "id" field — this is the memory_id you must use if you need to update or delete a memory.`,
+      parameters: {
+        type: "object",
+        properties: {
+          query:    { type: "string", description: "Natural language description of what to find. e.g. 'user food preferences'" },
+          limit:    { type: "integer", description: "Max results to return. Default 5." },
+        },
+        required: ["query"], // pass user id and companion id manually
+      },
+    },
+  },
+  {
+    type: "function",
+    function: {
+      name: "delete_all_memories",
+      description: `Delete ALL memories for this user + companion pair permanently.
+Only call this when the user explicitly asks to reset or clear everything you remember about them.`,
+      parameters: {
+        type: "object",
+        properties: {
+          confirm:  { type: "boolean", description: "Pass true to confirm deletion of all memories." },
+        },
+        required: ["confirm"],
+
+      },
+    },
+  },
+  {
+    type: "function",
+    function: {
+      name: "update_memory",
+      description: `Overwrite an existing memory with new text.
+IMPORTANT: You must call search_memories first to get the memory's "id" field.
+Then pass that "id" as memory_id here.
+Use this when the user corrects or updates something you already know about them
+(e.g. they changed their preference or corrected a fact).`,
+      parameters: {
+        type: "object",
+        properties: {
+          memory_id: { type: "string", description: "The 'id' field returned from search_memories. Required." },
+          text:      { type: "string", description: "The updated text to replace the old memory." },
+        },
+        required: ["memory_id", "text"],
+      },
+    },
+  },
+    {
+    type: "function",
+    function: {
+      name: "delete_memory",
+      description: `Delete a single memory permanently.
+IMPORTANT: You must call search_memories first to get the memory's "id" field.
+Then pass that "id" as memory_id here.
+Only call this when the user explicitly asks you to forget something specific.`,
+      parameters: {
+        type: "object",
+        properties: {
+          memory_id: { type: "string", description: "The 'id' field returned from search_memories. Required." },
+        },
+        required: ["memory_id"],
+      },
+    },
+  },
+];
+
+module.exports = tools;
