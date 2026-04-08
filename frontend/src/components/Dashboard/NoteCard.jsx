@@ -38,7 +38,10 @@ const NoteCard = ({ note, onDelete }) => {
       )}
 
       {/* Actions */}
-      <div className="flex items-center justify-end pt-3 border-t border-white/5 mt-auto">
+      <div className="flex items-center justify-between pt-3 border-t border-white/5 mt-auto">
+        <span className="text-[11px] text-slate-600">
+          {new Date(note.updatedAt || note.createdAt).toLocaleDateString()}
+        </span>
         <button
           onClick={(e) => {
             e.stopPropagation();
