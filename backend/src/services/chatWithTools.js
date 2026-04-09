@@ -63,6 +63,9 @@ async function llmResponse(messages, userId, compId) {
             else if (toolName === "getAllNotes"){
               result = await toolHandlers.getAllNotes(userId);
             }
+            else if (toolName === "updateNote"){
+              result = await toolHandlers.updateNote(userId, args.note_id, args.title, args.content);
+            }
             else if (toolName === "deleteNote"){
               result = await toolHandlers.deleteNote(userId, args.note_id);
             } 

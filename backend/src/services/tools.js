@@ -4,26 +4,41 @@ const {createNoteService} = require("../services/NoteServie");
 const User = require("../models/User");
 const logger = require("../utils/logger");
 
-// ================ MVP tools ==> add try catch to each tool
+// ================ MVP tools
 async function create_list(title, tasks, userId){
+  try {
     await createListService(userId, title, tasks);
     return `${title} List created successfully`;
+  } catch (error) {
+    logger.error("Error in create_list", error);
+    return { success: false, message: "Server error", error: error.message };
+  }
 }
 
 //================ List Tools 
 async function getAllLists(userId) {
-  const user = await User.findById(userId).select("lists");
-  if (!user) { return { success: false, message: "User not found" } }
-  return { success: true, lists: user.lists};
+  try {
+    const user = await User.findById(userId).select("lists");
+    if (!user) { return { success: false, message: "User not found" } }
+    return { success: true, lists: user.lists};
+  } catch (error) {
+    logger.error("Error in getAllLists", error);
+    return { success: false, message: "Server error", error: error.message };
+  }
 }
 
 async function deleteList(userId, listId){
-  const user = await User.findByIdAndUpdate( userId,
-    { $pull: { lists: { _id: listId } } },
-    { returnDocument: "after" }
-  );
-  if(!user) return { success: false, message: "User or list was not found" };
-  return { success: true, message: "List deleted successfully" };
+  try {
+    const user = await User.findByIdAndUpdate( userId,
+      { $pull: { lists: { _id: listId } } },
+      { returnDocument: "after" }
+    );
+    if(!user) return { success: false, message: "User or list was not found" };
+    return { success: true, message: "List deleted successfully" };
+  } catch (error) {
+    logger.error("Error in deleteList", error);
+    return { success: false, message: "Server error", error: error.message };
+  }
 }
 
 async function deleteListTask(userId, listId, taskId) {
@@ -80,68 +95,134 @@ async function updateListTask(userId, listId, taskId, updatedTask){
 }
   
 async function getAllNotes(userId) {
-  const user = await User.findById(userId).select("notes");
-  if (!user) { return { success: false, message: "User not found" } }
-  return { success: true, notes: user.notes};
+  try {
+    const user = await User.findById(userId).select("notes");
+    if (!user) { return { success: false, message: "User not found" } }
+    return { success: true, notes: user.notes};
+  } catch (error) {
+    logger.error("Error in getAllNotes", error);
+    return { success: false, message: "Server error", error: error.message };
+  }
 }
 
+// ============= Note Tools 
 async function deleteNote(userId, noteId){
-  const user = await User.findByIdAndUpdate( userId,
-    { $pull: { notes: { _id: noteId } } },
-    { returnDocument: "after" }
-  );
-  if(!user) return { success: false, message: "User or note was not found" };
-  return { success: true, message: "Note deleted successfully" };
+  try {
+    const user = await User.findByIdAndUpdate( userId,
+      { $pull: { notes: { _id: noteId } } },
+      { returnDocument: "after" }
+    );
+    if(!user) return { success: false, message: "User or note was not found" };
+    return { success: true, message: "Note deleted successfully" };
+  } catch (error) {
+    logger.error("Error in deleteNote", error);
+    return { success: false, message: "Server error", error: error.message };
+  }
 }
 
 async function create_Note(title, content, userId){
+  try {
     await createNoteService(userId, title, content);
     return `${title} Note created successfully`;
+  } catch (error) {
+    logger.error("Error in create_Note", error);
+    return { success: false, message: "Server error", error: error.message };
+  }
 }
+
+async function updateNote(userId, noteId, title, content) {
+  try {
+    const user = await User.findById(userId);
+    if (!user) return { success: false, message: "User not found" };
+
+    const note = user.notes.id(noteId);
+    if (!note) return { success: false, message: "Note not found" };
+
+    if (title && title.trim()) note.title = title.trim();
+    if (content !== undefined) note.content = content;
+    await user.save();
+
+    return { success: true, message: "Note updated", note };
+  } catch (error) {
+    logger.error("Error in updateNote", error);
+    return { success: false, message: "Server error", error: error.message };
+  }
+}
+
+
+
+
+
+
 
 // ====================== mem0 MCP Tools 
 async function add_memory(text, userId, compId) {
-  console.log(`adding ${text} to the memoary`);
-  return callMcpTool('add_memory', {
-    text,   
-    user_id: compId,
-    // agent_id: compId, 
-    async_mode: false,
-  });
+  try {
+    console.log(`adding ${text} to the memoary`);
+    return await callMcpTool('add_memory', {
+      text,   
+      user_id: compId,
+      // agent_id: compId, 
+      async_mode: false,
+    });
+  } catch (error) {
+    logger.error("Error in add_memory", error);
+    return { success: false, message: "Server error", error: error.message };
+  }
 }
 
 async function search_memories(query, userId, compId, limit = 5) {
-  return callMcpTool('search_memories', {
-    query,
-    limit,
-    filters: { 
-      AND: [
-        {
-          user_id: compId
-        },
-        // {
-        //   agent_id: compId 
-        // }
-      ]
-    },
-    keyword_search: false,
-    async_mode: false,
-  });
+  try {
+    return await callMcpTool('search_memories', {
+      query,
+      limit,
+      filters: { 
+        AND: [
+          {
+            user_id: compId
+          },
+          // {
+          //   agent_id: compId 
+          // }
+        ]
+      },
+      keyword_search: false,
+      async_mode: false,
+    });
+  } catch (error) {
+    logger.error("Error in search_memories", error);
+    return { success: false, message: "Server error", error: error.message };
+  }
 }
 
 async function update_memory(memory_id, text) {
-  return callMcpTool('update_memory', { memory_id, text });
+  try {
+    return await callMcpTool('update_memory', { memory_id, text });
+  } catch (error) {
+    logger.error("Error in update_memory", error);
+    return { success: false, message: "Server error", error: error.message };
+  }
 }
 
 async function delete_memory(memory_id) {
-  return callMcpTool('delete_memory', { memory_id });
+  try {
+    return await callMcpTool('delete_memory', { memory_id });
+  } catch (error) {
+    logger.error("Error in delete_memory", error);
+    return { success: false, message: "Server error", error: error.message };
+  }
 }
 
 async function delete_all_memories(userId, compId) {
-  return callMcpTool('delete_all_memories', { 
-    user_id: compId,
-    // agent_id: compId 
-  });
+  try {
+    return await callMcpTool('delete_all_memories', { 
+      user_id: compId,
+      // agent_id: compId 
+    });
+  } catch (error) {
+    logger.error("Error in delete_all_memories", error);
+    return { success: false, message: "Server error", error: error.message };
+  }
 }
 
 module.exports = {
@@ -154,6 +235,7 @@ module.exports = {
   getAllNotes,
   deleteNote,
   create_Note,
+  updateNote,
   add_memory,
   search_memories,
   update_memory,

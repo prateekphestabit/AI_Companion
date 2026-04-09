@@ -177,6 +177,31 @@ const tools = [
   {
     type: "function",
     function: {
+      name: "updateNote",
+      description: `Updates an existing Note. IMPORTANT: Before calling this tool, you must first call getAllNotes to get the correct note_id. You can optionally provide a new title and/or new content.`,
+      parameters: {
+        type: "object",
+        properties: {
+          note_id: {
+            type: "string",
+            description: "The _id of the note to update. Must be retrieved by calling getAllNotes first."
+          },
+          title: {
+            type: "string",
+            description: "Optional. The new title for the note."
+          },
+          content: {
+            type: "string",
+            description: "Optional. The new content for the note."
+          }
+        },
+        required: ["note_id", "title", "content"]
+      }
+    }
+  },
+  {
+    type: "function",
+    function: {
       name: "add_memory",
       description: `Store a new fact, preference, or insight about the user into long-term memory. Call this whenever the user shares something worth remembering across sessions (e.g. name, preferences, goals, habits, personal facts).`,
       parameters: {
