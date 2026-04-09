@@ -28,6 +28,35 @@ const tools = [
   {
     type: "function",
     function: {
+      name: "getAllLists",
+      description: `Retrieves all To-Do lists for the user. Call this to view the user's lists, interests, what user is currently doing or to find the list_id of a specific list before deleting it.`,
+      parameters: {
+        type: "object",
+        properties: {},
+        required: []
+      }
+    }
+  },
+  {
+    type: "function",
+    function: {
+      name: "deleteList",
+      description: `Deletes a specific To-Do list. IMPORTANT: Before calling this tool, you must first call getAllLists to get the correct list_id from the context. Do not guess the list_id.`,
+      parameters: {
+        type: "object",
+        properties: {
+          list_id: {
+            type: "string",
+            description: "The _id of the list to delete. Must be retrieved by calling getAllLists first."
+          }
+        },
+        required: ["list_id"]
+      }
+    }
+  },
+  {
+    type: "function",
+    function: {
       name: "create_Note",
       description: `Creates a Note for the user.
         Use this to explain the WHY behind the tasks in the to-do lists.
@@ -46,6 +75,35 @@ const tools = [
           }
         },
         required: ["title", "content"]
+      }
+    }
+  },
+  {
+    type: "function",
+    function: {
+      name: "getAllNotes",
+      description: `Retrieves all Notes for the user. Call this to view the user's notes, interests, what user is currently doing or to find the note_id of a specific note before deleting it.`,
+      parameters: {
+        type: "object",
+        properties: {},
+        required: []
+      }
+    }
+  },
+  {
+    type: "function",
+    function: {
+      name: "deleteNote",
+      description: `Deletes a specific Note. IMPORTANT: Before calling this tool, you must first call getAllNotes to get the correct note_id from the context. Do not guess the note_id.`,
+      parameters: {
+        type: "object",
+        properties: {
+          note_id: {
+            type: "string",
+            description: "The _id of the note to delete. Must be retrieved by calling getAllNotes first."
+          }
+        },
+        required: ["note_id"]
       }
     }
   },

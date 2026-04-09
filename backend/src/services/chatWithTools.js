@@ -24,6 +24,7 @@ async function llmResponse(messages, userId, compId) {
 
       const reply = completion.choices[0].message;
       if(!reply.tool_calls || reply.tool_calls.length === 0){
+        logger.info("query was answered by the companion");
         return reply.content;
       } 
       
@@ -41,9 +42,20 @@ async function llmResponse(messages, userId, compId) {
             if (toolName === "create_list"){
               result = await toolHandlers.create_list(args.title, args.tasks, userId);
             } 
+            else if (toolName === "getAllLists"){
+              result = await toolHandlers.getAllLists(userId);
+            }
+            else if (toolName === "deleteList"){
+              result = await toolHandlers.deleteList(userId, args.list_id);
+            }
             else if (toolName === "create_Note"){
               result = await toolHandlers.create_Note(args.title, args.content, userId);
-
+            } 
+            else if (toolName === "getAllNotes"){
+              result = await toolHandlers.getAllNotes(userId);
+            }
+            else if (toolName === "deleteNote"){
+              result = await toolHandlers.deleteNote(userId, args.note_id);
             } 
             else if (toolName === "add_memory"){
               result = await toolHandlers.add_memory(args.text, userId, compId);

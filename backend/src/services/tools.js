@@ -1,11 +1,42 @@
 const { callMcpTool } = require("../loaders/mem0");
 const {createListService} = require("../services/ListService");
 const {createNoteService} = require("../services/NoteServie");
+const User = require("../models/User");
 
 // ================ MVP tools
 async function create_list(title, tasks, userId){
     await createListService(userId, title, tasks);
     return `${title} List created successfully`;
+}
+
+async function getAllLists(userId) {
+  const user = await User.findById(userId).select("lists");
+  if (!user) { return { success: false, message: "User not found" } }
+  return { success: true, lists: user.lists};
+}
+
+async function deleteList(userId, listId){
+  const user = await User.findByIdAndUpdate( userId,
+    { $pull: { lists: { _id: listId } } },
+    { returnDocument: "after" }
+  );
+  if(!user) return { success: false, message: "User or list was not found" };
+  return { success: true, message: "List deleted successfully" };
+}
+
+async function getAllNotes(userId) {
+  const user = await User.findById(userId).select("notes");
+  if (!user) { return { success: false, message: "User not found" } }
+  return { success: true, notes: user.notes};
+}
+
+async function deleteNote(userId, noteId){
+  const user = await User.findByIdAndUpdate( userId,
+    { $pull: { notes: { _id: noteId } } },
+    { returnDocument: "after" }
+  );
+  if(!user) return { success: false, message: "User or note was not found" };
+  return { success: true, message: "Note deleted successfully" };
 }
 
 async function create_Note(title, content, userId){
@@ -60,6 +91,10 @@ async function delete_all_memories(userId, compId) {
 
 module.exports = {
   create_list,
+  getAllLists,
+  deleteList,
+  getAllNotes,
+  deleteNote,
   create_Note,
   add_memory,
   search_memories,

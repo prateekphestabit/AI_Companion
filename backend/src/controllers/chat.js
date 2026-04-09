@@ -2,7 +2,7 @@ const Companion = require("../models/Companion");
 const History = require("../models/History");
 const Message = require("../models/Message");
 const logger = require("../utils/logger");
-const { getTopic } = require("../services/chat");
+const { getTopic } = require("../services/chatTitle");
 const { llmResponse } = require("../services/chatWithTools");
 
 async function getHistory(req, res) {
@@ -68,7 +68,9 @@ async function sendMessage(req, res) {
       return res.status(404).json({ success: false, message: "Companion not found" });
     }
 
-    const systemInstruction = companion.systemPrompt + "\n\nCRITICAL CONTEXT: You have a long-term memory system. If the user asks about their name, preferences, or past information that isn't in this immediate chat window, you MUST proactively call the 'search_memories' tool to retrieve it before answering. Do not say you don't know without searching first.";
+    const systemInstruction = companion.systemPrompt + 
+    "\n\nCRITICAL CONTEXT: before answering any user query, ALWAYS CALL THESE THREE TOOLS search_memories, getAllLists and getAllNotes";
+    
     const messages = [{ "role": "system", "content": systemInstruction }];
 
     let aiReply;
