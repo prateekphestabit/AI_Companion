@@ -48,6 +48,15 @@ async function llmResponse(messages, userId, compId) {
             else if (toolName === "deleteList"){
               result = await toolHandlers.deleteList(userId, args.list_id);
             }
+            else if (toolName === "deleteListTask"){
+              result = await toolHandlers.deleteListTask(userId, args.list_id, args.task_id);
+            }
+            else if (toolName === "addTask"){
+              result = await toolHandlers.addTask(userId, args.list_id, args.task);
+            }
+            else if (toolName === "updateListTask"){
+              result = await toolHandlers.updateListTask(userId, args.list_id, args.task_id, args.updatedTask);
+            }
             else if (toolName === "create_Note"){
               result = await toolHandlers.create_Note(args.title, args.content, userId);
             } 

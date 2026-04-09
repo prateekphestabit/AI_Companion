@@ -57,6 +57,73 @@ const tools = [
   {
     type: "function",
     function: {
+      name: "addTask",
+      description: `Adds a new task to an existing To-Do list. IMPORTANT: You must first call getAllLists to get the correct list_id from the context.`,
+      parameters: {
+        type: "object",
+        properties: {
+          list_id: {
+            type: "string",
+            description: "The _id of the list to add the task to."
+          },
+          task: {
+            type: "string",
+            description: "The text/description of the new task to add."
+          }
+        },
+        required: ["list_id", "task"]
+      }
+    }
+  },
+  {
+    type: "function",
+    function: {
+      name: "deleteListTask",
+      description: `Deletes a specific task from an existing To-Do list. IMPORTANT: You must first call getAllLists to get the correct list_id and the task_id of the task you want to delete.`,
+      parameters: {
+        type: "object",
+        properties: {
+          list_id: {
+            type: "string",
+            description: "The _id of the list containing the task."
+          },
+          task_id: {
+            type: "string",
+            description: "The _id of the specific task to delete."
+          }
+        },
+        required: ["list_id", "task_id"]
+      }
+    }
+  },
+  {
+    type: "function",
+    function: {
+      name: "updateListTask",
+      description: `Updates the text of an existing task in a To-Do list. IMPORTANT: You must first call getAllLists to get the correct list_id and the task_id of the task you want to update.`,
+      parameters: {
+        type: "object",
+        properties: {
+          list_id: {
+            type: "string",
+            description: "The _id of the list containing the task."
+          },
+          task_id: {
+            type: "string",
+            description: "The _id of the specific task to update."
+          },
+          updatedTask: {
+            type: "string",
+            description: "The new description/text for the task."
+          }
+        },
+        required: ["list_id", "task_id", "updatedTask"]
+      }
+    }
+  },
+  {
+    type: "function",
+    function: {
       name: "create_Note",
       description: `Creates a Note for the user.
         Use this to explain the WHY behind the tasks in the to-do lists.
