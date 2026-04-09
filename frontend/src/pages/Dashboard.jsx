@@ -18,6 +18,8 @@ const Dashboard = () => {
   const [companions, setCompanions] = useState([]);
   const [lists, setLists] = useState([]);
   const [notes, setNotes] = useState([]);
+  const [listSearchQuery, setListSearchQuery] = useState('');
+  const [noteSearchQuery, setNoteSearchQuery] = useState('');
   const [userName, setUserName] = useState('');
   const [userAvatar, setUserAvatar] = useState(null);
 
@@ -106,6 +108,9 @@ const Dashboard = () => {
   };
   
   if (loading) return (<LoadingComponent text="Loading Dashboard"/>);
+
+  const filteredLists = lists.filter(list => list.title?.toLowerCase().includes(listSearchQuery.toLowerCase()));
+  const filteredNotes = notes.filter(note => note.title?.toLowerCase().includes(noteSearchQuery.toLowerCase()) || note.preview?.toLowerCase().includes(noteSearchQuery.toLowerCase()));
 
   return (
     <div className="min-h-screen bg-[#0a0a0f] relative overflow-hidden">
@@ -204,18 +209,32 @@ const Dashboard = () => {
                 }
               </p>
             </div>
-            <button
-              onClick={() => navigate("/createList")}
-              className="flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white font-semibold py-2.5 px-5 rounded-xl shadow-lg shadow-emerald-500/25 transition-all duration-200 hover:shadow-emerald-500/40 hover:-translate-y-0.5 active:translate-y-0 text-sm"
-            >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-              </svg>
-              Add List
-            </button>
+            <div className="flex items-center gap-4">
+              <div className="relative group">
+                <input
+                  type="text"
+                  placeholder="Search lists..."
+                  value={listSearchQuery}
+                  onChange={(e) => setListSearchQuery(e.target.value)}
+                  className="w-full sm:w-64 bg-white/5 border border-white/10 group-hover:border-emerald-500/30 text-white text-sm rounded-xl px-4 py-2.5 pl-10 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 placeholder-slate-400 transition-all duration-200"
+                />
+                <svg className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 group-hover:text-emerald-400 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <button
+                onClick={() => navigate("/createList")}
+                className="flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white font-semibold py-2.5 px-5 flex-shrink-0 rounded-xl shadow-lg shadow-emerald-500/25 transition-all duration-200 hover:shadow-emerald-500/40 hover:-translate-y-0.5 active:translate-y-0 text-sm"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                </svg>
+                Add List
+              </button>
+            </div>
           </div>
           <ListGrid
-            lists={lists}
+            lists={filteredLists}
             onDelete={handleDeleteList}
           />
         </section>
@@ -232,18 +251,32 @@ const Dashboard = () => {
                 }
               </p>
             </div>
-            <button
-              onClick={() => navigate("/createNote")}
-              className="flex items-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-semibold py-2.5 px-5 rounded-xl shadow-lg shadow-amber-500/25 transition-all duration-200 hover:shadow-amber-500/40 hover:-translate-y-0.5 active:translate-y-0 text-sm"
-            >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-              </svg>
-              Add Note
-            </button>
+            <div className="flex items-center gap-4">
+              <div className="relative group">
+                <input
+                  type="text"
+                  placeholder="Search notes..."
+                  value={noteSearchQuery}
+                  onChange={(e) => setNoteSearchQuery(e.target.value)}
+                  className="w-full sm:w-64 bg-white/5 border border-white/10 group-hover:border-amber-500/30 text-white text-sm rounded-xl px-4 py-2.5 pl-10 focus:outline-none focus:ring-2 focus:ring-amber-500/50 placeholder-slate-400 transition-all duration-200"
+                />
+                <svg className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 group-hover:text-amber-400 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <button
+                onClick={() => navigate("/createNote")}
+                className="flex items-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-semibold py-2.5 px-5 flex-shrink-0 rounded-xl shadow-lg shadow-amber-500/25 transition-all duration-200 hover:shadow-amber-500/40 hover:-translate-y-0.5 active:translate-y-0 text-sm"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                </svg>
+                Add Note
+              </button>
+            </div>
           </div>
           <NoteGrid
-            notes={notes}
+            notes={filteredNotes}
             onDelete={handleDeleteNote}
           />
         </section>
