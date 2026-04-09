@@ -18,7 +18,7 @@ async function getHistory(req, res) {
     // Get history list (title, id, timestamps) without full chatHistory for sidebar
     const historyList = await History.find({ companionId })
       .select("title createdAt updatedAt")
-      .sort({ updatedAt: -1 });
+      .sort({ updatedAt: 1 });
 
     res.status(200).json({ success: true, history: historyList });
   } catch (error) {

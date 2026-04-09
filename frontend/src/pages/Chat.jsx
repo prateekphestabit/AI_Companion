@@ -192,13 +192,14 @@ const Chat = () => {
         setMessages(prev => [...prev, { role: 'assistant', text: data.reply }]);
         if (!activeHistoryId) {
           setActiveHistoryId(data.historyId);
-          // Refresh sidebar
-          const histRes = await fetch(`${CHAT_API}/${companionId}/history`, {
-            method: 'GET', headers: { 'Content-Type': 'application/json' }, credentials: 'include',
-          });
-          const histData = await histRes.json();
-          if (histData.success) setHistoryList(histData.history);
         }
+        
+        // Refresh sidebar to update sorting (newest first)
+        const histRes = await fetch(`${CHAT_API}/${companionId}/history`, {
+          method: 'GET', headers: { 'Content-Type': 'application/json' }, credentials: 'include',
+        });
+        const histData = await histRes.json();
+        if (histData.success) setHistoryList(histData.history);
       }
     } catch (err) {
       console.error('Send failed:', err);
