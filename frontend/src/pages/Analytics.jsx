@@ -326,9 +326,9 @@ const Analytics = () => {
           <h2 style={{ color: '#f1f5f9', fontSize: 20, fontWeight: 700, letterSpacing: '-0.01em', marginBottom: 4 }}>Companion Details</h2>
           <p style={{ color: '#475569', fontSize: 13, marginBottom: 28 }}>Individual statistics for each companion</p>
 
-          {companionStats.length > 0 ? (
+          {rankedCompanions.length > 0 ? (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 24 }}>
-              {companionStats.map((comp, index) => {
+              {rankedCompanions.map((comp, index) => {
                 const color = COLORS[index % COLORS.length];
                 const grad = GRADIENTS[index % GRADIENTS.length];
                 const pct = maxMessages > 0 ? (comp.totalMessages / maxMessages) * 100 : 0;

@@ -41,7 +41,7 @@ const tools = [
     type: "function",
     function: {
       name: "deleteList",
-      description: `Deletes a specific To-Do list. IMPORTANT: Before calling this tool, you must first call getAllLists to get the correct list_id from the context. Do not guess the list_id.`,
+      description: `Deletes a specific To-Do list. IMPORTANT: Before calling this tool, you must first call getAllLists to get the correct list_id from the context. Do not guess the list_id. Always Ask user for confirmation before deleting any list.`,
       parameters: {
         type: "object",
         properties: {
@@ -94,7 +94,7 @@ const tools = [
     type: "function",
     function: {
       name: "deleteNote",
-      description: `Deletes a specific Note. IMPORTANT: Before calling this tool, you must first call getAllNotes to get the correct note_id from the context. Do not guess the note_id.`,
+      description: `Deletes a specific Note. IMPORTANT: Before calling this tool, you must first call getAllNotes to get the correct note_id from the context. Do not guess the note_id. Always Ask user for confirmation before deleting any note.`,
       parameters: {
         type: "object",
         properties: {
