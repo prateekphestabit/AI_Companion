@@ -2,7 +2,7 @@ const logger = require('./../utils/logger.js');
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
-const authMiddleware = require('../middlewares/auth.js');
+const {authMiddleware} = require('../middlewares/auth.js');
 
 class MiddlewareLoader {
     async loadMiddlewares(app) {

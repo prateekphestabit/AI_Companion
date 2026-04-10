@@ -1,5 +1,6 @@
 const logger = require('../utils/logger.js');
 const jwt = require('jsonwebtoken');
+const rateLimit = require("express-rate-limit");
 
 async function authMiddleware(req, res, next){
   if (req.path.startsWith('/dev') || req.path.startsWith('/auth')) {
@@ -30,4 +31,12 @@ async function authMiddleware(req, res, next){
   }
 }
 
-module.exports = authMiddleware;      
+const signinLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, 
+  max: 6, 
+  message: { success: false, message: "Too many sign-in attempts from this IP, please try again after 15 minutes." },
+  standardHeaders: true, 
+  legacyHeaders: false, 
+});
+
+module.exports = {authMiddleware, signinLimiter};      

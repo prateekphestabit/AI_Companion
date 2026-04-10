@@ -110,7 +110,7 @@ const Dashboard = () => {
   if (loading) return (<LoadingComponent text="Loading Dashboard"/>);
 
   const filteredLists = lists.filter(list => list.title?.toLowerCase().includes(listSearchQuery.toLowerCase()));
-  const filteredNotes = notes.filter(note => note.title?.toLowerCase().includes(noteSearchQuery.toLowerCase()) || note.preview?.toLowerCase().includes(noteSearchQuery.toLowerCase()));
+  const filteredNotes = notes.filter(note => note.title?.toLowerCase().includes(noteSearchQuery.toLowerCase()));
 
   return (
     <div className="min-h-screen bg-[#0a0a0f] relative overflow-hidden">
