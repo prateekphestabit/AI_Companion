@@ -3,6 +3,8 @@ import { useParams, useNavigate } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import { checkAuth } from '../auth/auth';
 import Sidebar from '../components/chatPage/sidebar';
+import AddDocButton from '../components/chatPage/addDocButton';
+import RemoveDocChip from '../components/chatPage/removeDocChip';
 import { jsPDF } from "jspdf";
 
 const CHAT_API = import.meta.env.VITE_CHAT_API_URL;
@@ -10,6 +12,9 @@ const CHAT_API = import.meta.env.VITE_CHAT_API_URL;
 const Chat = () => {
   const { companionId } = useParams();
   const navigate = useNavigate();
+
+  // file state
+  const [file, setFile] = useState(null);
 
   // Core state
   const [loading, setLoading] = useState(true);
@@ -181,12 +186,18 @@ const Chat = () => {
     setSending(true);
 
     try {
+      const formData = new FormData();
+      formData.append('message', text);
+      if (file) formData.append('file', file);
+      if (activeHistoryId) formData.append('historyId', activeHistoryId);
+
+      setFile(null);
       const res = await fetch(`${CHAT_API}/${companionId}/send`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
-        body: JSON.stringify({ historyId: activeHistoryId, message: text }),
+        body: formData,
       });
+
       const data = await res.json();
       if (data.success) {
         setMessages(prev => [...prev, { role: 'assistant', text: data.reply }]);
@@ -402,13 +413,21 @@ const Chat = () => {
           )}
         </main>
 
-        {/* ── Input Bar ── */}
+        {/* ── footer ── */}
         <footer className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0a0a0f] via-[#0a0a0f]/95 to-transparent pt-12 pb-5 px-4 pointer-events-none z-10">
           <div className="max-w-3xl mx-auto pointer-events-auto">
+
+            {/* {show selected files} */}
+            {file && (
+              <RemoveDocChip file={file} setFile={setFile} />
+            )}
+
+            {/* {input bar} */}
             <form
               onSubmit={handleSend}
-              className="flex items-end gap-2 bg-[#131320] border border-white/8 focus-within:border-indigo-500/40 rounded-2xl px-2 py-2 shadow-2xl shadow-black/40 transition-all duration-300"
+              className="flex items-center gap-2 bg-[#131320] border border-white/8 focus-within:border-indigo-500/40 rounded-2xl px-2 py-2 shadow-2xl shadow-black/40 transition-all duration-300"
             >
+              <AddDocButton setFile={setFile}></AddDocButton>
               <textarea
                 value={inputText}
                 onChange={(e) => setInputText(e.target.value)}

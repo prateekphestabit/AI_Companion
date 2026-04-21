@@ -4,6 +4,7 @@ const Message = require("../models/Message");
 const logger = require("../utils/logger");
 const { getTopic } = require("../services/chatTitle");
 const { llmResponse } = require("../services/chatWithTools");
+const { extractFileText } = require("../utils/textExtractor");
 
 async function getHistory(req, res) {
   try {
@@ -55,32 +56,65 @@ async function getChatMessages(req, res) {
 
 async function sendMessage(req, res) {
   try {
+    
+    // =========== DB validations ================ 
     const userId = req.user._id;
     const { companionId } = req.params;
-    const { historyId, message } = req.body;
+    let { historyId, message } = req.body;
+    const file = req.file;
 
-    if (!message || !message.trim()) {
-      return res.status(400).json({ success: false, message: "Message is required" });
-    }
+    if (!message || !message.trim()) return res.status(400).json({ success: false, message: "Message is required" });
 
     const companion = await Companion.findOne({ _id: companionId, userId });
-    if (!companion) {
-      return res.status(404).json({ success: false, message: "Companion not found" });
-    }
+    if (!companion) return res.status(404).json({ success: false, message: "Companion not found" });
 
+    
+    // =========== Text Extraction from file ============
+    const extractedFileText = file?  await extractFileText(file) : null;
+    logger.info('Text extraction completed');
+
+    // 1. ===== fetch system prompt + add tool calling instructions =====
     const systemInstruction = companion.systemPrompt + 
     "\n\nCRITICAL CONTEXT: before answering any user query, ALWAYS CALL THESE THREE TOOLS search_memories, getAllLists and getAllNotes";
     
+    // 2. ===== create msg array + system prompt 
     const messages = [{ "role": "system", "content": systemInstruction }];
 
-    let aiReply;
-    let activeHistoryId = historyId;
+    // 3. ===== from ==>History<== populate msg array with recent 50 msgs
+    logger.info('fetching msgs from history');
+    let history = null;
+    if(historyId){
+      const numberOfMessagesInMemory = 50;
 
-    if (!historyId) {
-      // ── New conversation ──
-      messages.push({ "role": "user", "content": message.trim() });
-      aiReply = await llmResponse(messages, userId, companionId);
+      // 3.1 ==> fetch history
+      history = await History.findOne({ _id: historyId, companionId }).populate("chatHistory");
+      if (!history) return res.status(404).json({ success: false, message: "Chat not found" });
 
+      // 3.2 ==> get recent 50 msgs
+      const chats = history.chatHistory;
+      const recentChats = chats.slice(-numberOfMessagesInMemory);
+
+      // 3.3 ==> push to msg array
+      for (const chat of recentChats) {
+        messages.push({ role: chat.role, content: chat.content });
+      }
+    }
+    logger.info('msgs from history fetched successfully');
+    // 4. ===== push file text
+    if(extractedFileText) messages.push({role: 'user', content: `File attached: ${file.originalname} \n Content: \n ${extractedFileText}`});
+
+    // 5. ===== push user msg
+    messages.push({role: 'user', content: message.trim()});
+    
+    // 6. ===== Call llm =====
+    logger.info('calling llm');
+    const aiReply = await llmResponse(messages, userId, companionId);
+    
+    // 7. ===== create History if not exist =====
+    if(!historyId) {
+      logger.info('creating history for first message');
+
+      // 7.1 ===== title generation prompt =====
       const contentForTitle = `
         Generate a short title (max 5 words).
         Return ONLY plain text. No quotes, no formatting.
@@ -91,72 +125,45 @@ async function sendMessage(req, res) {
         response:
         ${aiReply}
       `;
-      const title = await getTopic([{ "role": "user", "content": contentForTitle }]);
 
-      // Create History doc first
-      const history = await History.create({
+      // 7.2 ===== get title using llm
+      const title = await getTopic([{ "role": "user", "content": contentForTitle }]);
+      
+      // 7.3 ===== create History =====
+      history = await History.create({
         companionId,
         title,
         chatHistory: []
       });
-
-      // Create Message docs
-      const userMsg = await Message.create({ historyId: history._id, role: "user", content: message.trim() });
-      const assistantMsg = await Message.create({ historyId: history._id, role: "assistant", content: aiReply });
-
-      // Push message IDs into history
-      history.chatHistory.push(userMsg._id, assistantMsg._id);
-      await history.save();
-
-      // Push history ID into companion
-      companion.history.push(history._id);
-      await companion.save();
-
-      activeHistoryId = history._id;
-    }
-    else {
-      // ── Existing conversation ──
-      const numberOfMessagesInMemory = 100;
-
-      const historyEntry = await History.findOne({ _id: historyId, companionId }).populate("chatHistory");
-      if (!historyEntry) {
-        return res.status(404).json({ success: false, message: "Chat not found" });
-      }
-
-      const chats = historyEntry.chatHistory;
-      const recentChats = chats.slice(-numberOfMessagesInMemory);
-
-      for (const chat of recentChats) {
-        messages.push({
-          role: chat.role,
-          content: chat.content
-        });
-      }
-
-      messages.push({
-        role: 'user',
-        content: message.trim()
+      
+      // 7.4 ===== push history ID to companion =====
+      await Companion.findByIdAndUpdate(companionId, {
+        $push: { history: history._id }
       });
-
-      aiReply = await llmResponse(messages, userId, companionId);
-
-      // Create Message docs
-      const userMsg = await Message.create({ historyId, role: "user", content: message.trim() });
-      const assistantMsg = await Message.create({ historyId, role: "assistant", content: aiReply });
-
-      // Push message IDs into history
-      await History.findByIdAndUpdate(historyId, {
-        $push: { chatHistory: { $each: [userMsg._id, assistantMsg._id] } }
-      });
+      
+      historyId = history._id;
+      logger.info('history created successfully');
     }
+
+    // 8. ===== create msg docs =====
+    const userDocContentMSG = extractedFileText ? await Message.create({ historyId: history._id, role: "user", content: `File attached: ${file.originalname} \n Content: \n ${extractedFileText}` }) : null;
+    const userMsg = await Message.create({ historyId: history._id, role: "user", content: message.trim() });
+    const assistantMsg = await Message.create({ historyId: history._id, role: "assistant", content: aiReply });
+    
+    const ids = [ userDocContentMSG?._id, userMsg._id, assistantMsg._id ].filter(Boolean);
+
+    // 9. ===== push msg ids to history =====
+    await History.findByIdAndUpdate(historyId, { $push: { chatHistory: { $each: ids } } });
+    logger.info('msg uploaded to DB successfully');
 
     res.status(200).json({
       success: true,
-      historyId: activeHistoryId,
+      historyId: historyId,
       reply: aiReply,
     });
+
   } catch (error) {
-    logger.error("Error in sendMessage", error);
+    logger.error("Error in sendMessage:", error);
     res.status(500).json({ success: false, message: "Server error", error: error.message });
   }
 }
