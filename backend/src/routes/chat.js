@@ -1,4 +1,6 @@
 const chatRouter = require("express").Router();
+const multer = require('multer');
+const upload = multer({ storage: multer.memoryStorage() });
 
 const {
   getHistory,
@@ -15,7 +17,7 @@ chatRouter.route("/:companionId/history/:historyId")
   .delete(deleteHistory);
 
 chatRouter.route("/:companionId/send")
-  .post(sendMessage);
+  .post(upload.single('file'), sendMessage);
 
 module.exports = chatRouter;
 
