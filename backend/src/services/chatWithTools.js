@@ -9,14 +9,16 @@ const openai = new OpenAI({
 })
 
 async function llmResponse(messages, userId, compId) {
+  console.log("chat service called");
   while(1){
     try {
       const completion = await openai.chat.completions.create({
-        model: "mistralai/devstral-2-123b-instruct-2512",
+        model: "z-ai/glm-5.2",
         messages: messages,
-        temperature: 0.15,
+        temperature: 1,
         top_p: 0.95,
         max_tokens: 8192,
+        seed: 42,
         stream: false,
         tools: toolsInfo,           
         tool_choice: "auto",

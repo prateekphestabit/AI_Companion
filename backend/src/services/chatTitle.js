@@ -7,13 +7,16 @@ const openai = new OpenAI({
 })
  
 async function getTopic(messages) {
+  console.log("getTopic service called");
   try {
     const completion = await openai.chat.completions.create({
-      model: "mistralai/devstral-2-123b-instruct-2512",
+      model:"nvidia/nemotron-3-ultra-550b-a55b",
       messages: messages,
-      temperature: 0.15,
+      temperature: 1,
       top_p: 0.95,
-      max_tokens: 8192,
+      max_tokens: 16384,
+      reasoning_budget: 16384,
+      chat_template_kwargs: {"enable_thinking":true},
       stream: false
     })
     const generated = completion.choices[0].message.content;
