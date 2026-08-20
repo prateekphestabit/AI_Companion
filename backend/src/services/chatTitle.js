@@ -10,13 +10,12 @@ async function getTopic(messages) {
   console.log("getTopic service called");
   try {
     const completion = await openai.chat.completions.create({
-      model:"nvidia/nemotron-3-ultra-550b-a55b",
+      model: "z-ai/glm-5.2",
       messages: messages,
       temperature: 1,
       top_p: 0.95,
+      seed: 42,
       max_tokens: 16384,
-      reasoning_budget: 16384,
-      chat_template_kwargs: {"enable_thinking":true},
       stream: false
     })
     const generated = completion.choices[0].message.content;
