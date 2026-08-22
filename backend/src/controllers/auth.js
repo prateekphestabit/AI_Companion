@@ -62,8 +62,11 @@ async function signup(req, res) {
       process.env.JWT_SECRET,
     );
 
-    res.cookie('token', token, {
-      maxAge: 24 * 60 * 60 * 1000 // 1 day
+    res.cookie("token", token, {
+      httpOnly: true,
+      secure: true,
+      sameSite: "none",
+      maxAge: 24 * 60 * 60 * 1000
     });
 
     res.status(201).json({
