@@ -3,8 +3,9 @@ const jwt = require('jsonwebtoken');
 const rateLimit = require("express-rate-limit");
 
 async function authMiddleware(req, res, next){
-  console.log("req from someone ", req.path);
+  console.log("new req from someone ", req.path);
   if (req.path.startsWith('/dev') || req.path.startsWith('/auth')) {
+    console.log("Skipping auth for path: ", req.path);
     return next();
   }
 

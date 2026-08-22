@@ -40,6 +40,7 @@ async function signin(req, res) {
 
 async function signup(req, res) {
   try {
+    console.log("Signup request body: ", req.body);
     const { name, email, password } = req.body;
 
     const existingUser = await User.findOne({ email });
