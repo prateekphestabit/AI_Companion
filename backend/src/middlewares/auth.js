@@ -3,6 +3,7 @@ const jwt = require('jsonwebtoken');
 const rateLimit = require("express-rate-limit");
 
 async function authMiddleware(req, res, next){
+  console.log("req from someone ", req.path);
   if (req.path.startsWith('/dev') || req.path.startsWith('/auth')) {
     return next();
   }
