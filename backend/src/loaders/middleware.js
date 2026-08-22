@@ -16,7 +16,7 @@ class MiddlewareLoader {
 
     async loadMiddlewares(app) {
         logger.info('Loading Middlewares...');
-        
+        app.set("trust proxy", 1);
         app.use(cors(this.corsOptions));
         app.use(express.json());
         app.use(express.urlencoded({ extended: true }));
