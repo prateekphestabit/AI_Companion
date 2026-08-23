@@ -11,7 +11,9 @@ const ping = async () => {
 	}
 }
 
-function keepAlive() {
+async function keepAlive() {
+	logger.info("Keep alive scheduled to run every 5 minutes.");
+	await ping();
 	setInterval( ping , 5 * 60 * 1000); 
 }
 
