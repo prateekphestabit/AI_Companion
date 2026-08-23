@@ -4,7 +4,7 @@ const RoutesLoader = require("./routes.js");
 const AppLoader = require("./app.js");
 const logger = require('./../utils/logger.js');
 const { connectMCP } = require('./mem0.js');
-
+const { keepAlive } = require('./../jobs/keepalive.js');
 class Loader {
     async initializeApp(app, PORT, dbLink) {
         try {
@@ -14,6 +14,7 @@ class Loader {
             await RoutesLoader.loadRoutes(app);
             await connectMCP();
             await AppLoader.loadApp(app, PORT);
+            await keepAlive();
         } catch (error) {
             logger.error('Failed To Load', error);
         }
