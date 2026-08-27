@@ -13,15 +13,16 @@ async function llmResponse(messages, userId, compId) {
   while(1){
     try {
       const completion = await openai.chat.completions.create({
-        model: "z-ai/glm-5.2",
+        model: "deepseek-ai/deepseek-v4-pro-0813",
         messages: messages,
         temperature: 1,
         top_p: 0.95,
-        max_tokens: 8192,
+        max_tokens: 16384,
         seed: 42,
         stream: false,
         tools: toolsInfo,           
         tool_choice: "auto",
+        chat_template_kwargs: {"thinking":false},
       })
 
       const reply = completion.choices[0].message;
