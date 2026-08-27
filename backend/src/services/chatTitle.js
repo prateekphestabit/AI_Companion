@@ -10,12 +10,12 @@ async function getTopic(messages) {
   console.log("getTopic service called");
   try {
     const completion = await openai.chat.completions.create({
-      model: "deepseek-ai/deepseek-v4-pro-0813",
+      model: "nvidia/nemotron-3.5-lightning-30b-a3b",
       messages: messages,
       temperature: 1,
       top_p: 0.95,
-      seed: 42,
       max_tokens: 16384,
+      reasoning_budget: 16384,
       stream: false,
       chat_template_kwargs: {"thinking":false},
     })
